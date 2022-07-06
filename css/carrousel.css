@@ -5,7 +5,17 @@
     margin: 0px;
 }
 
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
 .slider-container {
+    padding-top: 5%;
     width: 720px;
     margin: auto;
     position: relative;
@@ -95,11 +105,22 @@
     background-color: #383838;
 }
 
-h1 {
-    font-size: 100px;
+H1 {
+    font-size: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+H2 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+H3 {
+    font-size: 25px;
+    padding: 5%;
 }
 
 ul {
@@ -107,12 +128,47 @@ ul {
     margin-right: 3%;
     display: flex;
     justify-content: space-between;
+    align-items: wrap;
     font-size: 50px;
     list-style-image: url('../images/syringe-fill.png');
 }
 
-li {
+.procedimientos {
     border-radius: 50%;
     border: 3px;
-    padding-bottom: 15%;
+    padding-bottom: 5%;
+}
+
+.procedimientos:hover {
+    font-size: 70px;
+    text-decoration-color: red;
+}
+
+#container-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+#container-doctores {
+    display: flex;
+    justify-content: space-between;
+}
+
+#txt-doctores {
+    padding-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.lst-procedimientos {
+    font-size: 18px;
+    display: block;
+    list-style: disc;
+    padding: 2%;
+    list-style: lower-alpha;
+    text-indent: 6px;
+    line-height: 40px;
 }
