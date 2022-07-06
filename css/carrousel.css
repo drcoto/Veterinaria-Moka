@@ -164,11 +164,16 @@ ul {
 }
 
 .lst-procedimientos {
-    font-size: 18px;
+    font-size: 25px;
     display: block;
     list-style: disc;
     padding: 2%;
     list-style: lower-alpha;
+    text-indent: 6px;
+    line-height: 40px;
+}
+
+p {
     text-indent: 6px;
     line-height: 40px;
 }
