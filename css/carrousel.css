@@ -94,3 +94,25 @@
 .slider-container .slider-bullets .active {
     background-color: #383838;
 }
+
+h1 {
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 50px;
+    list-style-image: url('../images/syringe-fill.png');
+}
+
+li {
+    border-radius: 50%;
+    border: 3px;
+    padding-bottom: 15%;
+}
