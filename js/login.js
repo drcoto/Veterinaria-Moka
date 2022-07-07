@@ -13,6 +13,8 @@ let anchoPage = () => {
   if (window.innerWidth > 850) {
     cajaTraseraLogin.style.display = "block";
     cajaTraseraRegister.style.display = "block";
+    cajatresera.style.marginTop = '0px';
+    formlogin.style.width = "90%";
   } else {
     cajaTraseraRegister.style.display = "block";
     formlogin.style.width = "100%";
@@ -21,7 +23,7 @@ let anchoPage = () => {
     formlogin.style.display = "block";
     formRegister.style.display = "none";
     contenedorLoginRegister.style.left = "0px";
-    cajatresera.style.marginTop = '90px';
+    cajatresera.style.marginTop = '20px';
   }
 };
 
@@ -39,7 +41,7 @@ let login = () => {
     formRegister.style.display = "none";
     cajaTraseraRegister.style.display = "block";
     cajaTraseraLogin.style.display = "none";
-    cajatresera.style.marginTop = '90px';
+    cajatresera.style.marginTop = '20px';
   }
 };
 let register = () => {
@@ -56,12 +58,11 @@ let register = () => {
     cajaTraseraRegister.style.display = "none";
     cajaTraseraLogin.style.display = "block";
     cajaTraseraLogin.style.opacity = "1";
-    cajatresera.style.marginTop = '300px';
+    cajatresera.style.marginTop = '20px';
   }
 };
 if(window.innerWidth > 850){
-  window.addEventListener("resize", anchoPage);
-  
+  window.addEventListener("resize", anchoPage); 
 }
 anchoPage();
 btnRegister.addEventListener("click", register);

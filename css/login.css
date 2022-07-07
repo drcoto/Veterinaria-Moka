@@ -2,18 +2,19 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-
-.form-all {
+body{
   background-image: url(/imgs/imgs-login/anna-dudkova-urs_y9NwFcc-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+}
+.form-all {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
 }
 .contenedor-todo {
   width: 100%;
@@ -94,7 +95,6 @@
   transition: left 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .contenedor-login-register form {
-  width: 100%;
   padding: 70px 20px;
   background: #f2f2f2;
   position: absolute;
@@ -106,8 +106,10 @@
   padding: 70px 20px;
 }
 .contenedor-login-register .formulario-register {
+  width: 100%;
   padding: 45px 20px;
 }
+
 .contenedor-login-register form h2 {
   font-size: 30px;
   text-align: center;
@@ -126,7 +128,10 @@
 }
 .contenedor-login-register form .btn-forms {
   padding: 10px 30px;
-  margin-top: 40px;
+  display: block;
+  margin: 0px auto;
+  position: relative;
+  top: 20px;
   border: none;
   font-size: 14px;
   background: #1ba67d;
@@ -200,32 +205,36 @@ input::placeholder {
 
 /* btn password */
 .card--label-input .btn-password {
+  height: 50%;
   outline: none;
   border: none;
   position: absolute;
   right: 10px;
-  top: 34px;
+  top: 27px;
   font-size: 16px;
   z-index: 10;
   background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.icons-container{
+
+.icons-container {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  top: -20px;
   gap: 10px;
 }
-.social-icon img:hover{
+.social-icon img:hover {
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   -o-border-radius: 0;
 }
-.social-icon img{
+.social-icon img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -236,32 +245,35 @@ input::placeholder {
 }
 
 /* icon password */
-.ri-eye-fill{
-  font-size: 20px;
+.fa-eye{
+  color: #03412e; 
 }
-.ri-eye-close-fill{
+.ri-eye-fill,.ri-eye-close-fill {
   font-size: 20px;
+  color: #03412e;
 }
-
-
 
 /* responsive Design */
 @media screen and (max-width: 850px) {
+  .form-all{
+    height: 100%;
+  }
   .caja-trasera {
     max-width: 350px;
     height: 300px;
-    flex-direction: column;
     margin: auto;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .caja-trasera div {
-    margin: 0;
-    position: absolute;
+    margin: 0 auto;
   }
   /* formulario */
   .contenedor-login-register {
     top: -10px;
-    left: -5px;
     margin: auto;
   }
   .contenedor-login-register form {
@@ -277,9 +289,10 @@ input::placeholder {
     max-width: auto;
     padding: 70px 20px;
   }
+
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 425px) {
   .caja-trasera {
     display: flex;
     flex-direction: column;
@@ -287,7 +300,7 @@ input::placeholder {
     justify-content: center;
     max-width: auto;
     text-align: center;
-    margin: 0 10px;
+    margin: 0 auto;
     width: auto;
   }
   .contenedor-login-register form h2 {
