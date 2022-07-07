@@ -79,47 +79,39 @@ for (let i = 0; i < inputs.length; i++) {
   });
 }
 
-// notificacion de registro
-// form login
-let btnLoginForm = document.querySelector("#btn-login-form");
-const formLoginEmail = document.querySelector("#login-email");
-const formLoginPassword = document.querySelector("#login-password");
 
-let alertLogin = () => {
-  alert("Has iniciado correctamente");
-};
-let alertRegister = () => {
-  alert("Has creado la cuenta correctamente");
-};
 
 //fucion de boton password
-let btnPassword = document.querySelector(".btn-password");
+let btnPassword1 = document.querySelector(".btn-password1");
 let icon  = document.querySelector(".fa-eye"); 
 
-let password = () => {
+let password1 = () => {
   let tipo = document.getElementById("login-password");
   if (tipo.type == "password") {
     tipo.type = "text";
-    icon.classList.replace("fa-eye","fa-eye-slash");
+    icon.classList.replace("fa-eye","ri-eye-close-fill");
     
   } else {
     tipo.type = "password";
-    icon.classList.replace("fa-eye-slash","fa-eye");
+    icon.classList.replace("ri-eye-close-fill","fa-eye");
+  }
+};
+// register
+let btnPassword2 = document.querySelector(".btn-password2");
+let icon2  = document.querySelector(".ri-eye-fill"); 
+
+let password2 = () => {
+  let tipo2 = document.getElementById("register-password");
+  if (tipo2.type == "password") {
+    tipo2.type = "text";
+    icon2.classList.replace("ri-eye-fill","ri-eye-close-fill");
+    
+  } else {
+    tipo2.type = "password";
+    icon2.classList.replace("ri-eye-close-fill","ri-eye-fill");
   }
 };
 
-btnPassword.addEventListener("click", password);
-
-// Form register
-let btnRegisterForm = document.querySelector("#btn-register-form");
-
-// events listener
-btnLoginForm.addEventListener("click", alertLogin);
-btnRegisterForm.addEventListener("click", alertRegister);
-
-
-let numero = 50
-let number2 = 0.35
-
-
+btnPassword1.addEventListener("click", password1);
+btnPassword2.addEventListener("click", password2);
 
