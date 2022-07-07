@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login y Register</title>
+    <script
+      src="https://kit.fontawesome.com/c02f88807d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+  </head>
+  <body>
+    <!-- formulario de login y registro -->
+    <section class="form-all">
+      <div class="contenedor-todo">
+        <div class="caja-trasera">
+          <!-- iniciar sesión -->
+          <div class="caja-trasera-login">
+            <h3>
+              <span class="questions-marks-styles">¿</span>Ya tienes una
+              cuenta<span class="questions-marks-styles">?</span>
+            </h3>
+            <p>Inicia sesión para entrar Moka</p>
+            <button type="button" id="btn-login">
+              Login<i class="fa-solid fa-right-to-bracket"></i>
+            </button>
+          </div>
+          <!-- registrarse -->
+          <div class="caja-trasera-register">
+            <h3>
+              <span class="questions-marks-styles">¿</span>Aun no tienes una
+              cuenta<span class="questions-marks-styles">?</span>
+            </h3>
+            <p>Regístrate para que puedas entrar a Moka</p>
+            <button type="button" id="btn-register">
+              Register<i class="fa-solid fa-clipboard-list"></i>
+            </button>
+          </div>
+        </div>
+        <div class="contenedor-login-register">
+          <!-- login -->
+          <form class="formulario-login">
+            <h2>Iniciar sesión</h2>
+            <div class="card--label-input">
+              <input
+                type="email"
+                placeholder="correo electrónico"
+                id="login-email"
+                class="formulario-input"
+              />
+              <label for="email" class="form-label">Correo electrónico </label>
+            </div>
+            <div class="card--label-input">
+              <input
+                type="password"
+                placeholder="contraseña"
+                id="login-password"
+                class="formulario-input"
+              />
+              <label for="" class="form-label">Contraseña</label>
+              <button type="button" class="btn-password">
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+            <button type="button" id="btn-login-form" class="btn-forms">
+              Iniciar sesión
+            </button>
+          </form>
+          <!-- register -->
+          <form class="formulario-register">
+            <h2>Registrarse</h2>
+            <div class="card--label-input">
+              <input
+                type="text"
+                placeholder="Nombre completo"
+                class="formulario-input"
+              />
+              <label for="" class="form-label">Nombre completo</label>
+            </div>
+            <div class="card--label-input">
+              <input
+                type="text"
+                placeholder="Nombre de la Mascota"
+                class="formulario-input"
+              />
+              <label for="" class="form-label">Nombre de la Mascota</label>
+            </div>
+            <div class="card--label-input">
+              <input
+                type="text"
+                placeholder="Usuario"
+                class="formulario-input"
+              />
+              <label for="" class="form-label">Usuario</label>
+            </div>
+            <div class="card--label-input">
+              <input
+                type="email"
+                placeholder="Correo electrónico"
+                id="register-email"
+                class="formulario-input"
+              />
+              <label for="register-email" class="form-label"
+                >Correo electrónico</label
+              >
+            </div>
+            <div class="card--label-input">
+              <input
+                type="password"
+                placeholder="Contraseña"
+                id="register-password"
+                class="formulario-input"
+              />
+              <label for="register-password" class="form-label"
+                >Contraseña</label
+              >
+              <button
+                type="button"
+                class="btn-password"
+                id="btn-register-password"
+              >
+                <i class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+            <button type="button" id="btn-register-form" class="btn-forms">
+              Registrarse
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="js/login.js"></script>
+  </body>
+</html>
