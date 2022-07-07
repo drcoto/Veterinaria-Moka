@@ -1,0 +1,11 @@
+.container-logo{
+    background-color: azure;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+nav{
+    height: 80px;
+    background-color: aqua;
+}
