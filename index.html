@@ -34,7 +34,7 @@
   <body>
     <header class="header-container">
       <div class="logo-container">
-        <img src="" alt="logo moka" />
+        <img src="imgs/logo/logo-moka.png" alt="logo moka" />
       </div>
       <div class="home"><a href="index.html">Inicio</a></div>
       <nav class="menu-icons">
@@ -45,16 +45,24 @@
       </nav>
     </header>
     <section class="contact-container">
-      <h3>Contacto</h3>
-      <div class="info-contact-container">
-        <div class="info-contact">
-          <div class="info-container">
-            <div class="icon">
+        <div class="glass">
+            <div class="map-container">
+                <h3>Dirección</h3>
+            <div class="map">
+                <div id="map"></div>
+            </div>
+        </div>
+        <div class="more-info"><a href="">Mas Información</a></div>
+        <div class="info-contact-container">
+            <h3>Contacto</h3>
+            <div class="info-contact">
+                <div class="info-container">
+                    <div class="icon">
               <a href=""><img src="imgs/icons/iconsWhite/phone.png" alt=""></a>
             </div>
             <span>Llámenos</span>
             <span>2254-6737</span>
-          </div>
+        </div>
           <div class="info-container">
             <div class="icon">
               <a href=""><img src="imgs/icons/iconsWhite/whatsApp.png" alt=""></a>
@@ -68,25 +76,20 @@
             </div>
             <span>Escribanos</span>
             <span>mokaclinic@vetpet.com</span>
-          </div>
+        </div>
           <div class="info-container horarios">
-            <div class="icon">
-              <a href=""><img src="imgs/icons/iconsWhite/clock.png" alt=""></a>
+              <div class="icon">
+              <a href="#"><img src="imgs/icons/iconsWhite/clock.png" alt=""></a>
             </div>
             <span>Horarios</span>
-            <span>Todos los días 24/7</span>
+            <span>Lunes a Domingo 24 horas</span>
           </div>
         </div>
-      </div>
-        </div>
-      <div class="map">
-        <h3>Dirección</h3>
-        <div class="map-container">
-          <div id="map"></div>
-        </div>
-      </div>
+    </div>
+</div>
+</div>
     </section>
     <script src="js/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbe_yIKBbi4YG3-tlEvw9Qb_UbM1Or74k&callback=iniciarMap"></script>
-  </body>
+</body>
 </html>
