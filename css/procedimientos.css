@@ -2,11 +2,6 @@ html {
     font-family: quantum;
 }
 
-@font-face {
-    font-family: quantum;
-    src: url(/fonts/Quantum.otf);
-}
-
 a {
     color: #000;
     text-decoration: none;
@@ -27,12 +22,12 @@ H2 {
     display: flex;
     justify-content: center;
     font-size: 60px;
-    margin-top: 5%
+    margin-top: 3%
 }
 
 H3 {
     font-size: 25px;
-    padding: 5%;
+    padding: 3%;
 }
 
 ul {
@@ -137,4 +132,28 @@ p {
 p {
     text-indent: 6px;
     line-height: 40px;
+}
+
+#sct-cirugias {
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#sct-desparasitaciones {
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#sct-emergencias {
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
