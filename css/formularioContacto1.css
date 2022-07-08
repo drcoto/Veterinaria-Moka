@@ -25,6 +25,13 @@ form {
     width: 100%;
 }
 
+.division {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
 .form-section {
     display: flex;
     align-items: center;
@@ -44,35 +51,30 @@ form {
 }
 
 .formTitle {
+    margin: auto;
     position: relative;
     top: -60px;
     font-size: 30px;
-    text-align: center;
-    background-size: 50%;
     background-color: #fff;
     padding: 5px;
     width: fit-content;
-    /*
-    position: absolute;
-    top: 5px;
-    left: 860px;
-    background-color: #fff;
-    font-size: 30px;
-    outline: none;
-    padding: 10px;
-    */
 }
 
 
 /*Inputs generales*/
 
+.box-direction input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.infoBox input,
 .box-nameArea input,
 .box-petNameArea input,
 .box-phone input,
-.box-email input,
-.infoBox input,
-.box-direction input {
-    width: 100%;
+.box-email input {
+    width: 300px;
     padding: 10px;
     border-radius: 3px;
 }
@@ -189,8 +191,8 @@ button:hover {
 
 
 /*
-                <div class="box-petNameArea">
-                    <input type="text" id="petName" required>
-                    <label for="petName"><i class="fa-solid fa-paw"></i> Nombre de la mascota</label>
-                </div>
-*/
+                  <div class="box-petNameArea">
+                      <input type="text" id="petName" required>
+                      <label for="petName"><i class="fa-solid fa-paw"></i> Nombre de la mascota</label>
+                  </div>
+  */
