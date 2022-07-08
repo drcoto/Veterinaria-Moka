@@ -1,0 +1,60 @@
+.procedimientos-container {
+  position: relative;
+  top: 80px;
+  text-align: center;
+  color: #fff;
+}
+.procedimientos-container h1 {
+  font-size: 40px;
+}
+.background-procedimientos {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/imgs/imgsindex/andrew-s-ouo1hbizWwo-unsplash.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 200px 0;
+}
+.procedimientos-container .procedimientos {
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  max-width: 855px;
+  padding: 20px 0;
+  font-size: 22px;
+}
+.procedimientos-container .procedimientos a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 25px;
+  text-align: center;
+}
+.procedimientos-container .procedimientos a i {
+  padding-right: 5px;
+  font-size: 17px;
+}
+
+.procedimientos a {
+  --s: 0.1em;
+  /*thethicknessoftheline*/
+  --c: #1095c1;
+  /*thecolor*/
+  padding-bottom: var(--s);
+  background: linear-gradient(90deg, var(--c) 50%, #000 0)
+      calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  font-family: Arial;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.procedimientos a:hover {
+  --_p: 100%;
+  color: #1095c1;
+}
