@@ -78,6 +78,11 @@ textarea {
     padding: 10px;
     outline: 0;
     border-radius: 3px;
+}
+
+input:focus,
+textarea:focus {
+    transition: 1s;
     border-color: #1ba67d;
 }
 
@@ -87,3 +92,5 @@ textarea:focus~label,
 textarea:valid~label {
     top: -35px;
 }
+
+button:hover {}
