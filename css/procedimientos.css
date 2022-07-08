@@ -1,3 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+div[id] {
+  scroll-margin-top: 80px;
+}
+section {
+  position: relative;
+  top: 80px;
+}
 .procedimientos-container {
   position: relative;
   top: 80px;
@@ -57,4 +67,79 @@
 .procedimientos a:hover {
   --_p: 100%;
   color: #1095c1;
+}
+.javier {
+  background-color: #1095c1;
+  height: 100px;
+  width: 100%;
+  margin: 10px 0;
+  z-index: 1;
+}
+.guillermo {
+  background-color: #3610c1;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+/* servicios castraciones */
+.services-container {
+  background-color: #bec110;
+}
+
+.castraciones h3 {
+  text-align: center;
+  font-size: 35px;
+  padding: 20px 0;
+}
+.castraciones .servicios-info-container p {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+}
+.castraciones .servicios-info-container .razones-castracion {
+  max-width: 1000px;
+  background: #1095c1;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.castraciones .servicios-info-container .razones-castracion > p {
+  margin: auto;
+  width: auto;
+}
+
+/* servicios */
+.container{
+  background-color: rebeccapurple;
+  display: flex;
+  justify-content: center;
+  padding: 0px 150px;
+  position: relative;
+}
+.services-container-info{
+  width: 600px;
+  background-color: #fff;
+  height: 400px;
+  padding: 0 20px;
+  font-size: 20px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .services-container-info  h3{
+  font-size: 35px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.container .img-container{
+  width: 600px;
+  height: 400px;
+}
+.container  img{
+  width: 100%;
+  height: 100%;
 }
