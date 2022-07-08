@@ -62,7 +62,6 @@ textarea {
     position: absolute;
     padding: 10px;
     cursor: text;
-    transition: 0.2s;
 }
 
 button {
@@ -80,6 +79,7 @@ textarea {
     border: 1px solid;
 }
 
-input:focus~label {
+.form-section input:focus~label,
+.form-section input:valid~label {
     top: -35px;
 }
