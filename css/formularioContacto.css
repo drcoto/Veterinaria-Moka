@@ -1,4 +1,4 @@
-map {
+#map {
     height: 400px;
     width: 100%;
 }
@@ -25,7 +25,7 @@ form {
 }
 
 .form-section {
-    background-color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,11 +57,12 @@ textarea {
     position: relative;
 }
 
-label {
+.form-container label {
     height: 100%;
     position: absolute;
     padding: 10px;
     cursor: text;
+    transition: 0.2s;
 }
 
 button {
@@ -82,87 +83,3 @@ textarea {
 input:focus~label {
     top: -35px;
 }
-
-
-/*
-#map {
-    height: 400px;
-    width: 100%;
-}
-
-.custom-map-control-button {
-    background-color: #fff;
-    border: 0;
-    border-radius: 2px;
-    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
-    margin: 10px;
-    padding: 0 0.5em;
-    font: 400 18px Roboto, Arial, sans-serif;
-    overflow: hidden;
-    height: 40px;
-    cursor: pointer;
-}
-
-.custom-map-control-button:hover {
-    background: rgb(235, 235, 235);
-}
-
-form {
-    width: 100%;
-}
-
-.form-section {
-    background-color: antiquewhite;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #000;
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 3px;
-}
-
-.box-nameArea,
-.box-petNameArea,
-.box-phone,
-.box-email,
-.box-direction,
-.infoBox {
-    display: flex;
-    margin-bottom: 30px;
-    position: relative;
-}
-
-label {
-    height: 100%;
-    position: absolute;
-    padding: 10px;
-    cursor: text;
-}
-
-button {
-    padding: 10px 0;
-    border: 2px solid;
-    width: 100%;
-    cursor: pointer;
-    transition: all ease 2s;
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 10px;
-    outline: 0;
-    border: 1px solid;
-}
-
-input:focus~label {
-    top: -35px;
-}
-
-
-*/
