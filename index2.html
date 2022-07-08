@@ -28,8 +28,23 @@
                 </div>
                 <div class="box-phone">
                     <input type="number" id="phone">
-                    <label for="phone">Numero de telefono</label>
+                    <label for="phone">Numero de teléfono</label>
                 </div>
+                <div class="box-email">
+                    <input type="email" id="email">
+                    <label for="email">Correo electrónico</label>
+                </div>
+                <div id="map"></div>
+                <div class="box-direction">
+                    <input type="text" id="textDirection" placeholder="Otras señales">
+                </div>
+                <div class="infoBox">
+                    <textarea id="message" rows="10" cols="30"></textarea>
+                    <label for="message">Información</label>
+                </div>
+                <script src="js/map.js"></script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbe_yIKBbi4YG3-tlEvw9Qb_UbM1Or74k&callback=initMap"></script>
+                <button type="submit">Enviar</button>
             </form>
         </div>
     </section>
