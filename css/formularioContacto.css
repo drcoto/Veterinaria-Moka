@@ -42,9 +42,16 @@ form {
     border-radius: 6px;
 }
 
-
-/*
 .formTitle {
+    position: relative;
+    top: -60px;
+    font-size: 30px;
+    text-align: center;
+    background-size: 50%;
+    background-color: #fff;
+    padding: 5px;
+    width: fit-content;
+    /*
     position: absolute;
     top: 5px;
     left: 860px;
@@ -52,8 +59,8 @@ form {
     font-size: 30px;
     outline: none;
     padding: 10px;
+    */
 }
-*/
 
 
 /*Inputs generales*/
@@ -71,13 +78,9 @@ form {
 
 .infoBox textarea {
     width: 100%;
-    padding: 0px;
+    padding: 5px;
     border-radius: 3px;
 }
-
-.checkCall input,
-.checkMail input,
-.checkWhats input {}
 
 .box-nameArea,
 .box-petNameArea,
@@ -169,3 +172,24 @@ button:hover {
     background: #051d27;
     color: #30da7a;
 }
+
+.box-direction {
+    padding: 10px;
+}
+
+.image-container {
+    display: flex;
+    width: 600px;
+    height: 600px;
+    background-image: url("../images/img1.jpg");
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+
+
+/*
+                <div class="box-petNameArea">
+                    <input type="text" id="petName" required>
+                    <label for="petName"><i class="fa-solid fa-paw"></i> Nombre de la mascota</label>
+                </div>
+*/
