@@ -42,6 +42,8 @@ form {
     border-radius: 6px;
 }
 
+
+/*
 .formTitle {
     position: absolute;
     top: 5px;
@@ -51,13 +53,31 @@ form {
     outline: none;
     padding: 10px;
 }
+*/
 
-input,
-textarea {
+
+/*Inputs generales*/
+
+.box-nameArea input,
+.box-petNameArea input,
+.box-phone input,
+.box-email input,
+.infoBox input,
+.box-direction input {
     width: 100%;
     padding: 10px;
     border-radius: 3px;
 }
+
+.infoBox textarea {
+    width: 100%;
+    padding: 0px;
+    border-radius: 3px;
+}
+
+.checkCall input,
+.checkMail input,
+.checkWhats input {}
 
 .box-nameArea,
 .box-petNameArea,
@@ -66,16 +86,56 @@ textarea {
 .box-direction,
 .infoBox {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     position: relative;
 }
 
-.form-container label {
+
+/*Labels*/
+
+.box-nameArea label,
+.box-petNameArea label,
+.box-phone label,
+.box-email label,
+.infoBox label {
     height: 100%;
     position: absolute;
     padding: 10px;
-    cursor: text;
 }
+
+.checkCall label,
+.checkMail label,
+.checkWhats label {
+    display: flex;
+    padding: 5px;
+}
+
+
+/*Checkboxes*/
+
+.checkCall,
+.checkMail,
+.checkWhats {
+    border: 1px solid #000;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.checkCall:hover,
+.checkMail:hover,
+.checkWhats:hover {
+    transition: 1s;
+    border-color: #1ba67d;
+}
+
+.checksBoxes {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+
+/*Submit button*/
 
 button {
     padding: 10px 0;
@@ -84,14 +144,6 @@ button {
     cursor: pointer;
     background-color: #03412e;
     color: #fff;
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 10px;
-    outline: 0;
-    border-radius: 3px;
 }
 
 input:focus,
