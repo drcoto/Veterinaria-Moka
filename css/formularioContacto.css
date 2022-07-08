@@ -25,7 +25,6 @@ form {
 }
 
 .form-section {
-    background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,6 +68,8 @@ button {
     border-radius: 3px;
     width: 100%;
     cursor: pointer;
+    background-color: #03412e;
+    color: #fff;
 }
 
 input,
