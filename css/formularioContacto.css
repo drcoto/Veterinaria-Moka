@@ -51,6 +51,7 @@ textarea {
 .box-email,
 .box-direction,
 .infoBox {
+    display: flex;
     margin-bottom: 30px;
     position: relative;
 }
