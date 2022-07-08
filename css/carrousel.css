@@ -52,6 +52,12 @@ ul {
     --_p: 100%
 }
 
+p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font: size 15px;
+}
+
 @media only screen and (max-width: 600px) {
     ul {
         display: block;
@@ -64,9 +70,10 @@ ul {
     H3 {
         font-size: 10px;
     }
-    li .lst-procedimientos {
-        margin: 10%;
-        font-size: 8px;
+    p {
+        margin-left: 5%;
+        margin-right: 5%;
+        font: size 10px;
     }
 }
 
@@ -82,9 +89,10 @@ ul {
     H3 {
         font-size: 10px;
     }
-    li .lst-procedimientos {
-        margin: 10%;
-        font-size: 8px;
+    p {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 10px;
     }
 }
 
