@@ -2,22 +2,25 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/carrousel.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 1. Archivo reset css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- 3. Estilos personalizados -->
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/carrousel.css" />
 
     <title>Página - Veterinaria Moka</title>
-
 </head>
 
 <body>
     <div class="slider-container">
-
         <div class="slides fade">
             <div class="slider-numbers">1/4</div>
-            <div class="slider-image"><img src="images/img1.jpg" alt="background_1"></div>
+            <div class="slider-image">
+                <img src="images/img1.jpg" alt="background_1" />
+            </div>
             <div class="slider-caption">Dr.Gupta</div>
         </div>
         <!-- slider -->
@@ -25,39 +28,76 @@
         <div class="slides fade">
             <div class="slider-numbers">2/4</div>
             <div class="slider-image">
-                <img src="images/img2.jpg" alt=" background_2 "></div>
-            <div class="slider-caption ">Dra. Diaz</div>
+                <img src="images/img2.jpg" alt=" background_2 " />
+            </div>
+            <div class="slider-caption">Dra. Diaz</div>
         </div>
         <!-- slider -->
 
-        <div class="slides fade ">
-            <div class="slider-numbers ">3/4</div>
-            <div class="slider-image "><img src="images/img3.jpg " alt="background_3 "></div>
-            <div class="slider-caption ">Dr. Chaves</div>
+        <div class="slides fade">
+            <div class="slider-numbers">3/4</div>
+            <div class="slider-image">
+                <img src="images/img3.jpg " alt="background_3 " />
+            </div>
+            <div class="slider-caption">Dr. Chaves</div>
         </div>
         <!-- slider -->
 
-        <div class="slides fade ">
-            <div class="slider-numbers ">4/4</div>
-            <div class="slider-image "><img src="images/img4.jpg " alt="background_4 "></div>
-            <div class="slider-caption ">Dr. Solorzano</div>
+        <div class="slides fade">
+            <div class="slider-numbers">4/4</div>
+            <div class="slider-image">
+                <img src="images/img4.jpg " alt="background_4 " />
+            </div>
+            <div class="slider-caption">Dr. Solorzano</div>
         </div>
         <!-- slider -->
 
         <!-- Slider Next and Previous buttons -->
-        <a class="prev " onclick="plusIndex(-1) ">❮</a>
-        <a class="next " onclick="plusIndex(+1) ">❯</a>
+        <a class="prev" onclick="plusIndex(-1) ">❮</a>
+        <a class="next" onclick="plusIndex(+1) ">❯</a>
 
         <!-- Slider Selection Bullets -->
-        <div class="slider-bullets " id="slider-bullets ">
-            <span class="dots " onclick="currentSlide(1) "></span>
-            <span class="dots " onclick="currentSlide(2) "></span>
-            <span class="dots " onclick="currentSlide(3) "></span>
-            <span class="dots " onclick="currentSlide(4) "></span>
+        <div class="slider-bullets" id="slider-bullets ">
+            <span class="dots" onclick="currentSlide(1) "></span>
+            <span class="dots" onclick="currentSlide(2) "></span>
+            <span class="dots" onclick="currentSlide(3) "></span>
+            <span class="dots" onclick="currentSlide(4) "></span>
         </div>
         <!-- Slider Bullets -->
-
     </div>
+    <section class="sct-hotel">
+        <div class="info-hotel">
+            <header class="titulo">
+                <h2>Hotel Canino y Felino</h2>
+            </header>
+            <div class="contenedor-info">
+                <p>Contamos con el mejor hotel para mascostas de Centroamerica.</p>
+                <p>
+                    Nuestas habitaciones cumplen con los mas rigurosos estandares profesionales.
+                </p>
+                <p>
+                    Ademas su mascota podra disfrutar de la mejor gastronomia en su estadia.
+                </p>
+            </div>
+        </div>
+        <div class="imagen-hotel">
+            <img src="images/perroAcostado.jpg" alt="" />
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="primero">
+            <p>Curridabat, Sanjose</p>
+        </div>
+        <div class="segundo">
+            <p>veterinariaMoka@gmail.com</p>
+        </div>
+
+        <div class="icons">
+            <a href="https://www.instagram.com/"><img src="images/instagram (2).png" alt="" /></a>
+            <a href="https://www.facebook.com/"><img src="images/facebook (1).png" alt="" /></a>
+            <a href="https://www.twitter.com/"><img src="images/twitter.png" alt="" /></a>
+        </div>
+    </footer>
     <script src="js/carrusel.js "></script>
 </body>
 
