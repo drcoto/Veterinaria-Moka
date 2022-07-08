@@ -24,3 +24,55 @@
 .custom-map-control-button:hover {
     background: rgb(235, 235, 235);
 }
+
+form {
+    width: 90%;
+    max-width: 600px;
+}
+
+.form-section {
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.box-nameArea,
+.box-petNameArea,
+.box-phone,
+.box-email,
+.box-direction,
+.infoBox {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+label {
+    height: 100%;
+    position: absolute;
+    padding: 10px;
+    cursor: text;
+}
+
+button {
+    padding: 10px 0;
+    border: 2px solid;
+    width: 100%;
+    cursor: pointer;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid;
+}

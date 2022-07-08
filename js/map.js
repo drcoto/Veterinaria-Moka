@@ -48,11 +48,6 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     infoWindow.open(map);
 }
 
-const marker = new google.maps.Marker({
-    position: pos,
-    map: map,
-});
-
 window.initMap = initMap;
 
 

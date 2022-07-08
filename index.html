@@ -14,72 +14,38 @@
 </head>
 
 <body>
-    <div class="slider-container">
-
-        <div class="slides fade">
-            <div class="slider-numbers">1/4</div>444440
-            <div class="slider-image"><img src="images/img1.jpg" alt="background_1"></div>
-            <div class="slider-caption">Dr.Gupta</div>
-        </div>
-        <!-- slider -->
-
-        <div class="slides fade">
-            <div class="slider-numbers">2/4</div>
-            <div class="slider-image">
-                <img src="images/img2.jpg" alt=" background_2 "></div>
-            <div class="slider-caption ">Dra. Diaz</div>
-        </div>
-        <!-- slider -->
-
-        <div class="slides fade ">
-            <div class="slider-numbers ">3/4</div>
-            <div class="slider-image "><img src="images/img3.jpg " alt="background_3 "></div>
-            <div class="slider-caption ">Dr. Chaves</div>
-        </div>
-        <!-- slider -->
-
-        <div class="slides fade ">
-            <div class="slider-numbers ">4/4</div>
-            <div class="slider-image "><img src="images/img4.jpg " alt="background_4 "></div>
-            <div class="slider-caption ">Dr. Solorzano</div>
-        </div>
-        <!-- slider -->
-
-        <!-- Slider Next and Previous buttons -->
-        <a class="prev " onclick="plusIndex(-1) ">❮</a>
-        <a class="next " onclick="plusIndex(+1) ">❯</a>
-
-        <!-- Slider Selection Bullets -->
-        <div class="slider-bullets " id="slider-bullets ">
-            <span class="dots " onclick="currentSlide(1) "></span>
-            <span class="dots " onclick="currentSlide(2) "></span>
-            <span class="dots " onclick="currentSlide(3) "></span>
-            <span class="dots " onclick="currentSlide(4) "></span>
-        </div>
-        <!-- Slider Bullets -->
-
-    </div>
-    <script src="js/carrusel.js "></script>
-
     <section class="form-section">
         <div class="form-container">
             <h1>Formulario de Contacto</h1>
             <form>
                 <div class="box-nameArea">
-                    <input type="text" id="name" placeholder="Digite su nombre">
+                    <input type="text" id="name">
+                    <label for="name">Nombre</label>
                 </div>
-                <div class="box-petName">
-                    <input type="text" id="name" placeholder="Digite el nombre de la mascota">
+                <div class="box-petNameArea">
+                    <input type="text" id="petName">
+                    <label for="petName">Nombre de la mascota</label>
                 </div>
                 <div class="box-phone">
-                    <input type="number" id="name" placeholder="Digite su numero de telefono">
+                    <input type="number" id="phone">
+                    <label for="phone">Numero de telefono</label>
                 </div>
-                <div class="box-mail">
-                    <input type="email" id="name" placeholder="Digite su correo electronico">
+                <div class="box-email">
+                    <input type="email" id="email">
+                    <label for="email">Correo electronico</label>
                 </div>
+
                 <div id="map"></div>
+                <div class="box-direction">
+                    <input type="text" id="textDirection" placeholder="Otras señales">
+                </div>
+                <div class="infoBox">
+                    <textarea id="message" rows="10" cols="30" placeholder="Añadir informacion"></textarea>
+                    <label for="message">Informacion</label>
+                </div>
+                <button type="submit">Enviar</button>
                 <script src="js/map.js"></script>
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbe_yIKBbi4YG3-tlEvw9Qb_UbM1Or74k&callback=initMap&v=weekly" defer></script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbe_yIKBbi4YG3-tlEvw9Qb_UbM1Or74k&callback=initMap"></script>
             </form>
         </div>
     </section>
