@@ -66,7 +66,7 @@ textarea {
 
 button {
     padding: 10px 0;
-    border: 2px solid;
+    border-radius: 3px;
     width: 100%;
     cursor: pointer;
 }
@@ -76,10 +76,12 @@ textarea {
     width: 100%;
     padding: 10px;
     outline: 0;
-    border: 1px solid;
+    border-radius: 3px;
 }
 
-.form-section input:focus~label,
-.form-section input:valid~label {
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
     top: -35px;
 }

@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/carrousel.css">
     <link rel="stylesheet" href="css/formularioContacto.css">
+    <script src="https://kit.fontawesome.com/92630db8b1.js" crossorigin="anonymous"></script>
 
     <title>Página - Veterinaria Moka</title>
 
@@ -19,32 +20,32 @@
             <p>Formulario de Contacto</p>
             <form>
                 <div class="box-nameArea">
-                    <input type="text" id="name">
-                    <label for="name">Nombre</label>
+                    <input type="text" id="name" required>
+                    <label for="name"><i class="fa-solid fa-user"></i> Nombre</label>
                 </div>
                 <div class="box-petNameArea">
-                    <input type="text" id="petName">
-                    <label for="petName">Nombre de la mascota</label>
+                    <input type="text" id="petName" required>
+                    <label for="petName"><i class="fa-solid fa-paw"></i> Nombre de la mascota</label>
                 </div>
                 <div class="box-phone">
-                    <input type="number" id="phone">
-                    <label for="phone">Numero de teléfono</label>
+                    <input type="number" id="phone" required>
+                    <label for="phone"><i class="fa-solid fa-phone"></i> Numero de teléfono</label>
                 </div>
                 <div class="box-email">
-                    <input type="email" id="email">
-                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" required>
+                    <label for="email"><i class="fa-solid fa-envelope"></i> Correo electrónico</label>
                 </div>
                 <div id="map"></div>
                 <div class="box-direction">
                     <input type="text" id="textDirection" placeholder="Otras señales">
                 </div>
                 <div class="infoBox">
-                    <textarea id="message" rows="10" cols="30"></textarea>
-                    <label for="message">Información</label>
+                    <textarea id="message" rows="10" cols="30" required></textarea>
+                    <label for="message"><i class="fa-solid fa-info"></i> Información</label>
                 </div>
                 <script src="js/map.js"></script>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbe_yIKBbi4YG3-tlEvw9Qb_UbM1Or74k&callback=initMap"></script>
-                <button type="submit">Enviar</button>
+                <button type="submit">Enviar <i class="fa-solid fa-paper-plane"></i></button>
             </form>
         </div>
     </section>
