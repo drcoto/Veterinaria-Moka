@@ -64,13 +64,9 @@
         margin-left: 70%;
         background-color: #3DFF91;
         border: 2px solid #000;
-        border-radius: 10px;
+        border-radius: 5px;
         -webkit-box-shadow: 5px 5px 10px 5px #000000;
         box-shadow: 5px 5px 5px 5px #d9dbdf;
-    }
-    
-    #btn-readMore:hover {
-        color: darkred;
     }
     
     #proc-cx {
@@ -159,4 +155,26 @@
         height: 200px;
         justify-content: center;
         padding-left: 3%;
+    }
+    
+    @keyframes bounce {
+        0%,
+        20%,
+        60%,
+        100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        40% {
+            -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+        }
+        80% {
+            -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+        }
+    }
+    
+    #btn-readMore:hover {
+        animation: bounce 1s;
     }
