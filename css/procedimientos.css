@@ -1,145 +1,55 @@
-html {
-  scroll-behavior: smooth;
-}
-div[id] {
-  scroll-margin-top: 80px;
-}
-section {
-  position: relative;
-  top: 80px;
-}
-.procedimientos-container {
-  position: relative;
-  top: 80px;
-  text-align: center;
-  color: #fff;
-}
-.procedimientos-container h1 {
-  font-size: 40px;
-}
-.background-procedimientos {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/imgs/imgsindex/andrew-s-ouo1hbizWwo-unsplash.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 200px 0;
-}
-.procedimientos-container .procedimientos {
-  margin: auto;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: center;
-  max-width: 855px;
-  padding: 20px 0;
-  font-size: 22px;
-}
-.procedimientos-container .procedimientos a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  padding: 25px;
-  text-align: center;
-}
-.procedimientos-container .procedimientos a i {
-  padding-right: 5px;
-  font-size: 17px;
+* {
+    box-sizing: border-box;
 }
 
-.procedimientos a {
-  --s: 0.1em;
-  /*thethicknessoftheline*/
-  --c: #1095c1;
-  /*thecolor*/
-  padding-bottom: var(--s);
-  background: linear-gradient(90deg, var(--c) 50%, #000 0)
-      calc(100% - var(--_p, 0%)) / 200% 100%,
-    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
-  -webkit-background-clip: text, padding-box;
-  background-clip: text, padding-box;
-  font-family: Arial;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-}
-.procedimientos a:hover {
-  --_p: 100%;
-  color: #1095c1;
-}
-.javier {
-  background-color: #1095c1;
-  height: 100px;
-  width: 100%;
-  margin: 10px 0;
-  z-index: 1;
-}
-.guillermo {
-  background-color: #3610c1;
-  height: 100px;
-  width: 100%;
-  margin-bottom: 10px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
-/* servicios castraciones */
-.services-container {
-  background-color: #bec110;
+/* Float four columns side by side */
+
+.column {
+    margin-top: 10%;
+    float: left;
+    width: 25%;
+    padding: 0 10px;
 }
 
-.castraciones h3 {
-  text-align: center;
-  font-size: 35px;
-  padding: 20px 0;
-}
-.castraciones .servicios-info-container p {
-  text-align: center;
-  padding: 10px 0;
-  font-size: 20px;
-}
-.castraciones .servicios-info-container .razones-castracion {
-  max-width: 1000px;
-  background: #1095c1;
-  margin: auto;
-  flex-wrap: wrap;
-}
-.castraciones .servicios-info-container .razones-castracion > p {
-  margin: auto;
-  width: auto;
+
+/* Remove extra left and right margins, due to padding in columns */
+
+.row {
+    margin: 0 -5px;
 }
 
-/* servicios */
-.container{
-  background-color: rebeccapurple;
-  display: flex;
-  justify-content: center;
-  padding: 0px 150px;
-  position: relative;
-}
-.services-container-info{
-  width: 600px;
-  background-color: #fff;
-  height: 400px;
-  padding: 0 20px;
-  font-size: 20px;
-  text-align: justify;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.container .services-container-info  h3{
-  font-size: 35px;
-  text-align: center;
-  padding: 15px 0;
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.container .img-container{
-  width: 600px;
-  height: 400px;
+
+/* Style the counter cards */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
 }
-.container  img{
-  width: 100%;
-  height: 100%;
+
+
+/* Responsive columns - one column layout (vertical) on small screens */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
 }
