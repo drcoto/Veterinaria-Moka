@@ -1,55 +1,162 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-/* Float four columns side by side */
-
-.column {
-    margin-top: 10%;
-    float: left;
-    width: 25%;
-    padding: 0 10px;
-}
-
-
-/* Remove extra left and right margins, due to padding in columns */
-
-.row {
-    margin: 0 -5px;
-}
-
-
-/* Clear floats after the columns */
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-/* Style the counter cards */
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    /* this adds the "card" effect */
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
-}
-
-
-/* Responsive columns - one column layout (vertical) on small screens */
-
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
+    * {
+        box-sizing: border-box;
     }
-}
+    
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /* Float four columns side by side */
+    
+    .column {
+        margin-top: 10%;
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+    }
+    
+    .card H3 {
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom: 3%;
+        text-align: center;
+    }
+    /* Remove extra left and right margins, due to padding in columns */
+    
+    .row {
+        margin: 0 -5px;
+    }
+    /* Clear floats after the columns */
+    
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* Style the counter cards */
+    
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        /* this adds the "card" effect */
+        padding: 16px;
+        text-align: justify;
+        background-color: #f1f1f1;
+        border-radius: 8px;
+    }
+    /* Responsive columns - one column layout (vertical) on small screens */
+    
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+    
+    #btn-readMore {
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        margin-left: 70%;
+        background-color: #3DFF91;
+        border: 2px solid #000;
+        border-radius: 10px;
+        -webkit-box-shadow: 5px 5px 10px 5px #000000;
+        box-shadow: 5px 5px 5px 5px #d9dbdf;
+    }
+    
+    #btn-readMore:hover {
+        color: darkred;
+    }
+    
+    #proc-cx {
+        background-image: url('../imgs/imgsservicios/cx.gif');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        justify-content: center;
+        padding-left: 3%;
+    }
+    
+    #proc-castracion {
+        background-image: url('../imgs/imgsservicios/castracion.gif');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        justify-content: center;
+        padding-left: 3%;
+    }
+    
+    #proc-desparasitaciones {
+        background-image: url('../imgs/imgsservicios/desparasitaciones.gif');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        justify-content: center;
+        padding-left: 3%;
+    }
+    
+    #proc-grooming {
+        background-image: url('../imgs/imgsservicios/grooming.gif');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        justify-content: center;
+        padding-left: 3%;
+    }
+    
+    #proc-odontovet {
+        background-image: url('../imgs/imgsservicios/odontovet.gif');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        justify-content: center;
+        padding-left: 3%;
+    }
+    
+    #proc-rx {
+        background-image: url('../imgs/imgsservicios/rx.gif');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        justify-content: center;
+        padding-left: 3%;
+    }
+    
+    #proc-vacunas {
+        background-image: url('../imgs/imgsservicios/vacuna.gif');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        justify-content: center;
+        padding-left: 3%;
+    }
+    
+    #proc-emergencia {
+        background-image: url('../imgs/imgsservicios/er.gif');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        justify-content: center;
+        padding-left: 3%;
+    }
