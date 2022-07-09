@@ -57,7 +57,7 @@
         }
     }
     
-    #btn-readMore {
+    .btn-readMore {
         display: flex;
         justify-content: center;
         margin-top: 5%;
@@ -175,6 +175,6 @@
         }
     }
     
-    #btn-readMore:hover {
+    .btn-readMore:hover {
         animation: bounce 1s;
     }
