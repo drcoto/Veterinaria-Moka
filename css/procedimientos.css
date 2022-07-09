@@ -82,64 +82,170 @@ section {
   margin-bottom: 10px;
 }
 
-
-/* servicios castraciones */
 .services-container {
-  background-color: #bec110;
-}
-
-.castraciones h3 {
   text-align: center;
-  font-size: 35px;
+}
+.services-container h2 {
+  font-size: 45px;
   padding: 20px 0;
 }
-.castraciones .servicios-info-container p {
-  text-align: center;
-  padding: 10px 0;
-  font-size: 20px;
+.services-container a {
+  text-decoration: none;
 }
-.castraciones .servicios-info-container .razones-castracion {
-  max-width: 1000px;
-  background: #1095c1;
-  margin: auto;
+.cards-container {
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-}
-.castraciones .servicios-info-container .razones-castracion > p {
+  gap: 15px;
   margin: auto;
-  width: auto;
+  padding: 20px 0;
 }
-
-/* servicios */
-.container{
-  background-color: rebeccapurple;
-  display: flex;
-  justify-content: center;
-  padding: 0px 150px;
-  position: relative;
+.info-card {
+  margin: auto;
 }
-.services-container-info{
-  width: 600px;
-  background-color: #fff;
-  height: 400px;
-  padding: 0 20px;
-  font-size: 20px;
-  text-align: justify;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.container .services-container-info  h3{
-  font-size: 35px;
+.card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5% 0;
   text-align: center;
-  padding: 15px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card p {
+  padding: 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.img-container {
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  background-color: aquamarine;
+  border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -ms-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
 }
 
-.container .img-container{
-  width: 600px;
-  height: 400px;
+.card {
+  width: 325px;
+  height: 345px;
+  background-color: #f1f1f1;
+  position: relative;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  margin-bottom: 45px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
-.container  img{
-  width: 100%;
-  height: 100%;
+
+.btn-readMore {
+  transform: translate(-50%, 0%);
+  width: 30%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #008bf8;
+  color: #fff;
+  font-size: 1rem;
+  padding: 8px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+  -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
+}
+
+.text-body {
+  color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/*Hover*/
+.card:hover {
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .btn-readMore {
+  transform: translate(-50%, -25%);
+  opacity: 1;
+  -webkit-transform: translate(-50%, -25%);
+  -moz-transform: translate(-50%, -25%);
+  -ms-transform: translate(-50%, -25%);
+  -o-transform: translate(-50%, -25%);
+  visibility: visible;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translate(-50%, -20%);
+    -webkit-transform: translate(-50%, -20%);
+    -moz-transform: translate(-50%, -20%);
+    -ms-transform: translate(-50%, -20%);
+    -o-transform: translate(-50%, -20%);
+  }
+  40% {
+    transform: translate(-50%, -30%);
+    -webkit-transform: translate(-50%, -30%);
+    -moz-transform: translate(-50%, -30%);
+    -ms-transform: translate(-50%, -30%);
+    -o-transform: translate(-50%, -30%);
+  }
+  80% {
+    transform: translate(-50%, -40%);
+    -webkit-transform: translate(-50%, -40%);
+    -moz-transform: translate(-50%, -40%);
+    -ms-transform: translate(-50%, -40%);
+    -o-transform: translate(-50%, -40%);
+  }
+}
+
+.btn-readMore:hover {
+  animation: bounce 1s;
+}
+
+/* images */
+.castraciones-img {
+  background-image: url(/imgs/imgsservicios/castracion.gif);
+}
+.cirugia-img {
+  background-image: url(/imgs/imgsservicios/cx.gif);
+}
+.desparacitaciones-img {
+  background-image: url(/imgs/imgsservicios/desparasitaciones.gif);
+}
+.grooming-img {
+  background-image: url(/imgs/imgsservicios/grooming.gif);
+}
+.odontologia-img {
+  background-image: url(/imgs/imgsservicios/odontovet.gif);
+}
+.rx-img {
+  background-image: url(/imgs/imgsservicios/rayosx.jpg);
+}
+.vacunacion-img {
+  background-image: url(/imgs/imgsservicios/vacuna.gif);
+}
+.emergencias-img {
+  background-image: url(/imgs/imgsservicios/er.gif);
+  background-position: -20px 10px;
 }
