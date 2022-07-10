@@ -122,11 +122,16 @@ body{
   width: 100%;
   margin-top: 20px;
   padding: 10px;
-  border: 2px solid rgba(0, 0, 0, 0.253);
   background: transparent;
   font-size: 16px;
   outline: none;
   border-radius: 5px;
+}
+.border-general{
+  border: 2px solid rgba(0, 0, 0, 0.253);
+}
+.incompleto{
+  border: 2px solid red;
 }
 .container-btn-register,.container-btn-iniciar-sesion{
   padding: 40px 0 40px 0;
@@ -256,6 +261,7 @@ input::placeholder {
   font-size: 20px;
   color: #03412e;
 }
+
 
 /* responsive Design */
 @media screen and (max-width: 850px) {
