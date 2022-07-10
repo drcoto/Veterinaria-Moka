@@ -80,11 +80,6 @@ for (let i = 0; i < inputs.length; i++) {
   });
 }
 // validacion del login
-const btnIniciarSecion = document.querySelector("#btn-login-form");
-const btnRegisterSecion = document.querySelector("#btn-register-form");
-btnIniciarSecion.addEventListener("click", validacion);
-
-
 
 
 
