@@ -148,7 +148,7 @@ const validarCampoLogin = (expresion, input, campo) => {
 		document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
     document.getElementById('form-login').classList.remove("formulario-login")
     document.getElementById('form-login').classList.add("formulario-login-error")
-    document.getElementById
+    document.getElementById()
 	}
 }
 
