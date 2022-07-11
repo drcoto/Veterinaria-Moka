@@ -118,6 +118,7 @@
                 id="register-name"
                 placeholder="Nombre completo"
                 class="formulario-input border-general"
+                required
               />
               <label for="" class="form-label">Nombre completo</label>
               <p class="formulario__input-error-register">El nombre solo puede contener letras y acentos.</p>
@@ -144,13 +145,16 @@
               <label for="" class="form-label">Usuario</label>
               <p class="formulario__input-error-register">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
             </div>
-            <div class="card--label-input" >
+            <div class="card--label-input" id="grupo__number">
               <input
-                type="text"
-                placeholder="Dirección"
+              type="text"
+              name="register-number"
+              placeholder="Usuario"
+              id="register-number"
                 class="formulario-input border-general"
               />
-              <label for="" class="form-label">Dirección</label>
+              <label for="register-number" class="form-label">Numero</label>
+              <p class="formulario__input-error-register">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
             </div>
             <div class="card--label-input"  id="grupo__email">
               <input

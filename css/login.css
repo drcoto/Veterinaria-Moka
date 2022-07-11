@@ -104,16 +104,16 @@ body{
 /* formulario de login */
 .contenedor-login-register .formulario-login {
   width: 90%;
-  padding: 60px 20px 20px 20px;
+  padding: 55px 20px 20px 20px;
 }
 .contenedor-login-register .formulario-login-error {
   width: 90%;
-  padding: 30px 20px 0px 20px;
+  padding: 45px 20px 0px 20px;
 }
 /* formulario de register */
 .contenedor-login-register .formulario-register-error {
   width: 100%;
-  padding: 30px 20px 0px 20px;
+  padding: 20px 20px 0px 20px;
 }
 .contenedor-login-register .formulario-register {
   width: 100%;
@@ -128,13 +128,22 @@ body{
 }
 .contenedor-login-register form .formulario-input  {
   width: 100%;
-  margin: 5px 0;
+  margin: 8px 0;
   padding: 10px;
   background: transparent;
   font-size: 16px;
   outline: none;
   border-radius: 5px;
   z-index: -1;
+}
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
 }
 .border-general{
   border: 2px solid rgba(0, 0, 0, 0.253);
@@ -160,8 +169,15 @@ body{
 .formulario__input-error-activo{
   display: block;
 }
-.container-btn-register,.container-btn-iniciar-sesion{
-  padding: 40px 0 40px 0;
+.container-btn-register{
+  padding: 25px 0 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-btn-iniciar-sesion{
+  padding: 30px 0 40px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -207,10 +223,10 @@ body{
 /* .card--label-input input:focus {
   border: 2px solid #48ff00;
 } */
+
 .card--label-input input:focus + .form-label {
-  top: 0px;
+  top: 0;
   left: 7px;
-  padding: 0 2px;
   color: #051d27;
   font-weight: bold;
   z-index: 1;
@@ -218,19 +234,21 @@ body{
 
 .form-label {
   position: absolute;
-  top: 20px;
+  top: 22px;
   left: 5px;
+  padding:  2px;
   color: #051d27;
   transition: all 300ms;
   background-color: #f2f2f2;
   border-radius: 5px;
   z-index: -1;
+  width: fit-content;
 }
 input::placeholder {
   opacity: 0;
 }
 .fijar {
-  top: 13px;
+  top: 0;
   left: 7px;
   padding: 2px;
   color: #051d27;
@@ -248,7 +266,7 @@ input::placeholder {
   border: none;
   position: absolute;
   right: 10px;
-  top: 30px;
+  top: 20px;
   font-size: 16px;
   z-index: 10;
   background-color: transparent;
@@ -262,7 +280,7 @@ input::placeholder {
   border: none;
   position: absolute;
   right: 10px;
-  top: 25px;
+  top: 15px;
   font-size: 16px;
   z-index: 10;
   background-color: transparent;

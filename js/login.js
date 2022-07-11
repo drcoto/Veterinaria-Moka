@@ -133,6 +133,7 @@ const campos = {
   usuario: false,
   email: false,
   password: false,
+  phone: false,
 };
 
 const validarFormularioLogin = (e) => {
@@ -161,6 +162,10 @@ const validarCampoLogin = (expresion, input, campo) => {
     document
       .getElementById("btn-password-1")
       .classList.remove("btn-password-error");
+    document.getElementById("form-login").classList.add("formulario-login");
+    document
+      .getElementById("form-login")
+      .classList.remove("formulario-login-error");
     campos[campo] = true;
   } else {
     document
@@ -190,15 +195,14 @@ inputsLogin.forEach((input) => {
 });
 
 btnFormLogin.addEventListener("click", (e) => {
-  if(campos.usuario && campos.password){
-    formularioLogin.reset()
+  if (campos.usuario && campos.password) {
+    formularioLogin.reset();
   }
 });
 
 // validacion register
 const formularioRegister = document.querySelector("#form-register");
 const inputsRegister = document.querySelectorAll("#form-register input");
-
 
 const validarFormularioRegister = (e) => {
   switch (e.target.name) {
@@ -213,6 +217,9 @@ const validarFormularioRegister = (e) => {
       break;
     case "register-email":
       validarCampoRegister(expresiones.correo, e.target, "email");
+      break;
+    case "register-number":
+      validarCampoRegister(expresiones.telefono, e.target, "number");
       break;
     case "register-password2":
       validarCampoRegister(expresiones.password, e.target, "password2");
@@ -246,7 +253,9 @@ const validarCampoRegister = (expresion, input, campo) => {
     document
       .querySelector(`#grupo__${campo} .formulario__input-error-register`)
       .classList.add("formulario__input-error-activo");
-    document.getElementById("form-register").classList.remove("formulario-register");
+    document
+      .getElementById("form-register")
+      .classList.remove("formulario-register");
     document
       .getElementById("form-register")
       .classList.add("formulario-register-error");
@@ -254,7 +263,6 @@ const validarCampoRegister = (expresion, input, campo) => {
     document
       .getElementById("btn-password-2")
       .classList.add("btn-password-error");
-      document.getElementsByClassName("card--label-input").style.backgroundColor = "red"
     campos[campo] = false;
   }
 };
@@ -264,3 +272,11 @@ inputsRegister.forEach((input) => {
   input.addEventListener("blur", validarFormularioRegister);
 });
 
+formularioRegister.addEventListener("click", (e) => {
+  if(campos.nombreCompleto && campos.mascota && campos.password && campos.email && campos.phone ){
+		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
+		setTimeout(() => {
+			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
+		}, 5000);
+  }
+});
