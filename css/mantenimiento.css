@@ -1,0 +1,25 @@
+.mantenimiento-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-mantenimiento{
+    position: relative;
+    max-width: 1500px;
+}
+.img-mantenimiento img{
+    width: 100%;
+    height: 100%;
+}
+
+.logo-container{
+    position: absolute;
+    width: 200px;
+    top: 130px;
+    right: 300px;
+}
+.logo-container img{
+    width: 100%;
+}
