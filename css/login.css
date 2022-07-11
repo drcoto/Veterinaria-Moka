@@ -111,6 +111,10 @@ body{
   padding: 30px 20px 0px 20px;
 }
 /* formulario de register */
+.contenedor-login-register .formulario-register-error {
+  width: 100%;
+  padding: 30px 20px 0px 20px;
+}
 .contenedor-login-register .formulario-register {
   width: 100%;
   padding: 30px 20px 0px 20px;
@@ -122,14 +126,15 @@ body{
   margin-bottom: 20px;
   color: #007a35;
 }
-.contenedor-login-register form input {
+.contenedor-login-register form .formulario-input  {
   width: 100%;
-  margin-top: 20px;
+  margin: 5px 0;
   padding: 10px;
   background: transparent;
   font-size: 16px;
   outline: none;
   border-radius: 5px;
+  z-index: -1;
 }
 .border-general{
   border: 2px solid rgba(0, 0, 0, 0.253);
@@ -146,6 +151,12 @@ body{
   text-align: justify;
   display: none;
 }
+.formulario__input-error-register{
+  font-size: 15px;
+  padding-top: 5px;
+  text-align: justify;
+  display: none;
+}
 .formulario__input-error-activo{
   display: block;
 }
@@ -154,6 +165,11 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+.container-btn-register .formulario__mensaje-exito{
+  padding-top: 10px;
+  color: #007a35;
 }
 .contenedor-login-register form .btn-forms {
   padding: 10px 30px;
@@ -185,19 +201,16 @@ body{
   padding: 3px 0;
   max-height: 120px;
 }
-.card--label-input .formulario-input {
-  background-color: transparent;
-  z-index: -1;
-}
+
 
 /* INPUT Focus */
 /* .card--label-input input:focus {
   border: 2px solid #48ff00;
 } */
 .card--label-input input:focus + .form-label {
-  top: 13px;
+  top: 0px;
   left: 7px;
-  padding: 2px;
+  padding: 0 2px;
   color: #051d27;
   font-weight: bold;
   z-index: 1;
@@ -205,7 +218,7 @@ body{
 
 .form-label {
   position: absolute;
-  top: 35px;
+  top: 20px;
   left: 5px;
   color: #051d27;
   transition: all 300ms;
