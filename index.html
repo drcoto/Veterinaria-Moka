@@ -31,11 +31,11 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/procedimientos.css" />
-    <link rel="stylesheet" type="text/css" href="css/carrousel.css" />
+    <link rel="stylesheet"  href="css/carrousel.css" />
     <link rel="stylesheet" href="css/map.css" />
   </head>
   <body>
-    <!-- header - van -->
+    <!-- header - nav -->
     <header class="header-container">
       <div class="logo-container">
         <img src="imgs/logo/logo-moka.png" alt="logo moka" />
@@ -80,8 +80,98 @@
         </div>
       </div>
     </section>
+    <!-- sobre nosotros -->
+    <section class="sct-nosotros">
+      <div class="nosotros-container">
+        <div class="img-nosotros-container">
+          <img src="imgs/imgsindex/autri-taheri-l0Gq4BmboYY-unsplash.jpg" alt="imagen sobre moka">
+        </div>
+        <div class="info-nosotros-container">
+          <h3>Sobre <span>Moka</span></h3>
+          <p class="txt-container">En Moka clínica veterinaria, situados en Curridabat. Así, con nuestra dedicación y compromiso ofrecemos los mejores servicios disponibles para su mascota. Lo más importante es la satisfacción de nuestros clientes y, sobre todo, el bienestar de sus mascotas.</p>
+        </div>
+      </div>
+    </section>
     <!-- profesionoles creado por javier -->
-    <section class="javier"></section>
+    <section class="sct-profesionales">
+
+      <h2>Nuestros profesionales</h2>
+      <div class="container">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="imgs/carrusel/img1.jpg" alt="">
+                    <div class="card-description">
+                        <div class="card-title">
+                            <h4>Dr.Amir Gupta</h4>
+                        </div>
+                        <div class="card-text">
+                            <p>Licenciado en Veterinaria por la Universidad CEU.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/carrusel/img2.jpg" alt="">
+                    <div class="card-description">
+                        <div class="card-title">
+                            <h4>Dra.Rosa Sánchez</h4>
+                        </div>
+                        <div class="card-text">
+                            <p>Licenciada en Veterinaria por la Universidad UAB.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/carrusel/3.jpg" alt="">
+                    <div class="card-description">
+                        <div class="card-title">
+                            <h4>Dr.Oriol Puig</h4>
+                        </div>
+                        <div class="card-text">
+                            <p>Licenciado en Veterinaria por la Universidad UNA.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/carrusel/4.jpg" alt="">
+                    <div class="card-description">
+                        <div class="card-title">
+                            <h4>Dr.Pedro Sanchez</h4>
+                        </div>
+                        <div class="card-text">
+                            <p>Licenciado en Veterinaria por la Universidad UNA.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/carrusel/img3.jpg" alt="">
+                    <div class="card-description">
+                        <div class="card-title">
+                            <h4>Dra.Elizabeth Olsen</h4>
+                        </div>
+                        <div class="card-text">
+                            <p>Licenciada en Veterinaria por la Universidad UNA.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgs/carrusel/img4.jpg" alt="">
+                    <div class="card-description">
+                        <div class="card-title">
+                            <h4>Dr.Manuel Rodríguez</h4>
+                        </div>
+                        <div class="card-text">
+                            <p>Licenciado en Veterinaria por la Universidad UCR.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
 
     <!-- hotel creado por guillermo -->
     <section class="sct-hotel">
@@ -271,6 +361,7 @@
     <script src="js/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbe_yIKBbi4YG3-tlEvw9Qb_UbM1Or74k&callback=iniciarMap"></script>
     <!-- scripst -->
-    <script src="js/carrusel.js "></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/carrousel.js"></script>
   </body>
 </html>

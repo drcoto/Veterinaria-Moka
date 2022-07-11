@@ -39,7 +39,7 @@
 .procedimientos a {
   --s: 0.1em;
   /*thethicknessoftheline*/
-  --c: #1095c1;
+  --c: #30da7a;
   /*thecolor*/
   padding-bottom: var(--s);
   background: linear-gradient(90deg, var(--c) 50%, #000 0)
@@ -56,20 +56,7 @@
 }
 .procedimientos a:hover {
   --_p: 100%;
-  color: #1095c1;
-}
-.javier {
-  background-color: #1095c1;
-  height: 100px;
-  width: 100%;
-  margin: 10px 0;
-  z-index: 1;
-}
-.guillermo {
-  background-color: #3610c1;
-  height: 100px;
-  width: 100%;
-  margin-bottom: 10px;
+  color: #30da7a;
 }
 
 .services-container {
@@ -107,7 +94,6 @@
   height: 150px;
   background-size: cover;
   background-position: center;
-  background-color: aquamarine;
   border-radius: 5px 5px 0 0;
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
@@ -135,7 +121,7 @@
   width: 30%;
   border-radius: 1rem;
   border: none;
-  background-color: #008bf8;
+  background-color: #007a35af;
   color: #fff;
   font-size: 1rem;
   padding: 8px;
@@ -153,19 +139,8 @@
   -o-transform: translate(-50%, 0%);
 }
 
-.text-body {
-  color: rgb(134, 134, 134);
-}
-
-/*Text*/
-.text-title {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
 /*Hover*/
 .card:hover {
-  border-color: #008bf8;
   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.568);
 }
 
@@ -208,6 +183,9 @@
 
 .btn-readMore:hover {
   animation: bounce 1s;
+  background-color: #009942af;
+  color: #000;
+  font-weight: bold;
 }
 
 /* images */
