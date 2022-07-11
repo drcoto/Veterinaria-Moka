@@ -63,13 +63,14 @@ let register = () => {
 };
 if (window.innerWidth > 850) {
   window.addEventListener("resize", anchoPage);
+  anchoPage();
 }
 anchoPage();
 btnRegister.addEventListener("click", register);
 btnLogin.addEventListener("click", login);
 
 // validacion de inputs
-let inputs = document.querySelectorAll('input');
+let inputs = document.querySelectorAll("input");
 for (let i = 0; i < inputs.length; i++) {
   inputs[i].addEventListener("keyup", function () {
     if (this.value.length >= 1) {
@@ -79,9 +80,6 @@ for (let i = 0; i < inputs.length; i++) {
     }
   });
 }
-// validacion del login
-
-
 
 //fucion de boton password
 let btnPassword1 = document.querySelector(".btn-password1");
@@ -114,3 +112,62 @@ let password2 = () => {
 
 btnPassword1.addEventListener("click", password1);
 btnPassword2.addEventListener("click", password2);
+
+// validacion login
+const btnFormLogin = document.querySelector("#btn-login-form")
+const formularioLogin = document.querySelector("#form-login");
+const inputsLogin = document.querySelectorAll("#form-login input");
+
+const expresiones = {
+  usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
+  nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+  password: /^.{4,12}$/, // 4 a 12 digitos.
+  correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+  telefono: /^\d{7,14}$/, // 7 a 14 numeros.
+};
+
+const validarFormularioLogin = (e) => {
+  switch (e.target.name) {
+    case "login-usuario":
+      validarCampoLogin(expresiones.usuario, e.target, 'usuario');
+      break;
+      case "login-password":
+        validarCampoLogin(expresiones.password, e.target, 'password');
+        break;
+      }
+}
+
+const validarCampoLogin = (expresion, input, campo) => {
+	if(expresion.test(input.value)){
+    document.getElementById(`login-${campo}`).classList.remove('formulario__grupo-incorrecto');
+		document.getElementById(`login-${campo}`).classList.add('formulario__grupo-correcto');
+		document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
+	} else {
+		document.getElementById(`login-${campo}`).classList.add('formulario__grupo-incorrecto');
+		document.getElementById(`login-${campo}`).classList.remove('formulario__grupo-correcto');
+		document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
+    document.getElementById('form-login').classList.remove("formulario-login")
+    document.getElementById('form-login').classList.add("formulario-login-error")
+    document.getElementById
+	}
+}
+
+inputsLogin.forEach((input) => {
+  input.addEventListener("keyup", validarFormularioLogin);
+  input.addEventListener("blur", validarFormularioLogin);
+});
+
+btnFormLogin.addEventListener("click",(e)=>{
+
+})
+
+
+
+
+
+
+
+
+
+const formularioRegister = document.querySelector("#form-register");
+const inputsRegister = document.querySelectorAll("#form-register input");

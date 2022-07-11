@@ -75,25 +75,29 @@
         </div>
         <div class="contenedor-login-register">
           <!-- login -->
-          <form class="formulario-login">
+          <form id="form-login" class="formulario-login">
             <h2>Iniciar sesión</h2>
-            <div class="card--label-input">
+            <div class="card--label-input" id="grupo__usuario">
               <input
                 type="text"
                 placeholder="Usuario"
+                name="login-usuario"
                 id="login-usuario"
                 class="formulario-input border-general"
               />
               <label for="Usuario" class="form-label">Usuario</label>
+              <p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
             </div>
-            <div class="card--label-input">
+            <div class="card--label-input" id="grupo__password">
               <input
                 type="password"
                 placeholder="contraseña"
+                name="login-password"
                 id="login-password"
                 class="formulario-input border-general"
               />
               <label for="" class="form-label">Contraseña</label>
+              <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
               <button type="button" class="btn-password btn-password1" title="show password">
                 <i class="fa-solid fa-eye"></i>
               </button>
@@ -105,11 +109,13 @@
             </div>
           </form>
           <!-- register -->
-          <form class="formulario-register">
+          <form id="form-register" class="formulario-register">
             <h2>Registrarse</h2>
             <div class="card--label-input">
               <input
                 type="text"
+                name="nombre-completo"
+                id="nombre-completo"
                 placeholder="Nombre completo"
                 class="formulario-input border-general"
               />

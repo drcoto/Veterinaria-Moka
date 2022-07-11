@@ -106,6 +106,10 @@ body{
   width: 90%;
   padding: 60px 20px 20px 20px;
 }
+.contenedor-login-register .formulario-login-error {
+  width: 90%;
+  padding: 30px 20px 0px 20px;
+}
 /* formulario de register */
 .contenedor-login-register .formulario-register {
   width: 100%;
@@ -130,8 +134,20 @@ body{
 .border-general{
   border: 2px solid rgba(0, 0, 0, 0.253);
 }
-.incompleto{
+.formulario__grupo-incorrecto{
   border: 2px solid red;
+}
+.formulario__grupo-correcto{
+  border: 2px solid #48ff00;
+}
+.formulario__input-error{
+  font-size: 15px;
+  padding-top: 5px;
+  text-align: justify;
+  display: none;
+}
+.formulario__input-error-activo{
+  display: block;
 }
 .container-btn-register,.container-btn-iniciar-sesion{
   padding: 40px 0 40px 0;
@@ -167,6 +183,7 @@ body{
 .card--label-input {
   position: relative;
   padding: 3px 0;
+  max-height: 120px;
 }
 .card--label-input .formulario-input {
   background-color: transparent;
@@ -174,9 +191,9 @@ body{
 }
 
 /* INPUT Focus */
-.card--label-input input:focus {
-  border: 2px solid #30da7a;
-}
+/* .card--label-input input:focus {
+  border: 2px solid #48ff00;
+} */
 .card--label-input input:focus + .form-label {
   top: 13px;
   left: 7px;
@@ -211,15 +228,28 @@ input::placeholder {
 .questions-marks-styles {
   color: #1ba67d;
 }
-
 /* btn password */
 .card--label-input .btn-password {
-  height: 50%;
+  height: 40%;
   outline: none;
   border: none;
   position: absolute;
   right: 10px;
-  top: 27px;
+  top: 30px;
+  font-size: 16px;
+  z-index: 10;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card--label-input .btn-password-error {
+  height: 40%;
+  outline: none;
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 25px;
   font-size: 16px;
   z-index: 10;
   background-color: transparent;
