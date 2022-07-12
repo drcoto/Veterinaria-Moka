@@ -23,11 +23,13 @@
     .custom-map-control-button:hover {
         background: rgb(235, 235, 235);
     }
+    /*Tamaño y margenes del form*/
     
     form {
         margin-top: -30px;
         width: 100%;
     }
+    /*Secciones de inputs: nombre, mascota, telefono y correo*/
     
     .division {
         width: 100%;
@@ -35,6 +37,7 @@
         justify-content: space-between;
         padding: 10px 0;
     }
+    /*Form section*/
     
     .form-section {
         display: flex;
@@ -45,6 +48,7 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+    /*Contiene el blur*/
     
     .blur-container {
         width: 100%;
@@ -64,6 +68,7 @@
         border-radius: 6px;
         background-color: #fff;
     }
+    /*Container del titulo de contactenos*/
     
     .formTitle {
         margin: auto;
