@@ -214,3 +214,7 @@
   background-image: url(/imgs/imgsservicios/er.gif);
   background-position: -20px 10px;
 }
+
+.card-select{
+  border: 2px solid#30da7a;
+}
