@@ -143,7 +143,7 @@ form {
 
 /*Submit button*/
 
-button {
+#btn-send {
     padding: 10px 0;
     border-radius: 3px;
     width: 100%;
@@ -192,11 +192,3 @@ button:hover {
 .infoBox {
     overflow: auto;
 }
-
-
-/*
-                  <div class="box-petNameArea">
-                      <input type="text" id="petName" required>
-                      <label for="petName"><i class="fa-solid fa-paw"></i> Nombre de la mascota</label>
-                  </div>
-  */
