@@ -28,11 +28,15 @@
     <!-- css reset-->
     <link rel="stylesheet" href="css/reset.css" />
     <!-- css -->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/procedimientos.css" />
-    <link rel="stylesheet"  href="css/carrousel.css" />
+    <link rel="stylesheet" href="css/carrousel.css" />
     <link rel="stylesheet" href="css/map.css" />
+    <link rel="stylesheet" href="css/formularioContacto.css" />
+    <!-- mapbox -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
   </head>
   <body>
     <!-- header - nav -->
@@ -84,117 +88,104 @@
     <section class="sct-nosotros">
       <div class="nosotros-container">
         <div class="img-nosotros-container">
-          <img src="imgs/imgsindex/autri-taheri-l0Gq4BmboYY-unsplash.jpg" alt="imagen sobre moka">
+          <img
+            src="imgs/imgsindex/autri-taheri-l0Gq4BmboYY-unsplash.jpg"
+            alt="imagen sobre moka"
+          />
         </div>
         <div class="info-nosotros-container">
           <h3>Sobre <span>Moka</span></h3>
-          <p class="txt-container">En Moka clínica veterinaria, situados en Curridabat. Así, con nuestra dedicación y compromiso ofrecemos los mejores servicios disponibles para su mascota. Lo más importante es la satisfacción de nuestros clientes y, sobre todo, el bienestar de sus mascotas.</p>
+          <p class="txt-container">
+            En Moka clínica veterinaria, situados en Curridabat. Así, con
+            nuestra dedicación y compromiso ofrecemos los mejores servicios
+            disponibles para su mascota. Lo más importante es la satisfacción de
+            nuestros clientes y, sobre todo, el bienestar de sus mascotas.
+          </p>
         </div>
       </div>
     </section>
     <!-- profesionoles creado por javier -->
     <section class="sct-profesionales">
-
       <h2>Nuestros profesionales</h2>
       <div class="container">
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-container mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="imgs/carrusel/img1.jpg" alt="">
-                    <div class="card-description">
-                        <div class="card-title">
-                            <h4>Dr.Amir Gupta</h4>
-                        </div>
-                        <div class="card-text">
-                            <p>Licenciado en Veterinaria por la Universidad CEU.</p>
-                        </div>
-                    </div>
-
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="imgs/carrusel/img1.jpg" alt="" />
+              <div class="card-description">
+                <div class="card-title">
+                  <h4>Dr.Amir Gupta</h4>
                 </div>
-                <div class="swiper-slide">
-                    <img src="imgs/carrusel/img2.jpg" alt="">
-                    <div class="card-description">
-                        <div class="card-title">
-                            <h4>Dra.Rosa Sánchez</h4>
-                        </div>
-                        <div class="card-text">
-                            <p>Licenciada en Veterinaria por la Universidad UAB.</p>
-                        </div>
-                    </div>
+                <div class="card-text">
+                  <p>Licenciado en Veterinaria por la Universidad CEU.</p>
                 </div>
-                <div class="swiper-slide">
-                    <img src="imgs/carrusel/3.jpg" alt="">
-                    <div class="card-description">
-                        <div class="card-title">
-                            <h4>Dr.Oriol Puig</h4>
-                        </div>
-                        <div class="card-text">
-                            <p>Licenciado en Veterinaria por la Universidad UNA.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="imgs/carrusel/4.jpg" alt="">
-                    <div class="card-description">
-                        <div class="card-title">
-                            <h4>Dr.Pedro Sanchez</h4>
-                        </div>
-                        <div class="card-text">
-                            <p>Licenciado en Veterinaria por la Universidad UNA.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="imgs/carrusel/img3.jpg" alt="">
-                    <div class="card-description">
-                        <div class="card-title">
-                            <h4>Dra.Elizabeth Olsen</h4>
-                        </div>
-                        <div class="card-text">
-                            <p>Licenciada en Veterinaria por la Universidad UNA.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="imgs/carrusel/img4.jpg" alt="">
-                    <div class="card-description">
-                        <div class="card-title">
-                            <h4>Dr.Manuel Rodríguez</h4>
-                        </div>
-                        <div class="card-text">
-                            <p>Licenciado en Veterinaria por la Universidad UCR.</p>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="swiper-slide">
+              <img src="imgs/carrusel/img2.jpg" alt="" />
+              <div class="card-description">
+                <div class="card-title">
+                  <h4>Dra.Rosa Sánchez</h4>
+                </div>
+                <div class="card-text">
+                  <p>Licenciada en Veterinaria por la Universidad UAB.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="imgs/carrusel/3.jpg" alt="" />
+              <div class="card-description">
+                <div class="card-title">
+                  <h4>Dr.Oriol Puig</h4>
+                </div>
+                <div class="card-text">
+                  <p>Licenciado en Veterinaria por la Universidad UNA.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="imgs/carrusel/4.jpg" alt="" />
+              <div class="card-description">
+                <div class="card-title">
+                  <h4>Dr.Pedro Sanchez</h4>
+                </div>
+                <div class="card-text">
+                  <p>Licenciado en Veterinaria por la Universidad UNA.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="imgs/carrusel/img3.jpg" alt="" />
+              <div class="card-description">
+                <div class="card-title">
+                  <h4>Dra.Elizabeth Olsen</h4>
+                </div>
+                <div class="card-text">
+                  <p>Licenciada en Veterinaria por la Universidad UNA.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="imgs/carrusel/img4.jpg" alt="" />
+              <div class="card-description">
+                <div class="card-title">
+                  <h4>Dr.Manuel Rodríguez</h4>
+                </div>
+                <div class="card-text">
+                  <p>Licenciado en Veterinaria por la Universidad UCR.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
     </section>
 
     <!-- hotel creado por guillermo -->
     <section class="sct-hotel">
       <h2>Hotel Canino y Felino</h2>
-      <div class="info-hotel">
-        <div class="contenedor-info">
-          <p>Contamos con el mejor hotel para mascotas de Centroamérica.</p>
-          <!-- <p>
-            Nuestras habitaciones cumplen con los mas rigurosos estándares
-            profesionales. Ademas su mascota podrá disfrutar de la mejor
-            gastronomía en su estadía.
-          </p> -->
-          <p>
-            Si quiere disfrutar de unas vacaciones, podrá dejar, a través de
-            nuestro hotel veterinario 5 estrellas, a su mascota con todas las
-            comodidades y cuidados necesarios.
-          </p>
-          <a href="#" class="btn-hotel">Mas sobre el hotel</a>
-        </div>
-        <div class="imagen-hotel">
-          <img src="imgs/imgsindex/perroAcostado.jpg" alt="" />
-        </div>
-      </div>
     </section>
     <!-- seccion de todos los servicios -->
 
@@ -312,57 +303,135 @@
         </div>
       </div>
     </section>
-
+    <!-- nav y contacto creado por jim -->
     <section class="contact-container">
-        <div class="glass">
-            <div class="map-container">
-                <h3>Dirección</h3>
-            <div class="map">
-                <div id="map"></div>
-            </div>
+      <div class="glass">
+        <div class="map-container">
+          <h3>Dirección</h3>
+          <div class="map">
+            <div id='map'></div>
+          </div>
         </div>
         <div class="more-info"><a href="">Mas Información</a></div>
         <div class="info-contact-container">
-            <h3>Contacto</h3>
-            <div class="info-contact">
-                <div class="info-container">
-                    <div class="icon">
-              <a href="#"><img src="imgs/icons/iconsWhite/phone.png" alt=""></a>
-            </div>
-            <span>Llámenos</span>
-            <span>2254-6737</span>
-        </div>
-          <div class="info-container">
-            <div class="icon">
-              <a href="#"><img src="imgs/icons/iconsWhite/whatsApp.png" alt=""></a>
-            </div>
-            <span>WhatsApp</span>
-            <span>mokaclinic@vetpet.com</span>
-          </div>
-          <div class="info-container">
-            <div class="icon">
-              <a href="#"><img src="imgs/icons/iconsWhite/email.png" alt=""></a>
-            </div>
-            <span>Escribanos</span>
-            <span>mokaclinic@vetpet.com</span>
-        </div>
-          <div class="info-container horarios">
+          <h3>Contacto</h3>
+          <div class="info-contact">
+            <div class="info-container">
               <div class="icon">
-              <a href="#"><img src="imgs/icons/iconsWhite/clock.png" alt=""></a>
+                <a href="#"
+                  ><img src="imgs/icons/iconsWhite/phone.png" alt=""
+                /></a>
+              </div>
+              <span>Llámenos</span>
+              <span>2254-6737</span>
             </div>
-            <span>Horarios</span>
-            <span>Lunes a Domingo 24 horas</span>
+            <div class="info-container">
+              <div class="icon">
+                <a href="#"
+                  ><img src="imgs/icons/iconsWhite/whatsApp.png" alt=""
+                /></a>
+              </div>
+              <span>WhatsApp</span>
+              <span>mokaclinic@vetpet.com</span>
+            </div>
+            <div class="info-container">
+              <div class="icon">
+                <a href="#"
+                  ><img src="imgs/icons/iconsWhite/email.png" alt=""
+                /></a>
+              </div>
+              <span>Escribanos</span>
+              <span>mokaclinic@vetpet.com</span>
+            </div>
+            <div class="info-container horarios">
+              <div class="icon">
+                <a href="#"
+                  ><img src="imgs/icons/iconsWhite/clock.png" alt=""
+                /></a>
+              </div>
+              <span>Horarios</span>
+              <span>Lunes a Domingo 24 horas</span>
+            </div>
           </div>
         </div>
-    </div>
-</div>
-</div>
+      </div>
     </section>
+    <section class="form-section">
+      <div class="blur-container">
+        <div class="form-container">
+          <div class="formTitle">
+            <h2>Contactenos</h2>
+          </div>
+          <form>
+            <div class="division">
+              <div class="box-nameArea">
+                <input type="text" id="name" required />
+                <label for="name"
+                  ><i class="fa-solid fa-user"></i> Nombre</label
+                >
+              </div>
+              <div class="box-petNameArea">
+                <input type="text" id="petName" required />
+                <label for="petName"
+                  ><i class="fa-solid fa-paw"></i> Nombre de la mascota</label
+                >
+              </div>
+            </div>
+            <div class="division">
+              <div class="box-phone">
+                <input type="number" id="phone" required />
+                <label for="phone"
+                  ><i class="fa-solid fa-phone"></i> Numero de teléfono</label
+                >
+              </div>
+              <div class="box-email">
+                <input type="email" id="email" required />
+                <label for="email"
+                  ><i class="fa-solid fa-envelope"></i> Correo
+                  electrónico</label
+                >
+              </div>
+            </div>
+            <div id="form-map"></div>
+            <div class="box-direction">
+              <input
+                type="text"
+                id="textDirection"
+                placeholder="Danos una referencia para mayor exactitud"
+              />
+            </div>
+            <div class="infoBox">
+              <textarea id="message" rows="3" required></textarea>
+              <label for="message"
+                ><i class="fa-solid fa-info"></i> Informacion</label
+              >
+            </div>
+            <div class="checksBoxes">
+              <div class="checkCall">
+                <input type="checkbox" id="call" /> Recibir llamada
+              </div>
+              <div class="checkMail">
+                <input type="checkbox" id="mail" /> Recibir correo
+              </div>
+              <div class="checkWhats">
+                <input type="checkbox" id="whats" /> Recibir mensaje
+              </div>
+            </div>
+            <button type="button" id="btn-send">
+              Enviar <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
     <!-- scripst -->
-    <script src="js/map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbe_yIKBbi4YG3-tlEvw9Qb_UbM1Or74k&callback=iniciarMap"></script>
+
+    <script src="js/mapForm.js"></script> 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbe_yIKBbi4YG3-tlEvw9Qb_UbM1Or74k&callback=initMap"></script>
     <script src="js/index.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/carrousel.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>

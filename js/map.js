@@ -1,51 +1,28 @@
-function iniciarMap() {
-  let coord = { lat: 9.915635614486694, lng: -84.03693278154675 };
-  let map = new google.maps.Map(document.getElementById("map"), {
-    zoom:15,
-    center: coord,
-  });
-  let marker = new google.maps.Marker({
-    position: coord,
-    map: map,
-    icon: ""
-  });
-
-  function addMarker(property) {
-    const marker = new google.maps.Marker({
-      position:property.location,
-      map: map,
-      icon: property.ImageIcon
-    });
-    // check for custom Icon
-    if(property.ImageIcon){
-        // set image icon
-        marker.setIcon(property.ImageIcon)
-    }
-
-    if(property.content){
-        const detailwindow = new google.maps.InfoWindow({
-            content: property.content
-          });
-          marker.addListener("click", () => {
-            detailwindow.open(map, marker);
-          });
-    }
-  }
-  // mora icons map
-  addMarker({location:{ lat:  9.915635614486694, lng: -84.03693278154675 },ImageIcon:"",
-  content: 
-  `<h2>Veterinaria Moka</h2>
-  <p>San José, Curridabat<br>
-  11801<br>
-  Costa Rica</p>
-  <a href='https://www.google.com/maps'>Ver en google maps</a>`,
+mapboxgl.accessToken =
+  "pk.eyJ1Ijoic3VidnJheSIsImEiOiJjbDVodDl6NGgwMWkyM2JwYmYwNXNseTVlIn0.TLrcaCPVZopjKQ3Qhwpmog";
+let Dmap = new mapboxgl.Map({
+  container: "map",
+  style: "mapbox://styles/mapbox/streets-v11",
+  center: { lat: 9.915635614486694, lng: -84.03693278154675 },
+  zoom: 16,
 });
-//   addMarker({location:{ lat: 9.914172391872446, lng: -84.03946259864865 },ImageIcon:"",
-//   content: 
-//   `<h2>Veterinaria Moka</h2>
-//   <p>San José, Curridabat<br>
-//   11801<br>
-//   Costa Rica</p>
-//   <a href='https://www.google.com/maps'>Ver en google maps</a>`,
-// });
-}
+
+let element = document.createElement("div");
+element.className = "marker";
+
+let marker = new mapboxgl.Marker(element)
+  .setLngLat({
+    lng: -84.03693278154675,
+    lat: 9.915635614486694,
+  })
+  .addTo(Dmap);
+
+new mapboxgl.Popup()
+.setLngLat({
+  lng: -84.03693278154675,
+  lat: 9.915635614486694,
+})
+  .setHTML("<h1>Veterinaria Moka</h1><p></p>")
+  .addTo(Dmap);
+Dmap.addControl(new mapboxgl.NavigationControl());
+Dmap.addControl(new mapboxgl.FullscreenControl());
