@@ -151,6 +151,7 @@ h2 {
 
 .card p {
     text-align: center;
+    line-height: 30px;
 }
 
 .card-wrapper {
