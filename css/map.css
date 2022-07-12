@@ -43,15 +43,19 @@
   color: black;
   text-align: start;
 }
-#map h2{
+#map h1{
+  text-align: start;
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+  padding: 0;
+}
+#map p{
   text-align: start;
   font-size: 14px;
   color: #000;
 }
-#map a{
-  color: rgb(0, 110, 255);
-  text-decoration: none;
-}
+
 
 /* enlace btn mas informacion */
 .more-info {
