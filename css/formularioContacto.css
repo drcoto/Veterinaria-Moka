@@ -43,7 +43,7 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/imgs/imgsindex/cat.jpg);
+    /* background-image: url(/imgs/imgsindex/cat.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,7 +54,7 @@ form {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.575);
+    background-color: rgba(0, 0, 0, 0.048);
     backdrop-filter: blur(2px);
     padding: 100px 0 ;
     
