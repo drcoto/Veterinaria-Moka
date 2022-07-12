@@ -182,8 +182,8 @@ H1 {
 }
 
 .footer-bar {
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 5%, rgba(0, 184, 80, 1) 26%, rgba(21, 21, 202, 1) 43%, rgba(19, 39, 207, 1) 52%, rgba(12, 101, 224, 1) 67%, rgba(9, 133, 233, 1) 84%, rgba(0, 212, 255, 1) 100%);
+    background: rgb(0, 184, 80);
+    background: linear-gradient(297deg, rgba(0, 184, 80, 1) 12%, rgba(7, 242, 109, 1) 48%, rgba(242, 166, 31, 1) 75%);
     height: 80px;
     display: flex;
     align-items: center;
