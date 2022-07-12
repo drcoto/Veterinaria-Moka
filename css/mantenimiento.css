@@ -62,6 +62,11 @@
    }
    
    .cssbuttons-io-button .icon {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
     background: white;
     margin-left: 1em;
     position: absolute;
@@ -73,13 +78,17 @@
     border-radius: 0.7em;
     box-shadow: 0.1em 0.1em 0.6em 0.2em #52b991;
     right: 0.3em;
-    transition: all 0.3s;
-    rotate: 180deg;
-   }
+    transition: all 0.3s ease;
+}
    
    .cssbuttons-io-button:hover .icon {
     width: calc(100% - 0.6em);
-   }
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
    
    .cssbuttons-io-button .icon svg {
     width: 1.1em;
@@ -89,13 +98,15 @@
    
    .cssbuttons-io-button:hover .icon svg {
     transform: translateX(0.1em);
-    -webkit-transform: translateX(0.1em);
-    -moz-transform: translateX(0.1em);
-    -ms-transform: translateX(0.1em);
-    -o-transform: translateX(0.1em);
+
 }
    
    .cssbuttons-io-button:active .icon {
     transform: scale(0.95);
-   }
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
    
