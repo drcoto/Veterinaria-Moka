@@ -16,54 +16,56 @@
 
 <body>
     <section class="form-section">
-        <div class="form-container">
-            <div class="formTitle">
-                <h2>Contactenos</h2>
+        <div class="blur-container">
+            <div class="form-container">
+                <div class="formTitle">
+                    <h2>Contactenos</h2>
+                </div>
+                <form>
+                    <div class="division">
+                        <div class="box-nameArea">
+                            <input type="text" id="name" required>
+                            <label for="name"><i class="fa-solid fa-user"></i> Nombre</label>
+                        </div>
+                        <div class="box-petNameArea">
+                            <input type="text" id="petName" required>
+                            <label for="petName"><i class="fa-solid fa-paw"></i> Nombre de la mascota</label>
+                        </div>
+                    </div>
+                    <div class="division">
+                        <div class="box-phone">
+                            <input type="number" id="phone" required>
+                            <label for="phone"><i class="fa-solid fa-phone"></i> Numero de teléfono</label>
+                        </div>
+                        <div class="box-email">
+                            <input type="email" id="email" required>
+                            <label for="email"><i class="fa-solid fa-envelope"></i> Correo electrónico</label>
+                        </div>
+                    </div>
+                    <div id="map"></div>
+                    <div class="box-direction">
+                        <input type="text" id="textDirection" placeholder="Danos una referencia para mayor exactitud">
+                    </div>
+                    <div class="infoBox">
+                        <textarea id="message" rows="3" required></textarea>
+                        <label for="message"><i class="fa-solid fa-info"></i> Informacion</label>
+                    </div>
+                    <div class="checksBoxes">
+                        <div class="checkCall">
+                            <input type="checkbox" id="call"> Recibir llamada
+                        </div>
+                        <div class="checkMail">
+                            <input type="checkbox" id="mail"> Recibir correo
+                        </div>
+                        <div class="checkWhats">
+                            <input type="checkbox" id="whats"> Recibir mensaje
+                        </div>
+                    </div>
+                    <button type="button" id="btn-send">Enviar <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+                <script src="js/map.js"></script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbe_yIKBbi4YG3-tlEvw9Qb_UbM1Or74k&callback=initMap"></script>
             </div>
-            <form>
-                <div class="division">
-                    <div class="box-nameArea">
-                        <input type="text" id="name" required>
-                        <label for="name"><i class="fa-solid fa-user"></i> Nombre</label>
-                    </div>
-                    <div class="box-petNameArea">
-                        <input type="text" id="petName" required>
-                        <label for="petName"><i class="fa-solid fa-paw"></i> Nombre de la mascota</label>
-                    </div>
-                </div>
-                <div class="division">
-                    <div class="box-phone">
-                        <input type="number" id="phone" required>
-                        <label for="phone"><i class="fa-solid fa-phone"></i> Numero de teléfono</label>
-                    </div>
-                    <div class="box-email">
-                        <input type="email" id="email" required>
-                        <label for="email"><i class="fa-solid fa-envelope"></i> Correo electrónico</label>
-                    </div>
-                </div>
-                <div id="map"></div>
-                <div class="box-direction">
-                    <input type="text" id="textDirection" placeholder="Danos una referencia para mayor exactitud">
-                </div>
-                <div class="infoBox">
-                    <textarea id="message" rows="3" required></textarea>
-                    <label for="message"><i class="fa-solid fa-info"></i> Informacion</label>
-                </div>
-                <div class="checksBoxes">
-                    <div class="checkCall">
-                        <input type="checkbox" id="call"> Recibir llamada
-                    </div>
-                    <div class="checkMail">
-                        <input type="checkbox" id="mail"> Recibir correo
-                    </div>
-                    <div class="checkWhats">
-                        <input type="checkbox" id="whats"> Recibir mensaje
-                    </div>
-                </div>
-                <button type="button" id="btn-send">Enviar <i class="fa-solid fa-paper-plane"></i></button>
-            </form>
-            <script src="js/map.js"></script>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbe_yIKBbi4YG3-tlEvw9Qb_UbM1Or74k&callback=initMap"></script>
         </div>
     </section>
 </body>
