@@ -180,3 +180,14 @@ H1 {
     justify-content: center;
     padding-bottom: 20%;
 }
+
+.footer-bar {
+    background-color: #00b850;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.041);
+    width: 100%;
+}
