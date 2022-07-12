@@ -54,10 +54,10 @@ form {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding-bottom: 40px;
-    padding-top: 30px;
-    background-color: rgba(0, 0, 0, 0.37);
-    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.575);
+    backdrop-filter: blur(2px);
+    padding: 100px 0 ;
+    
 }
 /*Este mueve el tama;o del form*/
 
@@ -80,6 +80,9 @@ form {
     width: fit-content;
     border: 1px solid #1ba67d;
     border-radius: 5px;
+}
+.formTitle h2{
+    padding: 0;
 }
 /*Inputs generales*/
 
