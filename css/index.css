@@ -93,25 +93,24 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 0 3%;
-    /* border-top: 2px solid rgb(0, 0, 0); */
+    border-top: 1px solid rgba(0, 0, 0, 0.192);
 }
 
 .footer-direction p {
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .footer-email {
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .footer-redes {
     display: flex;
-    font-size: 25px;
     gap: 20px;
 }
 
 .footer-redes a img {
-    width: 35px;
+    width: 30px;
 }
 
 
@@ -218,10 +217,10 @@ html::-webkit-scrollbar-track {
 .text-glass {
     margin: auto;
     display: flex;
-    width: 65%;
+    width: 80%;
     backdrop-filter: blur(1px);
     background-color: rgba(6, 5, 4, 0.55);
-    padding: 20px 20px 20px 20px;
+    padding: 20px 25px;
     border-radius: 5px;
 }
 
@@ -234,10 +233,9 @@ html::-webkit-scrollbar-track {
 /*Diseño del boton*/
 
 .cta {
-    border: none;
-    background: none;
-    cursor: pointer;
+  text-align: center;
     margin-bottom: 20px;
+    text-decoration: none;
 }
 
 .cta span {
