@@ -97,16 +97,16 @@ footer {
 }
 
 .footer-direction p {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .footer-email {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .footer-redes {
     display: flex;
-    font-size: 30px;
+    font-size: 25px;
     gap: 20px;
 }
 
