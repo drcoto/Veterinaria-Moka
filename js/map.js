@@ -25,6 +25,8 @@ new mapboxgl.Marker(el)
   .setPopup(popup) // sets a popup on this marker
   .addTo(Dmap);
 
+
+  // inicia la pagina en el mapa
 new mapboxgl.Popup()
   .setLngLat({
     lng: -84.03691,
