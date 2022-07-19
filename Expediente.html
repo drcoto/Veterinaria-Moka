@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,17 +14,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
     <!-- css reset-->
-    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reset.css">
     <!-- css -->
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/procedimientos.css" />
-    <link rel="stylesheet" href="css/carrousel.css" />
-    <link rel="stylesheet" href="css/map.css" />
-    <link rel="stylesheet" href="css/formularioContacto.css" />
-    <!-- mapbox -->
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/procedimientos.css">
+    <link rel="stylesheet" href="css/carrousel.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/formularioContacto.css">
+    <link rel="stylesheet" href="css/expediente.css">
+
 </head>
 
 <body>
@@ -39,17 +40,34 @@
       </nav>
     </header>
 
-<body>
-
+    <section class="sct-file">
+   
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+          </div>
+          
+          <!-- Tab content -->
+          <div id="London" class="tabcontent">
+            <h3>London</h3>
+            <p>London is the capital city of England.</p>
+          </div>
+          
+          <div id="Paris" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p>
+          </div>
+          
+          <div id="Tokyo" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+        <form>
+        <input type="date"></>
+        </form>
+    </section>
+    
 </body>
-<footer>
-    <div class="footer-direction"><p>Curridabat, San Jose</p></div>
-    <div class="footer-email"><p>mokaclinic@vetpet.com</p></div>
-    <div class="footer-redes">
-      <a href="#"><img src="imgs/icons/iconsWhite/facebook.png" alt="" /></a>
-            <a href="#"><img src="imgs/icons/iconsWhite/twitter.png" alt="" /></a>
-            <a href="#"><img src="imgs/icons/iconsWhite/instagram.png" alt="" /></a>
-            </div>
-            </footer>
 
-            </html>
+</html>
