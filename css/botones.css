@@ -1,0 +1,57 @@
+#btn-print {
+    border-radius: 5%;
+    margin-top: 6%;
+    margin-right: 5%;
+    padding-right: 10%;
+    width: 100px;
+    height: 40px;
+}
+
+#btn-rx {
+    border-radius: 5%;
+    margin-top: 10%;
+    width: 180px;
+    height: 40px;
+    margin-left: 1255px;
+}
+
+#btn-save {
+    border-radius: 5%;
+    margin-top: 6%;
+    margin-right: 5%;
+    padding-right: 10%;
+    width: 100px;
+    height: 40px;
+}
+
+#btn-print:hover {
+    background-color: #568656;
+}
+
+#btn-save:hover {
+    background-color: #568656;
+}
+
+.btn-exp {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 500px;
+}
+
+.exp-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.exp-save {
+    background-color: darkolivegreen;
+    border-radius: 5%;
+    padding-right: 5%;
+}
+
+.exp-print {
+    background-color: darkolivegreen;
+    border-radius: 5%;
+}
