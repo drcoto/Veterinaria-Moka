@@ -1,92 +1,275 @@
-.container-servicios{
-    position: relative;
-    top: 80px;
-    background-color: aqua;
+html{
+    font-family: "Varela Round", sans-serif;
 }
-.service-header{
-    margin: auto;
-    max-width: 1000px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 40px 0 0 0;
-    flex-wrap: wrap;
+.container-servicios {
+  position: relative;
+  top: 80px;
+  font-family: "Varela Round", sans-serif;
 }
-.service-header .img-servicio-container{
-    max-width: 400px;
-    height: 300px;
+.service-header {
+  margin: auto;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px 0 0 0;
+  flex-wrap: wrap;
 }
-.service-header .img-servicio-container img{
-    width: 100%;
-    height: 100%;
+.service-header .img-servicio-container {
+  max-width: 400px;
+  height: 300px;
 }
-
-.info-header-servicio{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-.service-header h1{
-    font-size: 65px;
-    padding: 10px 0;
-    text-align: center;
-}
-.service-header p{
-    font-size: 22px;
-    text-align: center;
-    width: 530px;
+.service-header .img-servicio-container img {
+  width: 100%;
+  height: 100%;
 }
 
+.info-header-servicio {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.service-header h1 {
+  font-size: 45px;
+  padding: 10px 0;
+  text-align: center;
+  color: #00b850;
+}
+.service-header p {
+  font-size: 20px;
+  width: 530px;
+  margin-top: 10px;
+}
 
 /* segunda parte de la pagina de los servicios */
-.info-container-servicio{
-    margin: auto;
-    max-width: 1000px;
-    display: flex;
-    justify-content: space-between;
-    padding: 65px 20px 20px 20px;
-    background-color: blueviolet;
-    flex-wrap: wrap;
+.info-container-servicio {
+  margin: auto;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px 0 0 0;
+  flex-wrap: wrap;
 }
-.info-container-servicio .info{
-    max-width: 550px;
+.info-container-servicio .info {
+  max-width: 650px;
+  padding: 40px 0 0 0;
 }
-.mas-servicios-container{
-    background-color: burlywood;
-    text-align: center;
-    width: 250px;
-    position: relative;
+.info h2 {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 25px;
+  color: #358a35b2;
+  font-weight: bold;
 }
-.mas-servicios-container .menu-servicios{
-    margin: auto;
-    background-color: yellow;
-    display: flex;
-    flex-direction: column;
-    font-size:  22px;
-    text-align: start;
-    padding: 0 10px;
-    width: 100%;
+.info p {
+  padding: 10px 0;
+  font-size: 20px;
+  width: 520px;
+  margin: auto;
+}
+.img-servicio-container {
+  width: 550px;
+  height: 280px;
+  margin: auto;
+}
+.img-servicio-container img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 5px #000;
+}
 
+.mas-servicios-container {
+  text-align: center;
+  width: 265px;
+  position: relative;
 }
-.mas-servicios-container .menu-servicios a{
-    text-decoration: none;
-    color: #000;
-    margin: 10px 0;
-    padding: 10px 5px;
-    width: 100%;
-    border: 2px solid red;
+.mas-servicios-container h2{
+  font-size: 30px;
+  padding-bottom: 15px;
+  color: #358a35b2;
+  font-weight: bold;
+}
+.mas-servicios-container .menu-servicios {
+  margin: auto;
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  text-align: start;
+  padding: 0 20px;
+  width: 100%;
+  border: radius 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0 0 5px #000;
+}
+.mas-servicios-container .menu-servicios a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  margin: 10px 0;
+  padding: 10px 5px;
+  width: 100%;
+  border: 3px solid #8d8d8d;
+  background-color: #007a35af;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all 0.5 ease;
+  -webkit-transition: all 0.5 ease;
+  -moz-transition: all 0.5 ease;
+  -ms-transition: all 0.5 ease;
+  -o-transition: all 0.5 ease;
+}
+.mas-servicios-container .menu-servicios a:hover {
+  color: rgb(255, 255, 255);
+  border: 3px solid #000;
+}
+
+.info-vet-container {
+  border: 1px solid red;
+}
+
+
+.mas-servicios-container .menu-servicios a .fa-bone {
+  padding: 0 5px;
+}
+
+.space {
+  padding-left: 32px;
+}
+.top {
+  position: relative;
+  top: 10px;
+}
+.division-bar {
+  color: #517a2f;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.incluyente-cirugias {
+  margin: auto;
+  width: 500px;
+  text-align: center;
+}
+
+.beneficios-container{
+    margin: 35px auto;
+    text-align: center;
+    max-width: 1000px;
+    padding: 40px 20px;
+}
+.beneficios-container h2{
+    margin: auto;
+    background-color: rgba(59, 192, 59, 0.698);
+    max-width: 700px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    font-size: 26px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
-.mas-servicios-container .menu-servicios a .fa-bone{
-    padding: 0 5px;
+.beneficios{
+    text-align: start;
+    background-color: #007a35af;
+    max-width: 1000px;
+    padding: 40px 20px;
+    box-shadow: 0 0 5px #000;
+    font-size: 20px;
 }
 
 
 
-.space{
-    padding-left:20px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    margin-top: 150px;
+    height: 70px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 3%;
+    box-shadow: 0 0 5px #000;
+    
+}
+
+.footer-direction p {
+    font-size: 18px;
+    margin: auto;
+}
+
+.footer-email {
+    margin: auto;
+    position: relative;
+    left: -25px;
+    font-size: 18px;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-redes a img {
+    width: 30px;
+}
+.create-by{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color:#007a35af;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px 3%;
+}
+
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+html::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+html::-webkit-scrollbar:vertical {
+    width: 12px;
+}
+
+html::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #196b3c;
+    border-radius: 3px;
+    border: 2px solid #00000077;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+html::-webkit-scrollbar-track {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
