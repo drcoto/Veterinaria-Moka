@@ -1,41 +1,34 @@
 html {
     scroll-behavior: smooth;
-}
-
-section[id] {
+  }
+  section[id] {
     scroll-margin-top: 80px;
-}
-
-.header-container {
-    background-color: #00b850;
+  }
+.header-container{
+    background-color: rgba(124, 245, 100, 0.954);
     height: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 0 3%;
     border-bottom: 2px solid rgba(0, 0, 0, 0.041);
     position: fixed;
     width: 100%;
-    z-index: 10;
-    top: 0;
+    z-index: 15;
+    font-family: "Varela Round", sans-serif;
 }
-
-.logo-container {
-    width: 80px;
+.logo-container{
+    width: 165px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.header-container img {
-    width: 80px;
+.header-container img{
+    width: 100%;
 }
-
-.header-container .home {
-    left: 45px;
+.header-container .home{
+    margin: auto;
     text-align: center;
-    position: relative;
     font-size: 25px;
     transition: border .1s ease;
     -webkit-transition: border .1s ease;
@@ -43,30 +36,40 @@ section[id] {
     -ms-transition: border .1s ease;
     -o-transition: border .1s ease;
     border-bottom: 0;
+    font-family: "Varela Round", sans-serif;
 }
-
-.header-container .home:hover {
+.header-container .services-link{
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    transition: border .1s ease;
+    -webkit-transition: border .1s ease;
+    -moz-transition: border .1s ease;
+    -ms-transition: border .1s ease;
+    -o-transition: border .1s ease;
+    border-bottom: 0;
+    font-family: "Varela Round", sans-serif;
+}
+.header-container .home:hover{
     border-bottom: 2px solid #03af5f;
 }
-
-.header-container a {
+.header-container a{
     text-decoration: none;
     color: rgb(0, 0, 0);
+
 }
 
-.menu-icons {
+.menu-icons{
     display: flex;
     align-items: center;
     height: 80px;
     gap: 25px;
     font-size: 18px;
 }
-
-.menu-icons a i {
+.menu-icons a i{
     font-size: 22px;
 }
-
-.menu-icons a {
+.menu-icons a{
     display: flex;
     gap: 5px;
     flex-direction: column;
@@ -74,7 +77,6 @@ section[id] {
     font-size: 16px;
     text-decoration: none;
 }
-
-.menu-icons a:hover i {
+.menu-icons a:hover i{
     color: #03af5f;
 }

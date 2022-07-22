@@ -15,10 +15,6 @@ div[id] {
     scroll-margin-top: 80px;
 }
 
-section {
-    position: relative;
-    top: 80px;
-}
 
 h2 {
     font-size: 35px;
