@@ -27,13 +27,13 @@ new mapboxgl.Marker(el)
 
 
   // inicia la pagina en el mapa
-new mapboxgl.Popup()
-  .setLngLat({
-    lng: -84.03691,
-    lat: 9.9141,
-  })
-  .setHTML("<h1>Veterinaria Moka</h1>")
-  .addTo(Dmap);
+// new mapboxgl.Popup()
+//   .setLngLat({
+//     lng: -84.03691,
+//     lat: 9.9141,
+//   })
+//   .setHTML("<h1>Veterinaria Moka</h1>")
+//   .addTo(Dmap);
 
 Dmap.addControl(new mapboxgl.NavigationControl());
 Dmap.addControl(new mapboxgl.FullscreenControl());
