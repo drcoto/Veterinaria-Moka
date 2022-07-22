@@ -9,28 +9,26 @@ html {
     height: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 0 3%;
     border-bottom: 2px solid rgba(0, 0, 0, 0.041);
     position: fixed;
     width: 100%;
     z-index: 15;
-    top: 0;
+    font-family: "Varela Round", sans-serif;
 }
 .logo-container{
-    width: 80px;
+    width: 165px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .header-container img{
-    width: 80px;
+    width: 100%;
 }
 .header-container .home{
-    left: 45px;
+    margin: auto;
     text-align: center;
-    position: relative;
     font-size: 25px;
     transition: border .1s ease;
     -webkit-transition: border .1s ease;
@@ -38,6 +36,19 @@ html {
     -ms-transition: border .1s ease;
     -o-transition: border .1s ease;
     border-bottom: 0;
+    font-family: "Varela Round", sans-serif;
+}
+.header-container .services-link{
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    transition: border .1s ease;
+    -webkit-transition: border .1s ease;
+    -moz-transition: border .1s ease;
+    -ms-transition: border .1s ease;
+    -o-transition: border .1s ease;
+    border-bottom: 0;
+    font-family: "Varela Round", sans-serif;
 }
 .header-container .home:hover{
     border-bottom: 2px solid #03af5f;
