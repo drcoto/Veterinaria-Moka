@@ -77,5 +77,6 @@ let confirmar = () => {
 
 };
 
+
 btnRegister.addEventListener('click', validarForm)
 btnRegister.addEventListener('mouseover', confirmar)

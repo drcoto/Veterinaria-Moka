@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/jim-header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/citas.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c02f88807d.js" crossorigin="anonymous"></script>
     <title>Citas del día</title>
 </head>
 
@@ -29,48 +29,59 @@
 
     <nav class="menu">
         <a href="expediente.html">Expediente</a>
-        <a href="citas.html">Consultar Citas</a>
+        <a href="citas.html">Citas</a>
 
     </nav>
 
     <section>
         <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'London')">Nueva Cita</button>
-            <button class="tablinks" onclick="openCity(event, 'Paris')">Consultar Citas</button>
-            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Citas del dia x Doctor</button>
+            <button class="tablinks" onclick="openCity(event, 'cita-nueva')">Nueva Cita</button>
+            <button class="tablinks" onclick="openCity(event, 'cita-listar')">Consultar Citas</button>
+            <button class="tablinks" onclick="openCity(event, 'cita-doctor')">Citas del dia x Doctor</button>
         </div>
 
         <!-- Tab content -->
-        <div id="London" class="tabcontent">
+        <div id="cita-nueva" class="tabcontent">
 
             <h3>Ingrese una nueva cita</h3>
             <form class="frm-citas-new">
-                <fieldset class="frm-vacunas">
-                    <legend>Crear una nueva cita</legend>
-                    <div>
-                        <label for="newCita-date">Fecha:</label>
-                        <input type="date" id="newCita-date">
-                        <label for="newCita-date">Hora:</label>
-                        <input type="time" id="newCita-date">
+                <div id="img-citas">
+                    <fieldset class="frm-cita">
+                        <legend>Crear una nueva cita</legend>
+                        <div id="hofe">
+                            <label for="newCita-date">Fecha:</label>
+                            <input type="date" id="newCita-date">
+                            <label for="newCita-date">Hora:</label>
+                            <input type="time" id="newCita-date">
 
-                    </div>
-                    <div>
-                        <input type="text" class="frm-citas" placeholder="Nombre de la mascota">
-                    </div>
-                    <div>
-                        <input type="text" class="frm-citas" placeholder="Nombre del dueño">
-                    </div>
-                    <div>
-                        <input type="text" class="frm-citas" placeholder="Procedimiento">
-                    </div>
-                    <div>
-                        <input type="text" class="frm-citas" placeholder="Doctor">
-                    </div>
-                </fieldset>
+                        </div>
+                        <div class="txt-citas">
+                            <input type="text" class="frm-citas" placeholder="Nombre de la mascota">
+                        </div>
+                        <div class="txt-citas">
+                            <input type="text" class="frm-citas" placeholder="Nombre del dueño">
+                        </div>
+                        <div class="txt-citas">
+                            <input type="text" class="frm-citas" placeholder="Procedimiento">
+                        </div>
+                        <div class="txt-citas">
+                            <select id="citas-doctores">
+                            <option value="" class="frm-select"> Doctores </option>
+                            <option value="luis" class="frm-select">Dr. Luis Zumbado</option>
+                            <option value="mario" class="frm-select">Dr. Mario Castellas</option>
+                            <option value="cindy" class="frm-select">Dra. Cindy Frias</option>
+                            <option value="lucrecia" class="frm-select">Dra. Lucrecia Diaz</option>
+                        </select>
+                        </div>
+                        <div id="dv-btnCitas">
+                            <button type="button" id="btn-citasNew">Agregar Cita</button>
+                        </div>
+                    </fieldset>
+                </div>
             </form>
         </div>
 
-        <div id="Paris" class="tabcontent">
+        <div id="cita-listar" class="tabcontent">
             <h3>Listado de Citas del día</h3>
 
             <div class="tbl-container">
@@ -104,32 +115,61 @@
 
 
 
-        <div id="Tokyo" class="tabcontent">
+        <div id="cita-doctor" class="tabcontent">
             <h3>Citas del día por Doctor</h3>
+
+
+            <div class="tbl-container">
+                <a href="index.html" class="btn-salir"><i class="fa-solid fa-reply"></i>Volver</a>
+                <h1>Citas del día x Doctor</h1>
+                <table id="tbl-doctor" class="tbl-info">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Nombre del Paciente</th>
+                            <th>Nombre del Dueño</th>
+                            <th>Procedimiento</th>
+                            <th>Doctor</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>02/11/2022</th>
+                            <th>Dusty</th>
+                            <th>Alberto Coto Calvo</th>
+                            <th>Vacuna</th>
+                            <th>Dr. Luis Zumbado</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
         </div>
 
 
 
     </section>
-    <footer>
-        <div class="footer-direction">
-            <p>Curridabat, San Jose</p>
-        </div>
-        <div class="footer-email">
-            <p>mokaclinic@vetpet.com</p>
-        </div>
-        <div class="footer-redes">
-            <a href="#"><img src="img/facebook-box-fill.png" alt="" /></a>
-            <a href="#"><img src="img/instagram-fill.png" alt="" /></a>
-            <a href="#"><img src="img/twitter-fill.png" alt="" /></a>
-        </div>
-    </footer>
-    <script src="js/cita-new.js"></script>
-    <script src="js/citas.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="js/citas-listar.js"></script>
-    <script src="js/expediente.js"></script>
+    <div>
+
+        <footer>
+            <div class="footer-direction">
+                <p>Curridabat, San Jose</p>
+            </div>
+            <div class="footer-email">
+                <p>mokaclinic@vetpet.com</p>
+            </div>
+            <div class="footer-redes">
+                <a href="#"><img src="img/facebook-box-fill.png" alt="" /></a>
+                <a href="#"><img src="img/instagram-fill.png" alt="" /></a>
+                <a href="#"><img src="img/twitter-fill.png" alt="" /></a>
+            </div>
+        </footer>
+        <script src="js/cita-new.js"></script>
+        <script src="js/citas.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/citas-listar.js"></script>
+        <script src="js/validar-citas.js"></script>
 </body>
 
 </html>

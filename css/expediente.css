@@ -9,6 +9,18 @@
         font-family: Arial;
     }
     
+    #container-lab {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    #dv-labFecha {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
     .dv-signos {
         display: flex;
         justify-content: space-around;
@@ -21,6 +33,14 @@
     #dv-signosMain {
         display: flex;
         justify-content: space-between;
+    }
+    
+    .dv-tableLab {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 3%;
+        width: 1000px;
     }
     
     #dv-tx {
@@ -37,6 +57,15 @@
     
     #exp-lab {
         background-color: darkslategrey;
+    }
+    
+    #exp-lab #frm-lab {
+        height: 200px;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 3%;
+        margin-top: 3%;
+        width: 700px;
     }
     
     #exp-principal {
@@ -126,6 +155,11 @@
         height: 450px;
     }
     
+    .frm-lab {
+        display: flex;
+        justify-content: center;
+    }
+    
     .frm-qp {
         display: flex;
         align-items: center;
@@ -149,12 +183,14 @@
         margin-bottom: 3%;
         margin-top: 2%;
         width: 450px;
+        height: 200px;
     }
     
     .frm-vacunas {
         margin-top: 2%;
         width: 950px;
-        height: 260px;
+        height: 460px;
+        margin-bottom: 2%;
     }
     
     .input-invalid {
@@ -184,6 +220,11 @@
         border: transparent;
     }
     
+    .rx {
+        width: 300px;
+        height: 400px;
+    }
+    
     .rxframe {
         border: 3px solid red;
         display: flex;
@@ -196,7 +237,7 @@
     
     .sct-tabs {
         padding-top: 7.5%;
-        height: 1700px;
+        height: 1900px;
     }
     
     .tablink {
@@ -226,6 +267,10 @@
         width: 1050px;
     }
     
+    #txt-examen input {
+        width: 549px;
+    }
+    
     #txt-fecha {
         display: flex;
         align-items: center;
@@ -233,10 +278,22 @@
         padding-right: 1.5%;
     }
     
+    #txt-pet input {
+        width: 549px;
+    }
+    
     #txt-mascota input {
         width: 530px;
     }
     
+    #txt-owner input {
+        width: 549px;
+    }
+    
     #txt-propietario input {
         width: 530px;
+    }
+    
+    #txt-resultados input {
+        width: 549px;
     }
