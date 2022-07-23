@@ -3,64 +3,45 @@
 
 const botonTx = document.querySelector('#btn-agregarTx');
 const botonVac = document.querySelector('#btn-agregarVacuna');
-const sNombre = document.querySelector('#name');
-const iTooth = document.querySelector('#tooth');
-const sTreatment = document.querySelector('#treatment');
-const iPrice = document.querySelector('#price');
-const sEmail = document.querySelector('#email');
-const iPhone = document.querySelector('#cel');
+const vacunaInput = document.querySelector('#input-dateVac');
+const vacunaDateInput = document.querySelector('#input-vacuna');
+const txDate = document.querySelector('#input-txDate');
+const txTreatment = document.querySelector('#input-txEvol');
 
 
 
-function obtenerDatosTx() {
-    let sName = sNombre.value;
-    let iDiente = Number(iTooth.value);
-    let sProc = sTreatment.value;
-    let iPrecio = 0;
 
-
-    llenarTablaTx();
-}
-
-function obtenerDatosVac() {
-    let sName = sNombre.value;
-    let iDiente = Number(iTooth.value);
-    let sProc = sTreatment.value;
-    let iPrecio = 0;
-
-
-    llenarTablaTx();
-}
 
 function llenarTablaTx() {
-    let tbody = document.querySelector("#tbl_precios tbody");
-    let lista_precios = obtenerPrecios();
-    for (let i = 0; i < lista_precios.length; i++) {
-        let fila = tbody.insertRow();
-        let celdaNum = fila.insertCell();
-        let celdaProc = fila.insertCell();
-        let celdaPrecio = fila.insertCell();
-        celdaNum.innerHTML = lista_precios[i][1];
-        celdaProc.innerHTML = lista_precios[i][2];
-        celdaPrecio.innerHTML = lista_precios[i][3];
+    let sName = vacunaInput.value;
+    let dateVac = vacunaDateInput.value;
+    let tbody = document.querySelector("#tbl_vacunas tbody");
 
-    };
+    let fila = tbody.insertRow();
+    let celdaDate = fila.insertCell();
+    let celdaNombre = fila.insertCell();
+    celdaDate.innerHTML = dateVac;
+    celdaNombre.innerHTML = sName;
+
+
+
 }
 
 function llenarTablaVac() {
+    let dateTx = txDate.value;
+    let treatment = txTreatment.value;
     let tbody = document.querySelector("#tbl_precios tbody");
-    let lista_precios = obtenerPrecios();
-    for (let i = 0; i < lista_precios.length; i++) {
-        let fila = tbody.insertRow();
-        let celdaNum = fila.insertCell();
-        let celdaProc = fila.insertCell();
-        let celdaPrecio = fila.insertCell();
-        celdaNum.innerHTML = lista_precios[i][1];
-        celdaProc.innerHTML = lista_precios[i][2];
-        celdaPrecio.innerHTML = lista_precios[i][3];
 
-    };
+    let fila = tbody.insertRow();
+    let celdaDateTx = fila.insertCell();
+    let celdaProc = fila.insertCell();
+    celdaDateTx.innerHTML = dateTx;
+    celdaProc.innerHTML = treatment;
+
+
+
 
 
 }
-botonTx.addEventListener('click', obtenerDatosTx);
+botonTx.addEventListener('click', llenarTablaTx);
+botonVac.addEventListener('click', llenarTablaVac);

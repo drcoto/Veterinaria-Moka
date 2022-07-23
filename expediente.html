@@ -196,10 +196,10 @@
                         <div id="dv-vacuna">
                             <div id="fecha-vacuna">
                                 <label for=""> Fecha de aplicación:</label>
-                                <input type="date" placeholder="Fecha de Aplicación">
+                                <input type="date" id="input-dateVac" placeholder="Fecha de Aplicación">
                             </div>
                             <div id="nombre-vacuna">
-                                <input type="text" placeholder="Nombre de la vacuna">
+                                <input type="text" id="input-vacuna" placeholder="Nombre de la vacuna">
                             </div>
                             <div>
                                 <button type="button" id="btn-agregarVacuna">Agregar</button>
@@ -232,16 +232,16 @@
                     <div id="dv-tx">
                         <div id="fecha-tx">
                             <label for=""> Fecha:</label>
-                            <input type="date" placeholder="Fecha">
+                            <input type="date" id="input-txDate">
                         </div>
                         <div id="tx-evolucionado">
-                            <input type="text" placeholder="Procedimientos Realizado">
+                            <input type="text" id="input-txEvol" placeholder="Procedimientos Realizado">
                         </div>
                         <div>
-                            <button type="button" id="btn-agregarTx">Agregar</button>
+                            <button type="button" id="btn-agregarTx" onclick="llenarTablaTx">Agregar</button>
                         </div>
                     </div>
-                    <table class="tbl-procedimientos">
+                    <table class="tbl-procedimientos ">
                         <thead>
                             <tr>
                                 <th>Fecha</th>
@@ -267,85 +267,85 @@
             </form>
         </div>
 
-        <div id="exp-rx" class="tabcontent">
+        <div id="exp-rx " class="tabcontent ">
             <h3>Radiografías</h3>
 
 
-            <div id="frameprincipal">
-                <div class="rxframe">
-                    <img src="" alt="rx-1" id="exp-rx0" class="rx">
+            <div id="frameprincipal ">
+                <div class="rxframe ">
+                    <img src=" " alt="rx-1 " id="exp-rx0 " class="rx ">
                 </div>
-                <div class="rxframe">
-                    <img src="" alt="rx-1" id="exp-rx1" class="rx">
+                <div class="rxframe ">
+                    <img src=" " alt="rx-1 " id="exp-rx1 " class="rx ">
                 </div>
-                <div class="rxframe">
-                    <img src="" alt="rx-2" id="exp-rx2" class="rx">
+                <div class="rxframe ">
+                    <img src=" " alt="rx-2 " id="exp-rx2 " class="rx ">
                 </div>
-                <div class="rxframe">
-                    <img src="" alt="rx-3" id="exp-rx3" class="rx">
+                <div class="rxframe ">
+                    <img src=" " alt="rx-3 " id="exp-rx3 " class="rx ">
                 </div>
-                <div class="rxframe">
-                    <img src="" alt="rx-4" id="exp-rx4" class="rx">
+                <div class="rxframe ">
+                    <img src=" " alt="rx-4 " id="exp-rx4 " class="rx ">
                 </div>
-                <div class="rxframe">
-                    <img src="" alt="rx-5" id="exp-rx5" class="rx">
+                <div class="rxframe ">
+                    <img src=" " alt="rx-5 " id="exp-rx5 " class="rx ">
                 </div>
-                <div class="rxframe">
-                    <img src="" alt="rx-6" id="exp-rx6" class="rx">
+                <div class="rxframe ">
+                    <img src=" " alt="rx-6 " id="exp-rx6 " class="rx ">
                 </div>
-                <div class="rxframe">
-                    <img src="" alt="rx-7" id="exp-rx7" class="rx">
+                <div class="rxframe ">
+                    <img src=" " alt="rx-7 " id="exp-rx7 " class="rx ">
                 </div>
 
             </div>
 
-            <button id="btn-rx">Incluir Radiografía</button>
+            <button id="btn-rx ">Incluir Radiografía</button>
         </div>
 
-        <div id="exp-lab" class="tabcontent">
+        <div id="exp-lab " class="tabcontent ">
             <div>
                 <h3>Ingreso y Consulta de exámenes clínicos</h3>
             </div>
 
 
-            <div id="container-lab">
+            <div id="container-lab ">
 
 
-                <fieldset id="frm-lab">
+                <fieldset id="frm-lab ">
                     <legend>Exámenes de Laboratorio</legend>
-                    <form class="frm-expLab">
-                        <div id="dv-labFecha">
-                            <label for="frm-labDate">Fecha</label>
-                            <input type="date" class="form-lab" id="frm-labDate">
+                    <form class="frm-expLab ">
+                        <div id="dv-labFecha ">
+                            <label for="frm-labDate ">Fecha</label>
+                            <input type="date " class="form-lab " id="frm-labDate ">
                         </div>
-                        <div id="txt-pet">
-                            <input type="text" class="form-lab" placeholder="Nombre de la mascota">
+                        <div id="txt-pet ">
+                            <input type="text " class="form-lab " placeholder="Nombre de la mascota ">
                         </div>
-                        <div id="txt-owner">
-                            <input type="text" class="form-lab" placeholder="Nombre del Dueño">
+                        <div id="txt-owner ">
+                            <input type="text " class="form-lab " placeholder="Nombre del Dueño ">
                         </div>
-                        <div id="txt-examen">
-                            <input type="text" class="form-lab" placeholder="Tipo de exámen realizado">
+                        <div id="txt-examen ">
+                            <input type="text " class="form-lab " placeholder="Tipo de exámen realizado ">
                         </div>
-                        <div id="txt-resultados">
-                            <input type="text" class="form-lab" placeholder="Resultados">
+                        <div id="txt-resultados ">
+                            <input type="text " class="form-lab " placeholder="Resultados ">
                         </div>
                         <div>
-                            <select id="lab-doctores">
-                        <option value="" class="frm-select"> Doctores </option>
-                        <option value="luis" class="frm-select">Dr. Luis Zumbado</option>
-                        <option value="mario" class="frm-select">Dr. Mario Castellas</option>
-                        <option value="cindy" class="frm-select">Dra. Cindy Frias</option>
-                        <option value="lucrecia" class="frm-select">Dra. Lucrecia Diaz</option>
+                            <select id="lab-doctores ">
+                        <option value=" " class="frm-select "> Doctores </option>
+                        <option value="luis " class="frm-select ">Dr. Luis Zumbado</option>
+                        <option value="mario " class="frm-select ">Dr. Mario Castellas</option>
+                        <option value="cindy " class="frm-select ">Dra. Cindy Frias</option>
+                        <option value="lucrecia " class="frm-select ">Dra. Lucrecia Diaz</option>
                     </select>
                         </div>
 
                     </form>
                 </fieldset>
-                <div class="dv-tableLab">
-                    <fieldset id="frm-tablaLab">
+                <div class="dv-tableLab ">
+                    <fieldset id="frm-tablaLab ">
                         <legend>Listado de Exámenes de Laboratorio</legend>
-                        <table id="tbl-lab">
+                        <table id="tbl-lab ">
                             <thead>
                                 <tr>
                                     <th>Fecha</th>
@@ -381,34 +381,34 @@
             </div>
         </div>
 
-        <div id="exp-medicamentos" class="tabcontent">
+        <div id="exp-medicamentos " class="tabcontent ">
             <h3>Prescripciones</h3>
 
-            <fieldset class="frm-medicamentos">
-                <form class="formulario-medicamentos">
+            <fieldset class="frm-medicamentos ">
+                <form class="formulario-medicamentos ">
                     <div>
-                        <label for="">Fecha:</label>
-                        <input type="date" class="formulario-receta">
+                        <label for=" ">Fecha:</label>
+                        <input type="date " class="formulario-receta ">
                     </div>
                     <div>
-                        <input type="text" class="formulario-receta" placeholder="Nombre de la mascota">
+                        <input type="text " class="formulario-receta " placeholder="Nombre de la mascota ">
                     </div>
                     <div>
-                        <select id="lab-doctores">
-                                <option value="" class="frm-select"> Doctores </option>
-                                <option value="luis" class="frm-select">Dr. Luis Zumbado</option>
-                                <option value="mario" class="frm-select">Dr. Mario Castellas</option>
-                                <option value="cindy" class="frm-select">Dra. Cindy Frias</option>
-                                <option value="lucrecia" class="frm-select">Dra. Lucrecia Diaz</option>
+                        <select id="lab-doctores ">
+                                <option value=" " class="frm-select "> Doctores </option>
+                                <option value="luis " class="frm-select ">Dr. Luis Zumbado</option>
+                                <option value="mario " class="frm-select ">Dr. Mario Castellas</option>
+                                <option value="cindy " class="frm-select ">Dra. Cindy Frias</option>
+                                <option value="lucrecia " class="frm-select ">Dra. Lucrecia Diaz</option>
                             </select>
                     </div>
                     <div>
-                        <input type="text" class="formulario-receta" placeholder="Nombre del Medicamento">
+                        <input type="text " class="formulario-receta " placeholder="Nombre del Medicamento ">
                     </div>
                     <div>
-                        <button type="button">Agregar Medicamento</button>
+                        <button type="button ">Agregar Medicamento</button>
                     </div>
-                    <table id="tbl-receta" class="exp-receta">
+                    <table id="tbl-receta " class="exp-receta ">
                         <thead>
                             <tr>
                                 <th>Medicamentos</th>
@@ -435,37 +435,38 @@
 
         </div>
     </section>
-    <section class="exp-buttons">
-        <div class="btn-exp">
-            <div id="exp-save">
+    <section class="exp-buttons ">
+        <div class="btn-exp ">
+            <div id="exp-save ">
 
-                <button type="button" id="btn-save">Guardar</button>
+                <button type="button " id="btn-save ">Guardar</button>
             </div>
-            <div id="exp-print">
-                <button type="button" id="btn-print">Imprimir</button>
+            <div id="exp-print ">
+                <button type="button " id="btn-print ">Imprimir</button>
             </div>
         </div>
     </section>
     <footer>
-        <div class="footer-direction">
+        <div class="footer-direction ">
             <p>Curridabat, San Jose</p>
         </div>
-        <div class="footer-email">
+        <div class="footer-email ">
             <p>mokaclinic@vetpet.com</p>
         </div>
-        <div class="footer-redes">
-            <a href="#"><img src="img/facebook-box-fill.png" alt="" /></a>
-            <a href="#"><img src="img/instagram-fill.png" alt="" /></a>
-            <a href="#"><img src="img/twitter-fill.png" alt="" /></a>
+        <div class="footer-redes ">
+            <a href="# "><img src="img/facebook-box-fill.png " alt=" " /></a>
+            <a href="# "><img src="img/instagram-fill.png " alt=" " /></a>
+            <a href="# "><img src="img/twitter-fill.png " alt=" " /></a>
         </div>
     </footer>
-    <script src="js/recursos.js"></script>
-    <script src="js/lista-procedimientos.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="js/validar.js"></script>
-    <script src="js/expediente.js"></script>
-    <script src="js/openFile.js"></script>
-    <script src="js/vacunas-listar.js"></script>
+    <script src="js/recursos.js "></script>
+    <script src="js/lista-procedimientos.js "></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11 "></script>
+    <script src="js/validar.js "></script>
+    <script src="js/expediente.js "></script>
+    <script src="js/exp-agregar.js"></script>
+    <script src="js/openFile.js "></script>
+    <script src="js/vacunas-listar.js "></script>
 
 
 </body>
