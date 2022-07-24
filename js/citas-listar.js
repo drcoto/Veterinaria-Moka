@@ -63,6 +63,7 @@ const llenarTablaDoctor = () => {
         let fila = cuerpoTablaDoctor.insertRow();
 
         fila.insertCell().textContent = cita.fecha;
+        fila.insertCell().textContent = cita.hora;
         fila.insertCell().textContent = cita.nombreMascota;
         fila.insertCell().textContent = cita.nombreOwner;
         fila.insertCell().textContent = cita.procedimiento;
