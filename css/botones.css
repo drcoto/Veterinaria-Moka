@@ -7,15 +7,22 @@
     height: 40px;
 }
 
-#btn-rx {
+#btn-citasNew {
     border-radius: 5%;
     margin-top: 10%;
     width: 180px;
     height: 40px;
-    margin-left: 1255px;
+    margin-left: 500px;
 }
 
-#btn-citasNew {
+#btn-lab {
+    border-radius: 5%;
+    width: 120px;
+    height: 30px;
+    margin-left: 430px;
+}
+
+#btn-rx {
     border-radius: 5%;
     margin-top: 10%;
     width: 180px;
