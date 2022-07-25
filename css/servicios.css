@@ -5,7 +5,6 @@ html {
 .container-servicios {
   position: relative;
   top: 80px;
-  border: 3px solid red;
 }
 
 .service-header {
@@ -53,9 +52,7 @@ html {
   padding: 0px 3%;
 }
 .hola2 {
-  width: 1000px;
-  margin: 50px auto;
-  border: 2px solid black;
+  margin: 80px auto;
 }
 
 /* parte de info general  */
@@ -108,8 +105,7 @@ html {
 .mas-servicios-container {
   text-align: center;
   font-size: 30px;
-  background-color: #f2f2f2;
-  box-shadow: 1px 1px 10px #000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.562);
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -145,9 +141,7 @@ html {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
 }
-.menu-servicios a:nth-child(1) {
-  border-bottom: 2px solid rgb(56, 180, 52);
-}
+
 .menu-servicios .fa-bone {
   font-size: 22px;
   padding-left: 15px;
@@ -159,7 +153,7 @@ html {
   top: 15px;
 }
 .menu-servicios .space{
-  padding-left: 42px;
+  padding-left: 45px;
 }
 
 .menu-servicios a::before,
@@ -202,10 +196,11 @@ html {
   font-size: 22px;
   text-align: center;
   
+  
 }
 
 .menu-servicios .txt {
-  color: #225a3b;
+  color: #28794c;
   font-size: 20px;
   font-weight: bold;
   transition: all 0.3s ease-in;
@@ -220,11 +215,49 @@ html {
 /* beneficios */
 
 .beneficios-container{
-  background-color: #006636;
-  text-align: center;
+  max-width: 1000px;
+  margin: auto;
 
 }
+.beneficios-container h2{
+  font-size: 30px;
+  padding: 15px;
+  width: 800px;
+  margin: auto;
+  background-color: #225a3b;
+  color: #fff;
+  text-align: center;
+  margin-bottom:10px ;
+}
+.beneficios-container .beneficios .bold{
+  font-weight: bold;
+}
+.beneficios{
+  margin-top: 25px;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.beneficios p{
+  font-size: 20px;
+  padding: 5px 0;
+}
+.beneficios ul li{
+  list-style-type: disc;
+  width: 600px;
+  font-size: 20px;
+  padding: 5px 0;
+}
 
+.beneficios .img-beneficios-container{
+  width: 500px;
+  height: 300px;
+}
+.beneficios .img-beneficios-container img{
+  width: 100%;
+  height: 100%;
+}
 
 
 
