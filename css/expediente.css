@@ -104,17 +104,6 @@
         padding-top: 5%;
     }
     
-    .frm-padecimientos {
-        display: flex;
-        align-items: center;
-        justify-content: left;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 200px;
-        margin-top: 3%;
-        width: 1475px;
-    }
-    
     .frm-datos {
         display: flex;
         justify-content: space-between;
@@ -158,6 +147,17 @@
     .frm-lab {
         display: flex;
         justify-content: center;
+    }
+    
+    .frm-padecimientos {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 200px;
+        margin-top: 3%;
+        width: 1475px;
     }
     
     .frm-qp {

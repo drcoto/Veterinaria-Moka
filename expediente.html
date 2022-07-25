@@ -374,14 +374,14 @@
         <div id="exp-medicamentos" class="tabcontent">
             <h3>Prescripciones</h3>
 
-            <fieldset class="frm-medicamentos">
+            <fieldset class="frm-medicamentosData">
                 <form class="formulario-medicamentos">
                     <div>
                         <label for="">Fecha:</label>
-                        <input type="date" class="formulario-receta">
+                        <input type="date" class="formulario-receta" id="med-date">
                     </div>
                     <div>
-                        <input type="text" class="formulario-receta" placeholder="Nombre de la mascota">
+                        <input type="text" class="formulario-receta" id="med-pet" placeholder="Nombre de la mascota">
                     </div>
                     <div>
                         <select id="lab-doctores">
@@ -393,35 +393,38 @@
                             </select>
                     </div>
                     <div>
-                        <input type="text" class="formulario-receta" placeholder="Nombre del Medicamento">
+                        <input type="text" class="formulario-receta" id="med-med" placeholder="Nombre del Medicamento">
                     </div>
                     <div>
-                        <button type="button">Agregar Medicamento</button>
+                        <button type="button" id="btn-med">Agregar Medicamento</button>
                     </div>
-                    <table id="tbl-receta" class="exp-receta">
-                        <thead>
-                            <tr>
-                                <th>Fecha</th>
-                                <th>Nombre de la Mascota</th>
-                                <th>Doctor</th>
-                                <th>Medicamentos</th>
-                                <th>Acciones</th>
-                            </tr>
+                </form>
+            </fieldset>
+            <fieldset class="frm-medicamentosTable">
+                <legend>Lista de medicamentos por recetar</legend>
+                <table id="tbl-receta" class="tbl-recetas">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Nombre de la Mascota</th>
+                            <th>Doctor</th>
+                            <th>Medicamentos</th>
+                            <th>Acciones</th>
+                        </tr>
 
-                        </thead>
-                        <tbody>
-                            <tr>
+                    </thead>
+                    <tbody>
+                        <tr>
 
-                                <td>Xanax 0.1mg</td>
-                                <td></td>
-                            </tr>
-                            <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
 
-                                <td>Levofloxacina 750mg</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    </tbody>
+                </table>
 
                 </form>
             </fieldset>

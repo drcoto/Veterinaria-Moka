@@ -107,6 +107,41 @@
     text-align: center;
 }
 
+.tbl-recetas {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin-top: 3%;
+    color: #000;
+}
+
+.tbl-recetas thead {
+    background: #000;
+    color: #fff;
+}
+
+.tbl-recetas thead tr {
+    border-bottom: 2px solid #0e726d
+}
+
+.tbl-recetas thead tr th {
+    padding: 5px 0;
+}
+
+.tbl-recetas tbody tr {
+    border-bottom: 2px solid #0e5754;
+}
+
+.tbl-recetas tbody tr:nth-child(even) {
+    background: rgb(24, 107, 107);
+    color: #fff;
+}
+
+.tbl-recetas tbody tr td {
+    padding: 10px 1%;
+    width: 5%;
+    text-align: center;
+}
+
 .btn-editar {
     background: #feca57;
     border: transparent;
