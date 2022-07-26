@@ -18,7 +18,7 @@ html {
     box-shadow: 0 0 5px #000;
 }
 .logo-container{
-    width: 165px;
+    width: 155px;
     height: 100%;
     display: flex;
     align-items: center;
@@ -29,29 +29,13 @@ html {
 }
 .header-container .home{
     margin: auto;
+    padding-left: 70px;
     text-align: center;
-    font-size: 25px;
-    transition: border .1s ease;
-    -webkit-transition: border .1s ease;
-    -moz-transition: border .1s ease;
-    -ms-transition: border .1s ease;
-    -o-transition: border .1s ease;
-    border-bottom: 0;
+    font-size: 22px;
     font-family: "Varela Round", sans-serif;
 }
-.header-container .services-link{
-    margin: auto;
-    text-align: center;
-    font-size: 25px;
-    transition: border .1s ease;
-    -webkit-transition: border .1s ease;
-    -moz-transition: border .1s ease;
-    -ms-transition: border .1s ease;
-    -o-transition: border .1s ease;
-    border-bottom: 0;
-    font-family: "Varela Round", sans-serif;
-}
-.header-container .home:hover{
+
+.header-container  .home a:hover{
     border-bottom: 2px solid #03af5f;
 }
 .header-container a{
@@ -64,20 +48,19 @@ html {
     display: flex;
     align-items: center;
     height: 80px;
-    gap: 25px;
-    font-size: 18px;
+    gap: 15px;
+    font-size: 16px;
 }
 .menu-icons a i{
-    font-size: 22px;
+    font-size: 20px;
 }
 .menu-icons a{
     display: flex;
-    gap: 5px;
     flex-direction: column;
     align-items: center;
     font-size: 16px;
     text-decoration: none;
 }
-.menu-icons a:hover i{
+.menu-icons a:hover {
     color: #03af5f;
 }

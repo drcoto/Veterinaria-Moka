@@ -123,6 +123,12 @@ h2 {
     padding: 5px 3%;
 }
 
+.cr-dev{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 100;
+}
 
 
 /* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
