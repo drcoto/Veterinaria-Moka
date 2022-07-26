@@ -193,8 +193,13 @@ html::-webkit-scrollbar-track {
     height: 100%;
 }
 
-.info p {
+.info ol li {
+    padding-left: 10%;
+}
+
+.hola .info-container-servicio .info p {
     text-align: left;
+    padding-bottom: 2%;
 }
 
 .info-header-servicio {
