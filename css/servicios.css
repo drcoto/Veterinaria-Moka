@@ -21,7 +21,7 @@ html {
     margin-bottom: 20px;
 }
 
-.beneficios-container .beneficios .bold {
+.bold {
     font-weight: bold;
 }
 
@@ -237,6 +237,19 @@ html::-webkit-scrollbar-track {
 }
 
 .info-container-servicio .info p {
+    padding: 0 30px;
+    text-align: left;
+    font-size: 20px;
+    max-width: 850px;
+    line-height: 30px;
+}
+
+.info-container-servicio .info .incluyente-cirugias p {
+    text-align: left;
+    list-style-type: lower-latin;
+}
+
+.info-container-servicio .info {
     padding: 0 30px;
     text-align: center;
     font-size: 20px;
