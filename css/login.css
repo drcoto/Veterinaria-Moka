@@ -323,6 +323,12 @@ input::placeholder {
   color: #03412e;
 }
 
+.input-invalid{
+  border: 2px solid red;
+}
+.input-valid{
+  border: 2px solid rgb(0, 255, 42);
+}
 
 /* responsive Design */
 @media screen and (max-width: 850px) {

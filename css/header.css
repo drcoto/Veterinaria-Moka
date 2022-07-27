@@ -29,7 +29,14 @@ html {
 }
 .header-container .home{
     margin: auto;
-    padding-left: 70px;
+    /* padding-left: 70px; */
+    text-align: center;
+    font-size: 22px;
+    font-family: "Varela Round", sans-serif;
+}
+.header-container .home-services{
+    margin: auto;
+    padding-left: 72px;
     text-align: center;
     font-size: 22px;
     font-family: "Varela Round", sans-serif;
