@@ -3,6 +3,7 @@ const iniciarSesion = () => {
   let contrasennaLogin = txtContrasennaLogin.value;
   validarCredenciales(usuarioLogin, contrasennaLogin);
 };
+
 const validarCredenciales = (usuarioLogin, contrasennaLogin) => {
   let usuarioValidado = false;
   usuarios.forEach((objUsuario) => {
