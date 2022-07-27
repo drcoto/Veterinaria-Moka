@@ -1,7 +1,7 @@
-function openCity(evt, cityName) {
+function openModulo(evt, modulo) {
     // Declare all variables
     let i, tabcontent, tablinks;
-    if (cityName === "expediente") {
+    if (modulo === "expediente") {
         window.location.href = "expediente.html";
     }
     // Get all elements with class="tabcontent" and hide them
@@ -17,10 +17,6 @@ function openCity(evt, cityName) {
     }
 
     // Show the current tab, and add an "active" class to the link that opened the tab
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(modulo).style.display = "block";
     evt.currentTarget.className += " active";
-}
-
-let admin = () => {
-    const users = "admin";
 }
