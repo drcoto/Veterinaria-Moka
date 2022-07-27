@@ -1,8 +1,8 @@
-const inputs = document.querySelectorAll("form input");
-const btnRegister = document.querySelector('#btn-citasNew');
+const campos = document.querySelectorAll(".frm-citas-new input");
+const btnAgregar = document.querySelector('#btn-citasNew');
 const selector = document.querySelector('#citas-doctores')
 let validarForm = () => {
-    inputs.forEach((input) => {
+    campos.forEach((input) => {
 
         if (input.value === "" || selector.value === "") {
 
@@ -32,7 +32,7 @@ let validarForm = () => {
                 text: 'La información ha sido ingresada con éxito en el expediente clínico',
                 confirmButtonText: "Entendido"
             }).then(() => {
-                // window.location.href = "index.html";
+                window.location.href = "admin.html";
             });
 
 
@@ -42,4 +42,4 @@ let validarForm = () => {
     });
 };
 
-btnRegister.addEventListener('click', validarForm)
+btnAgregar.addEventListener('click', validarForm)

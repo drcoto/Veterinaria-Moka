@@ -47,6 +47,10 @@
     width: 500px;
 }
 
+.btn-userAdd {
+    margin-left: 380px;
+}
+
 .exp-buttons {
     display: flex;
     justify-content: flex-end;
