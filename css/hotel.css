@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+section.sct-form {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/img/1.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+}
+
+section.hospedaje {
+    position: absolute;
+    width: 480px;
+    height: 50px;
+    left: 480px;
+    top: 600px;
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 65px;
+    color: #000000;
+}
+
+span.txt-1 {
+    position: absolute;
+    width: 562px;
+    height: 56px;
+    left: 439px;
+    top: 686px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+    ;
+}
