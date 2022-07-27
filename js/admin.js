@@ -1,7 +1,9 @@
 function openCity(evt, cityName) {
     // Declare all variables
     let i, tabcontent, tablinks;
-
+    if (cityName === "expediente") {
+        window.location.href = "expediente.html";
+    }
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
