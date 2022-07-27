@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/jim-header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/citas.css">
-    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/vete.css">
     <link rel="stylesheet" href="css/procedimientos.css">
     <script src="https://kit.fontawesome.com/c02f88807d.js" crossorigin="anonymous"></script>
     <title>Dashboard del Veterinario</title>
@@ -35,7 +35,7 @@
 
     <nav class="menu">
         <a href="expediente.html">Expediente</a>
-        <a href="citas.html">Citas</a>
+        <a href="citas.html">Listar Citas</a>
 
 
 
@@ -45,54 +45,15 @@
         <div class="container-admin">
             <div class="tab">
 
-                <button class="tablinks" onclick="openCity(event, 'appointment')">Citas de la Veterinaria</button>
-                <button class="tablinks" onclick="openCity(event, 'citas')">Listado de citas</button>
-                <button class="tablinks" onclick="openCity(event, 'expediente')">Expedientes</button>
+                <button class="tablinks" onclick="openModulo(event, 'appointment')">Citas de la Veterinaria</button>
+                <button class="tablinks" onclick="openModulo(event, 'expediente')">Expedientes</button>
             </div>
 
 
 
 
 
-            <div id="appointment" class="tabcontent">
-                <h3>Módulo de Citas</h3>
 
-                <form class="frm-citas-new">
-                    <div id="img-citas">
-                        <fieldset class="frm-cita">
-                            <legend>Crear una nueva cita</legend>
-                            <div id="hofe">
-                                <label for="newCita-date">Fecha:</label>
-                                <input type="date" id="newCita-date">
-                                <label for="newCita-date">Hora:</label>
-                                <input type="time" id="newCita-date">
-
-                            </div>
-                            <div class="txt-citas">
-                                <input type="text" class="frm-citas" placeholder="Nombre de la mascota">
-                            </div>
-                            <div class="txt-citas">
-                                <input type="text" class="frm-citas" placeholder="Nombre del dueño">
-                            </div>
-                            <div class="txt-citas">
-                                <input type="text" class="frm-citas" placeholder="Procedimiento">
-                            </div>
-                            <div class="txt-citas">
-                                <select id="citas-doctores">
-                                <option value="" class="frm-select"> Doctores </option>
-                                <option value="luis" class="frm-select">Dr. Luis Zumbado</option>
-                                <option value="mario" class="frm-select">Dr. Mario Castellas</option>
-                                <option value="cindy" class="frm-select">Dra. Cindy Frias</option>
-                                <option value="lucrecia" class="frm-select">Dra. Lucrecia Diaz</option>
-                            </select>
-                            </div>
-                            <div id="dv-btnCitas">
-                                <button type="button" id="btn-citasNew">Agregar Cita</button>
-                            </div>
-                        </fieldset>
-                    </div>
-                </form>
-            </div>
 
 
             <div id="citas" class="tabcontent">
@@ -127,6 +88,7 @@
                 </div>
 
             </div>
+
         </div>
     </section>
 
