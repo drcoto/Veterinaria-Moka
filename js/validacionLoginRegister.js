@@ -11,6 +11,8 @@ const btnRegistrar = document.querySelector(
   ".container-btn-register #btn-register-form"
 );
 
+
+// login
 let validarFormLogin = () => {
   error = false;
   if (txtUsuarioLogin.value == "") {
@@ -28,13 +30,31 @@ let validarFormLogin = () => {
   if (error == true) {
     Swal.fire({
       icon: "warning",
-      title: "Informacion incorrecta",
+      title: "Información incorrecta",
       text: "Complete los campos resaltados en color rojo",
     });
   } else {
     iniciarSesion();
   }
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// register
 let validarFormRegister = () => {
   error = false;
   inputsFormRegister.forEach((inputRegister) => {
