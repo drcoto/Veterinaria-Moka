@@ -27,24 +27,22 @@ const mostrarOpciones = () => {
   // }
 
   switch (usuarioConectado.rol) {
-    
-    case '1':
-    window.location.href = "mantenimiento.html";
+    case "1":
+      window.location.href = "mantenimiento.html";
       break;
-    case '2':
+    case "2":
       window.location.href = "index.html";
       break;
-    case '3':
+    case "3":
       window.location.href = "index.html";
       break;
-    case '4':
+    case "4":
       window.location.href = "index.html";
       break;
-  } 
+  }
 };
 
 mostrarOpciones();
-
 
 btnUsuario.addEventListener("click", () => {
   menu.classList.toggle("ocultar-menu");
