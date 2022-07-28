@@ -1,3 +1,5 @@
+let usuarioConectado = JSON.parse(localStorage.getItem("usuarioConectado"));
+
 function openModulo(evt, modulo) {
     // Declare all variables
     let i, tabcontent, tablinks;
@@ -20,3 +22,20 @@ function openModulo(evt, modulo) {
     document.getElementById(modulo).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+let validarUsers = () => {
+    switch (usuarioConectado.rol) {
+        case "1":
+            window.location.href = "admin.html";
+            break;
+        case "2":
+            window.location.href = "secretaria.html";
+            break;
+        case "3":
+            window.location.href = "cliente.html";
+            break;
+        case "4":
+            window.location.href = "veterinario.html";
+            break;
+    }
+};
