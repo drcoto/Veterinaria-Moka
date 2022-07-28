@@ -11,7 +11,6 @@ const btnRegistrar = document.querySelector(
   ".container-btn-register #btn-register-form"
 );
 
-
 // login
 let validarFormLogin = () => {
   error = false;
@@ -38,22 +37,6 @@ let validarFormLogin = () => {
   }
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // register
 let validarFormRegister = () => {
   error = false;
@@ -74,6 +57,9 @@ let validarFormRegister = () => {
         icon: "success",
         title: "Informacion completa",
         text: "Se ha registrado exitosamente",
+        confirmButtonText: "Entendido",
+      }).then(() => {
+        window.location.href = "login.html";
       });
     }
   });
