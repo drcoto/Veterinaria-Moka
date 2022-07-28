@@ -83,53 +83,107 @@
             <div id="billing" class="tabcontent">
                 <h3>Facturación</h3>
                 <p>Ingrese una factura nueva.</p>
+                <form>
+                    <div class="input-box">
+                        <label for="txt-juridica"></label>
+                        <input type="text" id="txt-juridica">
+                        <span>Cédula jurídica:</span>
+                    </div>
+                    <div class="input-box">
+                        <label for="txt-consecutivo"></label>
+                        <input type="text" id="txt-consecutivo">
+                        <span>Consecutivo:</span>
+                    </div>
+                    <div class="input-box">
+                        <label for="txt-fecha"></label>
+                        <input type="date" id="txt-fecha">
+                        <span>Fecha:</span>
+                    </div>
+                    <div class="input-box">
+                        <label for="txt-cliente"></label>
+                        <input type="text" id="txt-cliente">
+                        <span>Cliente:</span>
+                    </div>
+                    <div class="input-box">
+                        <label for="txt-email"></label>
+                        <input type="email" id="txt-email">
+                        <span>Email:</span>
+                    </div>
+                    <div class="input-box">
+                        <label for="txt-telefono"> </label>
+                        <input type="tel" id="txt-telefono">
+                        <span>Teléfono:</span>
+                    </div>
+                    <div class="input-box">
+                        <label for="txt-paciente"></label>
+                        <input type="text" id="txt-paciente">
+                        <span>Paciente:</span>
+                    </div>
+                    <div class="input-box">
+                        <label for="txt-subtotal"></label>
+                        <input type="text" id="txt-subtotal">
+                        <span>Subtotal:</span>
+                    </div>
+                    <div class="input-box">
+                        <label for="txt-descuento"></label>
+                        <input type="text" id="txt-descuento">
+                        <span>Descuento:</span>
+                    </div>
+                    <div class="input-box">
+                        <label for="txt-total"></label>
+                        <input type="text" id="txt-total">
+                        <span>Total:</span>
+                    </div>
+                    <button type="button" id="btn-imprimir">Imprimir</button>
             </div>
+            </form>
+        </div>
 
-            <div id="appointment" class="tabcontent">
-                <h3>Módulo de Citas</h3>
+        <div id="appointment" class="tabcontent">
+            <h3>Módulo de Citas</h3>
 
-                <form class="frm-citas-new">
-                    <div id="img-citas">
-                        <fieldset class="frm-cita">
-                            <legend>Crear una nueva cita</legend>
-                            <div id="hofe">
-                                <label for="newCita-date">Fecha:</label>
-                                <input type="date" id="newCita-date">
-                                <label for="newCita-date">Hora:</label>
-                                <input type="time" id="newCita-date">
+            <form class="frm-citas-new">
+                <div id="img-citas">
+                    <fieldset class="frm-cita">
+                        <legend>Crear una nueva cita</legend>
+                        <div id="hofe">
+                            <label for="newCita-date">Fecha:</label>
+                            <input type="date" id="newCita-date">
+                            <label for="newCita-date">Hora:</label>
+                            <input type="time" id="newCita-date">
 
-                            </div>
-                            <div class="txt-citas">
-                                <input type="text" class="frm-citas" placeholder="Nombre de la mascota">
-                            </div>
-                            <div class="txt-citas">
-                                <input type="text" class="frm-citas" placeholder="Nombre del dueño">
-                            </div>
-                            <div class="txt-citas">
-                                <input type="text" class="frm-citas" placeholder="Procedimiento">
-                            </div>
-                            <div class="txt-citas">
-                                <select id="citas-doctores">
+                        </div>
+                        <div class="txt-citas">
+                            <input type="text" class="frm-citas" placeholder="Nombre de la mascota">
+                        </div>
+                        <div class="txt-citas">
+                            <input type="text" class="frm-citas" placeholder="Nombre del dueño">
+                        </div>
+                        <div class="txt-citas">
+                            <input type="text" class="frm-citas" placeholder="Procedimiento">
+                        </div>
+                        <div class="txt-citas">
+                            <select id="citas-doctores">
                                 <option value="" class="frm-select"> Doctores </option>
                                 <option value="luis" class="frm-select">Dr. Luis Zumbado</option>
                                 <option value="mario" class="frm-select">Dr. Mario Castellas</option>
                                 <option value="cindy" class="frm-select">Dra. Cindy Frias</option>
                                 <option value="lucrecia" class="frm-select">Dra. Lucrecia Diaz</option>
                             </select>
-                            </div>
-                            <div id="dv-btnCitas">
-                                <button type="button" id="btn-citasNew">Agregar Cita</button>
-                            </div>
-                        </fieldset>
-                    </div>
-                </form>
-            </div>
+                        </div>
+                        <div id="dv-btnCitas">
+                            <button type="button" id="btn-citasNew">Agregar Cita</button>
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
 
 
-            <div id="reservation" class="tabcontent">
-                <h3>Reservaciones del Hotel</h3>
-                <p>Ingresar Reservaciones.</p>
-            </div>
+        <div id="reservation" class="tabcontent">
+            <h3>Reservaciones del Hotel</h3>
+            <p>Ingresar Reservaciones.</p>
+        </div>
         </div>
     </section>
 
