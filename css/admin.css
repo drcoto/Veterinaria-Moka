@@ -10,12 +10,19 @@
 
 .fieldset-billing {
     border: 3px solid black;
-    width: 400px;
+    width: 600px;
 }
 
 .fieldset-hotel {
     border: 3px solid black;
     width: 400px;
+}
+
+.frm-cedjur {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 10px;
 }
 
 .frm-consecutivo {
@@ -24,11 +31,34 @@
     margin-left: 250px;
 }
 
+.frm-email {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 10px;
+}
+
 .frm-fecha {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
-    margin-left: 0px;
+    margin: 10px;
+}
+
+.frm-mascota {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.frm-total {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 400px;
 }
 
 .frm-users {
@@ -99,6 +129,41 @@
     display: none;
 }
 
+#txt-cliente {
+    width: 300px;
+}
+
 #txt-consecutivo {
+    width: 100px;
+}
+
+#txt-descuento {
+    margin-left: 10px;
+    width: 100px;
+}
+
+#txt-email {
+    width: 250px;
+}
+
+#txt-juridica {
+    width: 100px;
+}
+
+#txt-paciente {
+    width: 400px;
+}
+
+#txt-subtotal {
+    margin-left: 25px;
+    width: 100px;
+}
+
+#txt-telefono {
+    width: 100px;
+}
+
+#txt-total {
+    margin-left: 45px;
     width: 100px;
 }
