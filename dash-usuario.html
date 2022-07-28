@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/menuUser.css" />
     <link rel="stylesheet" href="css/headerUser.css" />
+    <link rel="stylesheet" href="css/dashboardUsuario.css" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -56,11 +57,59 @@
     <section>
         <div class="container-dashboard-usuario">
             <div class="tab">
-                <button class="tablinks" onclick="openModule(event, 'expediente')">Usuarios</button>
-                <button class="tablinks" onclick="openModule(event, 'expediente')">Usuarios</button>
-                <button class="tablinks" onclick="openModule(event, 'expediente')">Usuarios</button>
-                <button class="tablinks" onclick="openModule(event, 'expediente')">Usuarios</button>
-                <button class="tablinks" onclick="openModule(event, 'expediente')">Usuarios</button>
+                <button class="tablinks" onclick="openModule(event, 'appointment')">Crear cita</button>
+                <button class="tablinks" onclick="openModule(event, 'reservation')">Crear reservación</button>
+            </div>
+
+            <div id="appointment" class="tabcontent">
+                <h3>Crear cita</h3>
+
+                <form class="dashboard--usuario-nueva-cita">
+                    <fieldset class="form-title-appointment">
+                        <legend>Agenda tu cita!</legend>
+
+                        <div class="dashboard-container-cita">
+                            <label for="form-cita">Cliente:  </label>
+                            <input type="text" class="form-citas">
+                        </div>
+                        <div class="dashborad-container-cita">
+                            <label for="form-cita">Motivo de cita: </label>
+                            <input type="areatext" class="form-citas">
+                        </div>
+                        <div class="dashborad-container-cita">
+                            <label for="form-cita">Fecha y hora deseada: </label>
+                            <input type="datetime-local" class="form-citas">
+                        </div>
+                        <div class="dashborad-container-cita">
+                            <label for="form-cita">Mascota</label>
+                            <select id="mascotas">
+                              <option value="" class="form-select">---Mascotas---</option>
+                              <option value="pet" class="form-select">Coquito</option>
+                              <option value="pet" class="form-select">Juls</option>
+                            </select>
+                            <button type="button" class="btn-agendar-cita">Agendar</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div id="reservation" class="tabcontent">
+                <h3>Reservación</h3>
+
+                <form class="dashboard--usuario-nueva-reservacion">
+                    <fieldset class="form-title-reservation">
+                        <legend>Reserva una habitacion!</legend>
+
+                        <div class="dashboard-container-reservacion">
+                            <label for="form-cita">Mascota:  </label>
+                            <input type="text" class="form-reservacion">
+                        </div>
+                        <div class="dashborad-container-reservacion">
+                            <label for="form-cita">Fecha y hora deseada: </label>
+                            <input type="datetime-local" class="form-reservacion">
+                        </div>
+                        <button type="button" class="btn-agendar-cita">Reservar</button>
+                    </fieldset>
+                </form>
             </div>
         </div>
     </section>
@@ -68,6 +117,7 @@
     <!-- js -->
     <script src="https://kit.fontawesome.com/c02f88807d.js" crossorigin="anonymous"></script>
     <script src="js/navUser.js"></script>
+    <script src="js/dashboardUsuario.js"></script>
 </body>
 
 </html>
