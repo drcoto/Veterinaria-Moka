@@ -17,6 +17,8 @@
 /* Style the tab */
 
 .tab {
+    top: 29px;
+    position: relative;
     background-color: #f1f1f1;
     margin-top: 7%;
     width: 20%;
@@ -66,4 +68,9 @@
     margin-left: 0%;
     margin-top: 6.5%;
     display: none;
+}
+.facturacion-contenedor{
+    width: 60%;
+    border: 2px solid red;
+    height: 300px;
 }
