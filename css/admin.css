@@ -8,9 +8,27 @@
     flex-wrap: nowrap;
 }
 
+.fieldset-billing {
+    border: 3px solid black;
+    width: 400px;
+}
+
 .fieldset-hotel {
     border: 3px solid black;
     width: 400px;
+}
+
+.frm-consecutivo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 250px;
+}
+
+.frm-fecha {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-left: 0px;
 }
 
 .frm-users {
@@ -79,4 +97,8 @@
     margin-left: 0%;
     margin-top: 6.5%;
     display: none;
+}
+
+#txt-consecutivo {
+    width: 100px;
 }

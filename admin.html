@@ -82,24 +82,26 @@
 
             <div id="billing" class="tabcontent">
                 <h3>Facturación</h3>
-                <p>Ingrese una factura nueva.</p>
+
                 <form>
-                    <fieldset id="fields">
-                        <div class="input-box">
-                            <label for="txt-juridica"></label>
-                            <input type="text" id="txt-juridica">
-                            <span>Cédula jurídica:</span>
-                        </div>
-                        <div class="input-box">
-                            <label for="txt-consecutivo"></label>
-                            <input type="text" id="txt-consecutivo">
-                            <span>Consecutivo:</span>
-                        </div>
-                        <div class="input-box">
-                            <label for="txt-fecha"></label>
+                    <fieldset class="fieldset-billing">
+                        <legend>Registrar una Nueva Factura</legend>
+                        <div class="frm-fecha">
+                            <label for="txt-fecha">Fecha:</label>
                             <input type="date" id="txt-fecha">
-                            <span>Fecha:</span>
+
+
+                            <label for="txt-consecutivo">Factura:</label>
+                            <input type="text" id="txt-consecutivo">
+
                         </div>
+                        <div class="frm-cedjur">
+                            <label for="txt-juridica">Cédula jurídica:</label>
+                            <input type="text" id="txt-juridica">
+
+                        </div>
+
+
                         <div class="input-box">
                             <label for="txt-cliente"></label>
                             <input type="text" id="txt-cliente">
