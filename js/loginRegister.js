@@ -35,8 +35,9 @@ const validarCredenciales = (usuarioLogin, contrasennaLogin) => {
       title: "Inicio de sesión correcto",
       text: "Bienvenido",
       confirmButtonText: "Entendido",
-    }).then(() => {
-      window.location.href = "usuario.html";
+    })
+    .then(() => {
+      mostrarOpciones();
     });
   }
 };
