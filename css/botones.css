@@ -1,5 +1,17 @@
+#btn-cantidad {
+    margin-left: 515px;
+}
+
 #btn-imprimir {
-    margin-left: 200px;
+    margin: 10px;
+    margin-left: 530px;
+}
+
+#btn-lab {
+    border-radius: 5%;
+    width: 120px;
+    height: 30px;
+    margin-left: 430px;
 }
 
 #btn-print {
@@ -11,11 +23,12 @@
     height: 40px;
 }
 
-#btn-lab {
-    border-radius: 5%;
-    width: 120px;
-    height: 30px;
-    margin-left: 430px;
+#btn-print:hover {
+    background-color: #568656;
+}
+
+#btn-registrar {
+    margin-left: 270px;
 }
 
 #btn-rx {
@@ -33,10 +46,6 @@
     padding-right: 10%;
     width: 100px;
     height: 40px;
-}
-
-#btn-print:hover {
-    background-color: #568656;
 }
 
 #btn-save:hover {
