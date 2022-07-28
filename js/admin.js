@@ -1,4 +1,5 @@
 let usuarioConectado = JSON.parse(localStorage.getItem("usuarioConectado"));
+let botonDash = document.getElementById("btn-dashboard");
 
 function openModulo(evt, modulo) {
     // Declare all variables
@@ -24,6 +25,7 @@ function openModulo(evt, modulo) {
 }
 
 let validarUsers = () => {
+    console.log(usuarioConectado.rol);
     switch (usuarioConectado.rol) {
         case "1":
             window.location.href = "admin.html";
@@ -39,3 +41,5 @@ let validarUsers = () => {
             break;
     }
 };
+
+botonDash.addEventListener("click", validarUsers);
