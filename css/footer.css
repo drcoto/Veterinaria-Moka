@@ -1,0 +1,28 @@
+footer {
+    margin-top: 80px;
+    position: relative;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+    border-top: 1px solid rgba(0, 0, 0, 0.192);
+}
+
+.footer-direction p {
+    font-size: 18px;
+}
+
+.footer-email {
+    font-size: 18px;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-redes a img {
+    width: 30px;
+}

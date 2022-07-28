@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+#tbl-lab {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin-top: 3%;
+    color: #000;
+}
+
+#tbl-lab thead {
+    background: #000;
+    color: #fff;
+}
+
+#tbl-lab thead tr {
+    border-bottom: 2px solid #0e726d
+}
+
+#tbl-lab thead tr th {
+    padding: 5px 0;
+}
+
+#tbl-lab tbody tr {
+    border-bottom: 2px solid #0e5754;
+}
+
+#tbl-lab tbody tr:nth-child(even) {
+    background: rgb(24, 107, 107);
+    color: #fff;
+}
+
+#tbl-lab tbody tr td {
+    padding: 10px 1%;
+    width: 5%;
+    text-align: center;
+}
+
+.tbl-procedimientos {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin-top: 3%;
+    color: #000;
+}
+
+.tbl-procedimientos thead {
+    background: #000;
+    color: #fff;
+}
+
+.tbl-procedimientos thead tr {
+    border-bottom: 2px solid #0e726d
+}
+
+.tbl-procedimientos thead tr th {
+    padding: 5px 0;
+}
+
+.tbl-procedimientos tbody tr {
+    border-bottom: 2px solid #0e5754;
+}
+
+.tbl-procedimientos tbody tr:nth-child(even) {
+    background: rgb(24, 107, 107);
+    color: #fff;
+}
+
+.tbl-procedimientos tbody tr td {
+    padding: 10px 1%;
+    width: 5%;
+    text-align: center;
+}
+
+.tbl-vacunas {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin-top: 3%;
+    color: #000;
+}
+
+.tbl-vacunas thead {
+    background: #000;
+    color: #fff;
+}
+
+.tbl-vacunas thead tr {
+    border-bottom: 2px solid #0e726d
+}
+
+.tbl-vacunas thead tr th {
+    padding: 5px 0;
+}
+
+.tbl-vacunas tbody tr {
+    border-bottom: 2px solid #0e5754;
+}
+
+.tbl-vacunas tbody tr:nth-child(even) {
+    background: rgb(24, 107, 107);
+    color: #fff;
+}
+
+.tbl-vacunas tbody tr td {
+    padding: 10px 1%;
+    width: 5%;
+    text-align: center;
+}
+
+.tbl-recetas {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin-top: 3%;
+    color: #000;
+}
+
+.tbl-recetas thead {
+    background: #000;
+    color: #fff;
+}
+
+.tbl-recetas thead tr {
+    border-bottom: 2px solid #0e726d
+}
+
+.tbl-recetas thead tr th {
+    padding: 5px 0;
+}
+
+.tbl-recetas tbody tr {
+    border-bottom: 2px solid #0e5754;
+}
+
+.tbl-recetas tbody tr:nth-child(even) {
+    background: rgb(24, 107, 107);
+    color: #fff;
+}
+
+.tbl-recetas tbody tr td {
+    padding: 10px 1%;
+    width: 5%;
+    text-align: center;
+}
+
+.btn-editar {
+    background: #feca57;
+    border: transparent;
+    border-right: 3px solid #000;
+    cursor: pointer;
+    padding: 5px;
+    width: 60px;
+}
+
+.btn-editar {
+    background: #b3ee75;
+}
+
+.btn-eliminar {
+    background: #ee5253;
+    border: transparent;
+    cursor: pointer;
+    padding: 5px;
+    width: 60px;
+}
+
+.btn-eliminar:hover {
+    background: #ff6b6b;
+}

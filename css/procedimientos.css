@@ -1,180 +1,206 @@
-    * {
-        box-sizing: border-box;
+a {
+    color: #000;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+a:hover {
+    color: #1095c1;
+}
+
+H1 {
+    font-size: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: quantum;
+}
+
+H2 {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    margin-top: 3%;
+    font-family: quantum;
+}
+
+H3 {
+    font-size: 25px;
+    padding: 3%;
+    color: #000;
+}
+
+ul {
+    margin-left: 3%;
+    margin-right: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: wrap;
+    font-size: 35px;
+    list-style-image: url('../images/syringe-fill.png');
+    font-family: Arial;
+}
+
+.procedimientos {
+    --s: 0.1em;
+    /* the thickness of the line */
+    --c: #1095c1;
+    /* the color */
+    padding-bottom: var(--s);
+    background: linear-gradient(90deg, var(--c) 50%, #000 0) calc(100% - var(--_p, 0%))/200% 100%, linear-gradient(var(--c) 0 0) 0% 100%/var(--_p, 0%) var(--s) no-repeat;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    transition: 0.5s;
+    font-family: Arial;
+}
+
+.procedimientos:hover {
+    --_p: 100%
+}
+
+p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font: size 15px;
+    font-family: Arial;
+}
+
+@media only screen and (max-width: 600px) {
+    ul {
+        display: block;
+        font-size: 12px;
+        padding-left: 7%;
     }
-    
-    a {
-        text-decoration: none;
-        color: #000;
+    H2 {
+        font-size: 15px;
     }
-    
-    body {
-        font-family: Arial, Helvetica, sans-serif;
+    H3 {
+        font-size: 10px;
     }
-    /* Float four columns side by side */
-    
-    .column {
-        margin-top: 10%;
-        float: left;
-        width: 25%;
-        padding: 0 10px;
+    p {
+        margin-left: 5%;
+        margin-right: 5%;
+        font: size 10px;
     }
-    
-    .card H3 {
-        font-size: 18px;
-        font-weight: bold;
-        padding-bottom: 3%;
-        text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    ul {
+        display: block;
+        font-size: 12px;
+        padding-left: 7%;
     }
-    /* Remove extra left and right margins, due to padding in columns */
-    
-    .row {
-        margin: 0 -5px;
+    H2 {
+        font-size: 15px;
     }
-    /* Clear floats after the columns */
-    
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
+    H3 {
+        font-size: 10px;
     }
-    /* Style the counter cards */
-    
-    .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        /* this adds the "card" effect */
-        padding: 16px;
-        text-align: justify;
-        background-color: #f1f1f1;
-        border-radius: 8px;
+    p {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 10px;
     }
-    /* Responsive columns - one column layout (vertical) on small screens */
-    
-    @media screen and (max-width: 600px) {
-        .column {
-            width: 100%;
-            display: block;
-            margin-bottom: 20px;
-        }
-    }
-    
-    .btn-readMore {
-        display: flex;
-        justify-content: center;
-        margin-top: 5%;
-        margin-left: 70%;
-        background-color: #3DFF91;
-        border: 2px solid #000;
-        border-radius: 5px;
-        -webkit-box-shadow: 5px 5px 10px 5px #000000;
-        box-shadow: 5px 5px 5px 5px #d9dbdf;
-    }
-    
-    #proc-cx {
-        background-image: url('../imgs/imgsservicios/cx.gif');
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        height: 200px;
-        justify-content: center;
-        padding-left: 3%;
-    }
-    
-    #proc-castracion {
-        background-image: url('../imgs/imgsservicios/castracion.gif');
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        height: 200px;
-        justify-content: center;
-        padding-left: 3%;
-    }
-    
-    #proc-desparasitaciones {
-        background-image: url('../imgs/imgsservicios/desparasitaciones.gif');
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        height: 200px;
-        justify-content: center;
-        padding-left: 3%;
-    }
-    
-    #proc-grooming {
-        background-image: url('../imgs/imgsservicios/grooming.gif');
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        height: 200px;
-        justify-content: center;
-        padding-left: 3%;
-    }
-    
-    #proc-odontovet {
-        background-image: url('../imgs/imgsservicios/odontovet.gif');
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        height: 200px;
-        justify-content: center;
-        padding-left: 3%;
-    }
-    
-    #proc-rx {
-        background-image: url('../imgs/imgsservicios/rx.gif');
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        height: 200px;
-        justify-content: center;
-        padding-left: 3%;
-    }
-    
-    #proc-vacunas {
-        background-image: url('../imgs/imgsservicios/vacuna.gif');
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        height: 200px;
-        justify-content: center;
-        padding-left: 3%;
-    }
-    
-    #proc-emergencia {
-        background-image: url('../imgs/imgsservicios/er.gif');
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
-        height: 200px;
-        justify-content: center;
-        padding-left: 3%;
-    }
-    
-    @keyframes bounce {
-        0%,
-        20%,
-        60%,
-        100% {
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-        }
-        40% {
-            -webkit-transform: translateY(-20px);
-            transform: translateY(-20px);
-        }
-        80% {
-            -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-        }
-    }
-    
-    .btn-readMore:hover {
-        animation: bounce 1s;
-    }
+}
+
+#container-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+#container-doctores {
+    display: flex;
+    justify-content: space-between;
+}
+
+#txt-doctores {
+    padding-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.lst-procedimientos {
+    font-size: 25px;
+    display: block;
+    list-style: disc;
+    padding: 2%;
+    list-style: lower-alpha;
+    text-indent: 6px;
+    line-height: 40px;
+}
+
+p {
+    text-indent: 6px;
+    line-height: 40px;
+}
+
+#sct-cirugias {
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#sct-desparasitaciones {
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#sct-emergencias {
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#sct-grooming {
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#sct-odontovet {
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#sct-odontovet H2 {
+    display: flex;
+    justify-content: center;
+    padding-left: 25%;
+}
+
+#sct-radio {
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#sct-radio H2 {
+    display: flex;
+    justify-content: center;
+    padding-left: 20%;
+}
+
+#sct-vacuna {
+    padding-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
