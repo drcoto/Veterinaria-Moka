@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/head-facturación.css">
+    <link rel="stylesheet" href="css/tablas.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header-container">
+        <button type="button">
+          <i class="fa-solid fa-user"></i>Nombre del Usuario
+          </button>
+        <div class="logo-container">
+            <img src="logo-moka.png" alt="logo moka" />
+        </div>
+        <div class="menu-icons">
+            <a href="login.html"><i class="fa-solid fa-house"></i>Inicio</a>
+            <a href="#"><i class="fa-solid fa-wheelchair"></i>Accesibilidad</a>
+        </div>
+    </header>
+    <nav class="menu">
+        <a href="">Expedientes</a>
+        <a href="">Reservaciones</a>
+        <a href="">Citas</a>
+        <a href="">Mascotas</a>
+        <a href="">Metodos de pago</a>
+    </nav>
+    <section class="container">
+        <div class="tbl-container">
+            <a href="facturación.html" class="btn-salir"><i class="fa-solid fa-reply"></i>Volver</a
+          >
+          <h1>Listado de facturas</h1>
+          <table id="tbl-factura" class="tbl-info">
+            <thead>
+              <tr>
+                <th>Cédula jurídica </th>
+                <th>Consecutivo </th>
+                <th>Fecha</th>
+                <th>Cliente</th>
+                <th>Email</th>
+                <th>Teléfono </th>
+                <th>Paciente</th>
+                <th>Subtotal</th>
+                <th>Descuento</th>
+                <th>Total</th>
+                <th>Accines</th>
+              </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>4-201-676242</td>
+                        <td>100110010110724</td>
+                        <td>23/10/2022</td>
+                        <td>Manuel Leandro</td>
+                        <td>mleandro@gmail.com</td>
+                        <td>8976-0956</td>
+                        <td>Osiris</td>
+                        <td>₡64.999</td>
+                        <td>₡2.500</td>
+                        <td>₡62.499</td>
+                    </tr>
+                    <tr>
+                        <td>1-512-250969</td>
+                        <td>101110101001152</td>
+                        <td>25/08/2022</td>
+                        <td>Elizabeth Sequeira</td>
+                        <td>esequeira@gmail.com</td>
+                        <td>6709-8655</td>
+                        <td>Seth</td>
+                        <td>₡29.595</td>
+                        <td>₡0</td>
+                        <td>₡29.595</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/facturas.js"></script>
+        <script src="js/factura-listar.js"></script>
+</body>
+
+</html>
