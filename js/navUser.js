@@ -29,18 +29,16 @@ const mostrarOpciones = () => {
       window.location.href = "mantenimiento.html";
       break;
     case "2":
-      window.location.href = "usuario.html";
+      window.location.href = "index.html";
       break;
     case "3":
       window.location.href = "index.html";
       break;
     case "4":
-      window.location.href = "index.html";
+      window.location.href = "usuario.html";
       break;
   }
 };
-
-
 
 btnUsuario.addEventListener("click", () => {
   menu.classList.toggle("ocultar-menu");
