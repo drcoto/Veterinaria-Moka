@@ -1,5 +1,5 @@
-const inputDate = document.getElementById('txt-date');
-const inputCuartos = document.getElementById('txt-cantidad');
+const inputEntrada = document.getElementById('fecha-entrada');
+const inputSalida = document.getElementById('fecha-salida');
 const inputAnimales = document.getElementById('cantidad-animales');
 const btnGuardar = document.getElementById('btn-registrar');
 
@@ -7,18 +7,18 @@ const validar  = () => {
 
     let error = false;
 
-    if(inputDate.value == ''){
+    if(inputEntrada.value == ''){
         error = true;
-        inputDate.classList.add('input-error');
+        inputEntrada.classList.add('input-error');
     }else{
-        inputDate.classList.remove('input-error');
+        inputEntrada.classList.remove('input-error');
     }
 
-    if(inputCuartos.value == ''){
+    if(inputSalida.value == ''){
         error = true;
-        inputCuartos.classList.add('input-error');
+        inputSalida.classList.add('input-error');
     }else{
-        inputCuartos.classList.remove('input-error');
+        inputSalida.classList.remove('input-error');
     }
 
     if(inputAnimales.value == ''){
@@ -44,18 +44,18 @@ const validar  = () => {
 const obtenerDatos = () => {
     //variable tipo JSON
     let reserva = {
-        'date' : inputDate.value,
-        'cant-cuartos' : inputCuartos.value,
+        'date' : inputEntrada.value,
+        'cant-cuartos' : inputSalida.value,
         'cant-animales' : inputAnimales.value
     };
     console.log(reserva);
     Swal.fire({
         'icon': 'success',
-        'title' : 'Usuario ingresado correctamente',
-        'text' : 'Sus datos han sido guardados y registrados',
+        'title' : 'Reserva realizada exitosamente',
+        'text' : 'Su numero de confirmacion le llegara al correo',
         'confirmButtonText' : 'Continuar'
     }).then(()=>{
-        window.location.href = 'usuario-listar.html'
+        window.location.href = 'reserva-listado.html'
 
     });
    
