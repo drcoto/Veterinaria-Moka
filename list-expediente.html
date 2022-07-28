@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usuario</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/menuUser.css" />
+    <link rel="stylesheet" href="css/headerUser.css" />
+    <link rel="stylesheet" href="css/dashboardUsuario.css" />
+    <link rel="stylesheet" href="css/tablas.css" />
+    <link rel="stylesheet" href="css/list-expediente.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header-container">
+        <a href="#" id="btn-usuario">
+            <i class="fa-solid fa-user"></i>Monica
+            <i class="fa-solid fa-caret-down"></i>
+        </a>
+        <div class="logo-container">
+            <img src="imgs/logo/logo-moka.png" alt="logo moka" />
+        </div>
+        <div class="menu-icons">
+            <a href="login.html"><i class="fa-solid fa-house"></i>Inicio</a>
+            <a href="#"><i class="fa-solid fa-wheelchair"></i>Accesibilidad</a>
+        </div>
+    </header>
+
+    <nav class="menu-header">
+        <a href="list-expediente.html" id="expedientes">Expediente</a>
+        <a href="#" id="reservaciones">Reservaciones</a>
+        <a href="#" id="citas">Citas</a>
+        <a href="#" id="citas">Pagos</a>
+    </nav>
+    <section class="container">
+        <div class="tbl-container">
+            <a href="dash-usuario.html" class="btn-salir"><i class="fa-solid fa-reply"></i>Volver</a>
+            <h1>Listado de expedientes de mascotas</h1>
+            <table id="tbl-users" class="tbl-info">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre completo</th>
+                        <th>Usuario</th>
+                        <th>Numero</th>
+                        <th>Correo electrónico</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2000</td>
+                        <td>Coquito</td>
+                        <td>Monica</td>
+                        <td>62163165</td>
+                        <td>monica@gmail.com</td>
+                        <td><button class="btn-ver" id="btn-expediente">Ver expediente</button></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    <tr>
+                        <td>3000</td>
+                        <td>Juls</td>
+                        <td>Monica</td>
+                        <td>62163165</td>
+                        <td>monica@gmail.com</td>
+                        <td><button class="btn-ver" id="btn-expediente">Ver expediente</button></td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
+    <div class="modal-expediente" id="modal-expediente">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-informacion">
+                <form>
+                    <div>
+                        <input type="text" id="petName" />
+                    </div>
+                    <div>
+                        <input type="number" id="petId" />
+                    </div>
+                    <div>
+                        <input type="text" id="userName" />
+                    </div>
+                    <div>
+                        <input type="number" id="userId" />
+                    </div>
+                    <div>
+                        <input type="text" id="padecimiento" />
+                    </div>
+                    <div>
+                        <input type="text" id="vax" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/c02f88807d.js" crossorigin="anonymous"></script>
+    <script src="js/navUser.js"></script>
+    <script src="js/list-expediente.js"></script>
+
+</body>
+
+</html>
