@@ -1,17 +1,17 @@
-const campos = document.querySelectorAll(".frm-usuarios-new input");
+const camposUser = document.querySelectorAll(".frm-userName");
 const btnAgregarUser = document.querySelector('#btn-userAdd');
-const selector = document.querySelector('#roles')
-let validarForm = () => {
-    campos.forEach((input) => {
+const selectorUser = document.querySelector('#roles')
+let validarUser = () => {
+    camposUser.forEach((input) => {
 
-        if (input.value === "" || selector.value === "") {
+        if (input.value === "" || selectorUser.value === "") {
 
 
             input.classList.add("input-invalid");
             input.classList.remove("input-valid");
-            if (selector.value === "") {
-                selector.classList.add("input-invalid");
-                selector.classList.remove("input-valid");
+            if (selectorUser.value === "") {
+                selectorUser.classList.add("input-invalid");
+                selectorUser.classList.remove("input-valid");
             }
 
             Swal.fire({
@@ -23,8 +23,8 @@ let validarForm = () => {
         } else {
             input.classList.remove("input-invalid");
             input.classList.add("input-valid");
-            selector.classList.remove("input-invalid");
-            selector.classList.add("input-valid");
+            selectorUser.classList.remove("input-invalid");
+            selectorUser.classList.add("input-valid");
 
             Swal.fire({
                 icon: 'success',
@@ -42,4 +42,4 @@ let validarForm = () => {
     });
 };
 
-btnAgregarUser.addEventListener('click', validarForm)
+btnAgregarUser.addEventListener('click', validarUser)

@@ -8,6 +8,11 @@
     flex-wrap: nowrap;
 }
 
+.fieldset-hotel {
+    border: 3px solid black;
+    width: 400px;
+}
+
 .frm-users {
     border: 3px solid #000;
     width: 600px;

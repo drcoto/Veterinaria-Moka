@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1. Archivo reset css -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- 2. Styles css -->
+    <link rel="stylesheet" href="css/header-users.css">
+    <link rel="stylesheet" href="css/error.css">
+    <link rel="stylesheet" href="css/reserva-form.css">
+    <title>Reserva del Hotel</title>
+</head>
+<body>
+    <header class="header-container">
+        <button type="button">
+          <i class="fa-solid fa-user"></i>Nombre del Usuario
+        </button>
+        <div class="logo-container">
+          <img src="imgs/logo-moka.png" alt="logo moka" />
+        </div>
+        <div class="menu-icons">
+          <a href="login.html"><i class="fa-solid fa-house"></i>Inicio</a>
+          <a href="#"><i class="fa-solid fa-wheelchair"></i>Accesibilidad</a>
+        </div>
+      </header>
+      <nav class="menu">
+        <a href="">Expedientes</a>
+        <a href="">Reservaciones</a>
+        <a href="">Citas</a>
+        <a href="">Mascotas</a>
+        <a href="">Métodos de pago</a>
+  
+      </nav>
+
+    <section class="sct-container">
+            <div class="top-logo">
+                <div class="icon">
+                    <a href="index.html"><img src="images/volver.png" alt="">Volver</a>
+                </div>
+                <div class="logo-vet">
+                    <img src="images/veterinarian.png" alt="">
+                </div>
+            </div>
+            <div class="middle-sct">
+                <div class="div-date">
+                    <label for="txt-date">Fecha de Entrada</label>
+                    <input type="date" name="" id="fecha-entrada">
+                </div>
+                <div class="div-cuartos">
+                    <label for="cantidad-cuartos">Fecha de Salida</label>
+                    <input type="date" name="" id="fecha-salida">
+                </div>
+                <div class="div-animales">
+                    <label for="cantidad-animales">Numero de animales</label>
+                    <input type="number" name="" id="cantidad-animales" min="0">
+                </div>
+                <div>
+                    <button type="button" id="btn-registrar">Registrar Reserva</button>
+                </div>
+            </div>
+    </section>
+    <script src="https://kit.fontawesome.com/c02f88807d.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/reserva-hotel.js"></script>
+</body>
+</html>
