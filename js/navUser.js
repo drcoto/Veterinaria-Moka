@@ -2,9 +2,7 @@ const btnUsuario = document.querySelector("#btn-usuario");
 let menu = document.querySelector(".menu-user-container");
 let usuarioConectado = JSON.parse(localStorage.getItem("usuarioConectado"));
 let opcionesNav = document.querySelectorAll("nav a");
-// let expedientes = document.querySelector("nav #expedientes");
-// let reservaciones = document.querySelector("nav #reservaciones");
-// let citas = document.querySelector("nav #citas");
+
 // nav
 
 const mostrarOpciones = () => {
@@ -37,7 +35,7 @@ const mostrarOpciones = () => {
       window.location.href = "index.html";
       break;
     case "4":
-      window.location.href = "index.html";
+      // window.location.href = "";
       break;
   }
 };
