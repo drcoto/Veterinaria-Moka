@@ -1,6 +1,6 @@
-const campos = document.querySelectorAll(".frm-citas-new input");
-const btnAgregar = document.querySelector('#btn-citasNew');
-const selector = document.querySelector('#citas-doctores')
+const campos = document.querySelectorAll(".frm-usuarios-new input");
+const btnAgregarUser = document.querySelector('#btn-userAdd');
+const selector = document.querySelector('#roles')
 let validarForm = () => {
     campos.forEach((input) => {
 
@@ -42,4 +42,4 @@ let validarForm = () => {
     });
 };
 
-btnAgregar.addEventListener('click', validarForm)
+btnAgregarUser.addEventListener('click', validarForm)
