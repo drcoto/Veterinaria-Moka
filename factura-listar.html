@@ -6,18 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/head-facturación.css">
+    <link rel="stylesheet" href="css/head-facturacion.css">
     <link rel="stylesheet" href="css/tablas.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/menuUser.css" />
+    <link rel="stylesheet" href="css/headerUser.css" />
+    <script src="https://kit.fontawesome.com/c02f88807d.js" crossorigin="anonymous"></script>
+    <title>Listado de Facturas</title>
 </head>
 
 <body>
     <header class="header-container">
-        <button type="button">
-          <i class="fa-solid fa-user"></i>Nombre del Usuario
-          </button>
+        <a href="#" id="btn-usuario">
+            <i class="fa-solid fa-user"></i>Monica
+            <i class="fa-solid fa-caret-down"></i>
+        </a>
         <div class="logo-container">
-            <img src="logo-moka.png" alt="logo moka" />
+            <img src="imgs/logo-moka.png" alt="logo moka" />
         </div>
         <div class="menu-icons">
             <a href="login.html"><i class="fa-solid fa-house"></i>Inicio</a>
@@ -25,18 +29,37 @@
         </div>
     </header>
     <nav class="menu">
-        <a href="">Expedientes</a>
-        <a href="">Reservaciones</a>
-        <a href="">Citas</a>
-        <a href="">Mascotas</a>
-        <a href="">Metodos de pago</a>
+
+        <a href="#" id="btn-dash">Dashboard Principal</a>
+
+
+
     </nav>
+    <div class="menu-user-container ocultar-menu">
+        <div class="menu-user">
+            <div class="img-user-container">
+                <img src="imgs/users/users1.jpg" alt="" />
+            </div>
+            <div class="enleces">
+                <a href="#"><i class="fa-solid fa-gear"></i>Perfil</a>
+                <a href="#"><i class="fa-solid fa-calendar-days"></i>Mis citas</a>
+                <a href="#"><i class="fa-solid fa-paw"></i>Mi mascotas</a>
+                <a href="#"><i class="fa-solid fa-wallet"></i>Métodos de pago</a>
+                <a href="#"><i class="fa-solid fa-file-invoice-dollar"></i>Facturas</a>
+                <a href="index.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>Cerrar sesión</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <section class="container">
         <div class="tbl-container">
             <a href="facturación.html" class="btn-salir"><i class="fa-solid fa-reply"></i>Volver</a
           >
           <h1>Listado de facturas</h1>
-          <table id="tbl-factura" class="tbl-info">
+          <table id="tbl-factura" class="tbl-factura">
             <thead>
               <tr>
                 <th>Cédula jurídica </th>
@@ -83,6 +106,7 @@
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="js/facturas.js"></script>
         <script src="js/factura-listar.js"></script>
+        <script src="js/navUser.js"></script>
 </body>
 
 </html>

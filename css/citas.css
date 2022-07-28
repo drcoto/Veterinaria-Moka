@@ -1,3 +1,8 @@
+#cita-listar-doctores {
+    margin: 20px;
+    margin-left: 1160px;
+}
+
 #dv-btnCitas {
     display: flex;
     justify-content: flex-end;

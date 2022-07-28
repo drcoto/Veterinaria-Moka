@@ -1,4 +1,5 @@
 const botonDash = document.getElementById("btn-dashboard");
+let usuarioConectado = JSON.parse(localStorage.getItem("usuarioConectado"));
 
 function openPage(pageName, elmnt, color) {
     // Hide all elements with class="tabcontent" by default */

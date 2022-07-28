@@ -37,6 +37,41 @@
     text-align: center;
 }
 
+.tbl-factura {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin-top: 5.8%;
+    color: #000;
+}
+
+.tbl-factura thead {
+    background: #000;
+    color: #fff;
+}
+
+.tbl-factura thead tr {
+    border-bottom: 2px solid #0e726d
+}
+
+.tbl-factura thead tr th {
+    padding: 5px 0;
+}
+
+.tbl-factura tbody tr {
+    border-bottom: 2px solid #0e5754;
+}
+
+.tbl-factura tbody tr:nth-child(even) {
+    background: rgb(24, 107, 107);
+    color: #fff;
+}
+
+.tbl-factura tbody tr td {
+    padding: 10px 1%;
+    width: 5%;
+    text-align: center;
+}
+
 .tbl-procedimientos {
     background-color: #f2f2f2;
     font-family: Arial, Helvetica, sans-serif, sans-serif;
