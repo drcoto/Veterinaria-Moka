@@ -13,33 +13,50 @@
     <link rel="stylesheet" href="css/citas.css">
     <link rel="stylesheet" href="css/vete.css">
     <link rel="stylesheet" href="css/procedimientos.css">
+    <link rel="stylesheet" href="css/menuUser.css" />
+    <link rel="stylesheet" href="css/headerUser.css" />
     <script src="https://kit.fontawesome.com/c02f88807d.js" crossorigin="anonymous"></script>
     <title>Dashboard del Veterinario</title>
 </head>
 
 <body>
     <header class="header-container">
-        <button type="button">
-          <i class="fa-solid fa-user"></i>Veterinario
-          </button>
+        <a href="#" id="btn-usuario">
+            <i class="fa-solid fa-user"></i>Monica
+            <i class="fa-solid fa-caret-down"></i>
+        </a>
         <div class="logo-container">
-            <img src="img/logo-moka.png" alt="logo moka" />
+            <img src="imgs/logo-moka.png" alt="logo moka" />
         </div>
         <div class="menu-icons">
-            <a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a>
+            <a href="login.html"><i class="fa-solid fa-house"></i>Inicio</a>
             <a href="#"><i class="fa-solid fa-wheelchair"></i>Accesibilidad</a>
-            <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i>Cerrar Sesión</a>
-
         </div>
     </header>
-
     <nav class="menu">
-        <a href="expediente.html">Expediente</a>
-        <a href="citas.html">Listar Citas</a>
 
-
+        <a href="citas.html">Consultar Citas de la Veterinaria</a>
+        <a href="reserva-listado.html">Consultar Expedientes</a>
 
     </nav>
+    <div class="menu-user-container ocultar-menu">
+        <div class="menu-user">
+            <div class="img-user-container">
+                <img src="imgs/users/users1.jpg" alt="" />
+            </div>
+            <div class="enleces">
+                <a href="#"><i class="fa-solid fa-gear"></i>Perfil</a>
+                <a href="#"><i class="fa-solid fa-calendar-days"></i>Mis citas</a>
+                <a href="#"><i class="fa-solid fa-paw"></i>Mi mascotas</a>
+                <a href="#"><i class="fa-solid fa-wallet"></i>Métodos de pago</a>
+                <a href="#"><i class="fa-solid fa-file-invoice-dollar"></i>Facturas</a>
+                <a href="index.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>Cerrar sesión</a>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <section>
         <div class="container-admin">
@@ -99,6 +116,7 @@
     <script src="js/citas-listar.js"></script>
     <script src="js/validar.js"></script>
     <script src="js/validar-citas.js"></script>
+    <script src="js/navUser.js"></script>
 
 </body>
 
