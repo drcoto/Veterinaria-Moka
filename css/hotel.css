@@ -25,12 +25,14 @@ div.hotel-img-head {
 }
 
 .info-hotel-container {
+    font-family: "Varela Round", sans-serif;
     position: relative;
     top: 0px;
     padding: 20px 0;
 }
 
 .info-hotel-container h1 {
+    font-family: "Varela Round", sans-serif;
     font-size: 30px;
     text-align: center;
     padding: 20px 0;
@@ -70,6 +72,7 @@ div.hotel-img-head {
 }
 
 .img-perro .txt-perros {
+    font-family: "Varela Round", sans-serif;
     padding: 10px;
     font-size: 25px;
 }
@@ -110,6 +113,7 @@ div.hotel-img-head {
 
 .sct-perros h2,
 .sct-gatos h2 {
+    font-family: "Varela Round", sans-serif;
     text-align: center;
     font-size: 30px;
     padding: 20px 0 0 0;
@@ -122,6 +126,7 @@ div.hotel-img-head {
 
 .sct-perros p,
 .sct-gatos p {
+    font-family: "Varela Round", sans-serif;
     text-align: center;
     width: 400px;
     font-size: 25px;
