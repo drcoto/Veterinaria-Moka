@@ -1,39 +1,50 @@
 * {
     box-sizing: border-box;
 }
-.sct-hotel{
+
+div.hotel-img-head {
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    height: 700px;
+    justify-content: center;
+}
+
+.sct-hotel {
     position: relative;
     top: 81px;
 }
 
 .img-hospedaje {
-width: 100%;
-height: 600px;
-
+    width: 100%;
+    height: 600px;
 }
+
 .img-hospedaje img {
-width: 100%;
-height: 100%;
-
+    width: 100%;
+    height: 100%;
 }
-.info-hotel-container{
+
+.info-hotel-container {
     position: relative;
     top: 0px;
     padding: 20px 0;
 }
-.info-hotel-container h1{
+
+.info-hotel-container h1 {
     font-size: 30px;
     text-align: center;
     padding: 20px 0;
+    font-weight: 700;
 }
-.info-hotel-container p{
+
+.info-hotel-container p {
     font-size: 25px;
     text-align: center;
     margin: auto;
     width: 450px;
 }
 
-.img-animales-container{
+.img-animales-container {
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -41,132 +52,87 @@ height: 100%;
     height: 200px;
     padding: 20px 0;
 }
-.img-perro,.img-gato{
+
+.img-perro,
+.img-gato {
     display: flex;
     flex-direction: column;
     text-align: center;
     height: 100px;
 }
-.img-perro img,.img-gato img{
+
+.img-perro img,
+.img-gato img {
     display: flex;
     flex-direction: column;
-
     text-align: center;
     height: 150px;
 }
-.img-perro .txt-perros{
-    padding: 10px;
-    font-size: 25px;
-}
-.img-perro .txt-gato{
+
+.img-perro .txt-perros {
     padding: 10px;
     font-size: 25px;
 }
 
-.sct-perros{
+.img-perro .txt-gato {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.sct-perros {
     display: flex;
     justify-content: space-evenly;
     margin: 50px auto;
     max-width: 1200px;
-    padding: 20px ;
+    padding: 20px;
 }
 
-.img-sct-container{
+.img-sct-container {
     width: 400px;
-    height: 500px;
+    height: 600px;
 }
-.img-sct-container img{
+
+.img-sct-container img {
     width: 100%;
-    height: 100%;
+    height: 110%;
 }
-.img-info-container{
-    width: 300px;
+
+.img-info-container {
+    width: 200px;
     height: 200px;
     margin: auto;
 }
-.img-info-container img{
+
+.img-info-container img {
     width: 100%;
     height: 100%;
 }
-.sct-perros h2,.sct-gatos h2{
+
+.sct-perros h2,
+.sct-gatos h2 {
     text-align: center;
     font-size: 30px;
     padding: 20px 0 0 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    ;
 }
-.sct-perros p,.sct-gatos p{
+
+.sct-perros p,
+.sct-gatos p {
     text-align: center;
     width: 400px;
-    font-size: 30px;
+    font-size: 25px;
     padding: 15px 0 0 0;
 }
-.sct-gatos{
+
+.sct-gatos {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
     margin: 50px auto;
     max-width: 1200px;
-    padding: 20px ;
+    padding: 20px;
 }
-
-
-
-/* p.txt-1 {
-    position: absolute;
-    width: 480px;
-    height: 36px;
-    left: 481px;
-    top: 830px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 65px;
-} */
-
-/* p.txt-2 {
-    position: absolute;
-    width: 704px;
-    height: 56px;
-    left: 335px;
-    top: 904px;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 39px;
-    text-align: center;
-} */
-
-
-/* p.perro-1 {
-    position: absolute;
-    width: 99px;
-    height: 28px;
-    left: 468px;
-    top: 1245px;
-    font-weight: 400;
-    font-size: 32px;
-} */
-
-/* section.gato {
-    background-image: url(../img/gato.png);
-    position: absolute;
-    width: 167px;
-    height: 173px;
-    left: 837px;
-    top: 1033px;
-} */
-
-/* p.gato-1 {
-    position: absolute;
-    width: 97px;
-    height: 28px;
-    left: 872px;
-    top: 1247px;
-    font-weight: 400;
-    font-size: 32px;
-} */
-
-/* .hotel-perro {
-    border: gray;
-    padding: .5rem;
-    display: flex;
-    flex-direction: column;
-} */
