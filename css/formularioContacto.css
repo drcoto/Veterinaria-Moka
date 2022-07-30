@@ -1,8 +1,9 @@
   /*Tamaño del mapa*/
     
   #form-map {
-    height: 400px;
-    width: 100%;
+    margin-top: 40px;
+    height: 275px;
+    width: 400px;
 }
 /*Controla el boton que se encuentra sobre el mapa para la geolocalizacion*/
 
@@ -26,17 +27,24 @@
 /*Tamaño y margenes del form*/
 
 form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
     margin-top: -30px;
     width: 100%;
+    gap: 20px;
 }
 /*Secciones de inputs: nombre, mascota, telefono y correo*/
 
 .division {
     width: 100%;
     display: flex;
+    gap: 20px;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 5px 0;
 }
+
 /*Form section*/
 
 .form-section {
@@ -62,9 +70,10 @@ form {
 /*Este mueve el tama;o del form*/
 
 .form-container {
-    width: 700px;
+    margin: 0 3%;
+    max-width: 1150px;
     border: 2px solid #1ba67d;
-    padding: 40px;
+    padding: 40px 10px;
     border-radius: 6px;
     background-color: #fff;
 }
@@ -97,9 +106,10 @@ form {
 .box-petNameArea input,
 .box-phone input,
 .box-email input {
-    width: 300px;
+    max-width: 250px;
     padding: 10px;
     border-radius: 3px;
+    font-size: 16px;
 }
 
 .infoBox textarea {
@@ -128,6 +138,7 @@ form {
     height: 100%;
     position: absolute;
     padding: 10px;
+
 }
 
 .checkCall label,
