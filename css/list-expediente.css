@@ -62,6 +62,10 @@
     /* Could be more or less, depending on screen size */
 }
 
+.modal-informacion {
+    height: 350px;
+}
+
 
 /* The Close Button */
 
