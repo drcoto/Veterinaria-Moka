@@ -377,23 +377,25 @@
 
             <fieldset class="frm-medicamentosData">
                 <form class="formulario-medicamentos">
-                    <div>
+                    <div id="form-receta-fecha">
                         <label for="">Fecha:</label>
                         <input type="date" class="formulario-receta" id="med-date">
                     </div>
                     <div>
+                        <label for="med-pet">Nombre de mascota:</label>
                         <input type="text" class="formulario-receta" id="med-pet" placeholder="Nombre de la mascota">
                     </div>
                     <div>
-                        <select id="lab-doctores">
+                        <select id="med-doctores">
                                 <option value="" class="frm-select"> Doctores </option>
-                                <option value="luis" class="frm-select">Dr. Luis Zumbado</option>
-                                <option value="mario" class="frm-select">Dr. Mario Castellas</option>
-                                <option value="cindy" class="frm-select">Dra. Cindy Frias</option>
-                                <option value="lucrecia" class="frm-select">Dra. Lucrecia Diaz</option>
+                                <option value="Dr. Luis Zumbado" class="frm-select">Dr. Luis Zumbado</option>
+                                <option value="Dr. Mario Castellas" class="frm-select">Dr. Mario Castellas</option>
+                                <option value="Dra. Cindy Frias" class="frm-select">Dra. Cindy Frias</option>
+                                <option value="Dra. Lucrecia Diaz" class="frm-select">Dra. Lucrecia Diaz</option>
                             </select>
                     </div>
                     <div>
+                        <label for="med-med">Nombre del Medicamento:</label>
                         <input type="text" class="formulario-receta" id="med-med" placeholder="Nombre del Medicamento">
                     </div>
                     <div>
@@ -416,7 +418,6 @@
                     </thead>
                     <tbody>
                         <tr>
-
                             <td></td>
                             <td></td>
                             <td></td>

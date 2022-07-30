@@ -149,6 +149,10 @@
         justify-content: center;
     }
     
+    .frm-medicamentosTable {
+        height: 300px;
+    }
+    
     .frm-padecimientos {
         display: flex;
         align-items: center;
@@ -172,6 +176,14 @@
         margin-left: 10%;
         padding-left: 35%;
         width: 1200px;
+    }
+    
+    .frm-medicamentosData {
+        width: 700px;
+    }
+    
+    #form-receta-fecha {
+        margin-left: 500px;
     }
     
     .frm-signos {
@@ -199,6 +211,18 @@
     
     .input-valid {
         border: transparent;
+    }
+    
+    #med-doctores {
+        margin-left: 532px;
+    }
+    
+    #med-med {
+        width: 476px;
+    }
+    
+    #med-pet {
+        width: 516px;
     }
     
     #nombre-vacuna input {

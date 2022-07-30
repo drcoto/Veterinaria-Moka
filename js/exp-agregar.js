@@ -1,5 +1,5 @@
 'use strict';
-
+const botonMed = document.getElementById('btn-med');
 const botonLab = document.querySelector('#btn-lab');
 const botonTx = document.querySelector('#btn-agregarTx');
 const botonVac = document.querySelector('#btn-agregarVacuna');
@@ -11,7 +11,7 @@ const labResult = document.querySelector('#lab-result');
 const medDate = document.querySelector('#med-date');
 const medPet = document.querySelector('#med-pet');
 const medMed = document.querySelector('#med-med');
-const medDr = document.querySelectorAll('.frm-select');
+const medDr = document.querySelector('#med-doctores');
 const vacunaDateInput = document.querySelector('#input-dateVac');
 const vacunaInput = document.querySelector('#input-vacuna');
 const txDate = document.querySelector('#input-txDate');
@@ -25,7 +25,7 @@ function llenarTablaVac() {
     let sName = vacunaInput.value;
     let dateVac = vacunaDateInput.value;
     let tbodyVac = document.querySelector("#tbl-vacuna tbody");
-    tbodyVac.innerHTML = "";
+    //tbodyVac.innerHTML = "";
     let fila = tbodyVac.insertRow();
     let celdaDate = fila.insertCell();
     let celdaNombre = fila.insertCell();
@@ -86,7 +86,7 @@ function llenarTablaTx() {
     let dateTx = txDate.value;
     let treatment = txTreatment.value;
     let tbodyTx = document.querySelector("#tbl-procedimiento tbody");
-    tbodyTx.innerHTML = " ";
+    //tbodyTx.innerHTML = " ";
     let fila = tbodyTx.insertRow();
     let celdaDateTx = fila.insertCell();
     let celdaProc = fila.insertCell();
@@ -150,7 +150,7 @@ function llenarTablaLab() {
 
 
     let tbodyLab = document.querySelector("#tbl-lab tbody");
-    tbodyLab.innerHTML = "";
+    // tbodyLab.innerHTML = "";
     let fila = tbodyLab.insertRow();
     let celdaDate = fila.insertCell();
     let celdaPet = fila.insertCell();
@@ -223,24 +223,24 @@ function llenarTablaLab() {
 
 function llenarTablaMed() {
     let medFecha = medDate.value;
-    let medPet = medPet.value;
-    let medDr = medDr.value;
-    let medMed = medMed.value;
+    let smedPet = medPet.value;
+    let smedDr = medDr.value;
+    let smedMed = medMed.value;
 
-    console.log(medFecha, medPet, medDr, medMed);
+
 
     let tbodyMed = document.querySelector("#tbl-receta tbody");
-    tbodyMed.innerHTML = "";
+    //tbodyMed.innerHTML = "";
     let fila = tbodyMed.insertRow();
-    let celdaDate = fila.insertCell();
-    let celdaPet = fila.insertCell();
-    let celdaDr = fila.insertCell();
-    let celdaMed = fila.insertCell();
+    let celdaDateMed = fila.insertCell();
+    let celdaPetMed = fila.insertCell();
+    let celdaDrMed = fila.insertCell();
+    let celdaMedMed = fila.insertCell();
     let tdAccionesMed = fila.insertCell();
-    celdaDate.innerHTML = dFecha;
-    celdaPet.innerHTML = sPet;
-    celdaDr.innerHTML = sOwner;
-    celdaMed.innerHTML = sTest;
+    celdaDateMed.innerHTML = medFecha;
+    celdaPetMed.innerHTML = smedPet;
+    celdaDrMed.innerHTML = smedDr;
+    celdaMedMed.innerHTML = smedMed;
 
 
     let btnEditar = document.createElement('button');
@@ -261,7 +261,7 @@ function llenarTablaMed() {
 
     btnEliminar.addEventListener('click', () => {
         Swal.fire({
-            title: 'Está seguro que desea eliminar el exámen?',
+            title: 'Está seguro que desea eliminar el registro?',
             text: "La acción no se puede revertir!",
             icon: 'warning',
             showCancelButton: true,
@@ -297,7 +297,7 @@ function llenarTablaMed() {
 
 }
 
-
+botonMed.addEventListener('click', llenarTablaMed);
 botonTx.addEventListener('click', llenarTablaTx);
 botonVac.addEventListener('click', llenarTablaVac);
 botonLab.addEventListener('click', llenarTablaLab);
