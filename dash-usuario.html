@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
@@ -35,7 +36,7 @@
         <a href="list-expediente.html" id="expedientes">Expediente</a>
         <a href="list-reservaciones.html" id="reservaciones">Reservaciones</a>
         <a href="list-citas.html" id="citas">Citas</a>
-        <a href="list-pagos.html" id="citas">Pagos</a>
+        <a href="list-pagos.html" id="pagos">Pagos</a>
     </nav>
 
     <div class="menu-user-container ocultar-menu">
@@ -64,9 +65,8 @@
 
             <div id="appointment" class="tabcontent">
                 <div class="tabcontentDisplay>">
-
-                    <form class="dashboard--usuario-nueva-cita">
-                        <fieldset class="form-title-appointment">
+                    <form class="dashboard--usuario-nueva-cita center-form">
+                        <fieldset class="form-title-appointment center-fieldset">
                             <legend>Agenda tu cita!</legend>
 
                             <div class="dashboard-container-cita">
@@ -96,8 +96,8 @@
             </div>
             <div id="reservation" class="tabcontent">
 
-                <form class="dashboard--usuario-nueva-reservacion">
-                    <fieldset class="form-title-reservation">
+                <form class="dashboard--usuario-nueva-reservacion center-form">
+                    <fieldset class="form-title-reservation center-fieldset">
                         <legend>Reserva una habitacion!</legend>
 
                         <div class="dashboard-container-reservacion">
@@ -114,6 +114,27 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="footer">
+          <div class="footer-direction"><p>Curridabat, San Jose</p></div>
+          <div class="footer-email"><p>mokaclinic@vetpet.com</p></div>
+          <div class="footer-redes">
+            <a href="#"
+              ><img src="imgs/icons/iconsDark/facebook-dark.png" alt=""
+            /></a>
+            <a href="#"
+              ><img src="imgs/icons/iconsDark/instagram-dark.png" alt=""
+            /></a>
+            <a href="#"
+              ><img src="/imgs/icons/iconsDark/twitter-dark.png" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="create-by">
+          <p>Pagina creada por <a href="" class="cr-dev">CR-Dev</a></p>
+        </div>
+      </footer>
 
     <!-- js -->
     <script src="https://kit.fontawesome.com/c02f88807d.js" crossorigin="anonymous"></script>

@@ -17,7 +17,7 @@ const rederigirUsuarios = () => {
       window.location.href = "index.html";
       break;
     case 4:
-      window.location.href = "usuario.html";
+      window.location.href = "dash-usuario.html";
       break;
   }
 };
