@@ -6,7 +6,7 @@
     top: 120px;
     height: 81vh;
     width: 100%;
-    overflow: auto;
+    overflow-y: auto;
 }
 .container h1{
     text-align: center;
@@ -15,7 +15,8 @@
 .tbl-container{
     margin: auto;
     margin-top: 30px;
-    width: 85%;
+    width: 75%;
+    padding: 20px 0;
 }
 
 #tbl-lab {

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/menuUser.css" />
     <link rel="stylesheet" href="css/headerUser.css" />
     <link rel="stylesheet" href="css/reserva.css">
-    <link rel="stylesheet" href="css/jim-header.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <script src="https://kit.fontawesome.com/c02f88807d.js" crossorigin="anonymous"></script>
     <title>Listado de Reservas</title>
@@ -31,7 +31,7 @@
             <i class="fa-solid fa-caret-down"></i>
         </a>
         <div class="logo-container">
-            <img src="imgs/logo-moka.png" alt="logo moka" />
+            <img src="imgs/logo/logo-moka.png" alt="logo moka" />
         </div>
         <div class="menu-icons">
             <a href="login.html"><i class="fa-solid fa-house"></i>Inicio</a>
@@ -39,7 +39,7 @@
         </div>
     </header>
     <nav class="menu-header">
-        <a href="admin.html" id="btn-reservaAtras">Dashboard Principal</a>
+        <a href="dashboard-admin.html" id="btn-reservaAtras">Dashboard Principal</a>
     </nav>
     <div class="menu-user-container ocultar-menu">
         <div class="menu-user">
@@ -61,8 +61,8 @@
 
 
     <section class="sct-reporte-reserva container ">
-        <h1>Listado de Reservas del Hotel</h1>
         <div class="tbl-container">
+            <h1>Listado de Reservas del Hotel</h1>
         <table id="tbl-hotel" class="tbl-general">
             <thead>
                 <tr>
@@ -92,9 +92,29 @@
         </table>
         </div>
     </section>
+    <footer>
+        <div class="footer">
+            <div class="footer-direction">
+                <p>Curridabat, San Jose</p>
+            </div>
+            <div class="footer-email">
+                <p>mokaclinic@vetpet.com</p>
+            </div>
+            <div class="footer-redes">
+                <a href="#"><img src="imgs/icons/iconsDark/facebook-dark.png" alt="" /></a>
+                <a href="#"><img src="imgs/icons/iconsDark/instagram-dark.png" alt="" /></a>
+                <a href="#"><img src="/imgs/icons/iconsDark/twitter-dark.png" alt="" /></a>
+            </div>
+        </div>
+        <div class="create-by">
+            <p>Pagina creada por <a href="" class="cr-dev">CR-Dev</a></p>
+        </div>
+    </footer>
+    <!-- js -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/reservas.js"></script>
     <script src="js/reserva-listado.js"></script>
+    <script src="js/navUser.js"></script>
 </body>
 
 </html>

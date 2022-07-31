@@ -5,7 +5,7 @@ function openModulo(evt, modulo) {
     // Declare all variables
     let i, tabcontent, tablinks;
     if (modulo === "expediente") {
-        window.location.href = "expediente.html";
+        window.location.href = "expediente-admin.html";
     }
     // Get all elements with class="tabcontent" and hide them
     tabcontent = document.getElementsByClassName("tabcontent");

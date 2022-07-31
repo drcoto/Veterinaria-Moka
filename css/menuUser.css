@@ -7,9 +7,9 @@
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
-  z-index: 20;
+  z-index: 10;
   width: 15%;
-  height: 70vh;
+  height: 81vh;
 }
 
 .menu-user {
