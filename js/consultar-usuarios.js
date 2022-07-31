@@ -1,20 +1,23 @@
-const cuerpoTabla = document.querySelector('#tbl-hotel tbody');
-const botonReservaBack = document.getElementById("btn-reservaAtras");
-let usuarioConectado = JSON.parse(localStorage.getItem("usuarioConectado"));
-const pagina = document.querySelector('#btn-usuario');
+'use strict';
+const cuerpoTabla = document.querySelector('#tbl-usuarios tbody');
+const botonBackMain = document.getElementById("btn-backMain");
 
-const llenarTabla = () => {
+const llenarUsuarios = () => {
+    //Limpia el contenido que tiene el cuerpo de la tabla.
+    cuerpoTabla.innerHTML = '';
+    //Para cada usuario que se encuentre dentro de la coleccion de usuarios
+    usuarios.forEach(user => {
 
-    //cuerpoTabla.innerHTML = ''; //limpia el contenido del html
+        let fila = cuerpoTabla.insertRow();
 
-    reservas.forEach(reservaTemporal => {
-        let fila = cuerpoTabla.insertRow(); //Crea una fila
+        fila.insertCell().textContent = user.identificacion;
+        fila.insertCell().textContent = user.nombre;
+        fila.insertCell().textContent = user.contrasena;
+        fila.insertCell().textContent = user.rol;
 
-        fila.insertCell().textContent = reservaTemporal.fechaReserva;
-        fila.insertCell().textContent = reservaTemporal.fechaSalida;
-        fila.insertCell().textContent = reservaTemporal.cantAnimales;
+
         // Creación de la celda para los botones
-        let tdAcciones = fila.insertCell();
+        let tdAccionesUser = fila.insertCell();
 
         //Creación del boton editar
         let btnEditar = document.createElement('button');
@@ -28,14 +31,16 @@ const llenarTabla = () => {
         btnEliminar.classList.add('btn-eliminar');
 
         //Agregar el boton de editar a la celda acciones
-        tdAcciones.appendChild(btnEditar);
+        tdAccionesUser.appendChild(btnEditar);
 
         //Agregar el boton de eliminar a la celda acciones
-        tdAcciones.appendChild(btnEliminar);
+        tdAccionesUser.appendChild(btnEliminar);
+        btnEditar.addEventListener('click', () => { window.location.href = "" });
+
 
         btnEliminar.addEventListener('click', () => {
             Swal.fire({
-                title: 'Está seguro que desea eliminar la cita?',
+                title: 'Está seguro que desea eliminar el usuario?',
                 text: "La acción no se puede revertir!",
                 icon: 'warning',
                 showCancelButton: true,
@@ -44,18 +49,22 @@ const llenarTabla = () => {
                 confirmButtonText: 'Sí, eliminar!'
             }).then((result) => {
                 if (result.isConfirmed) {
+                    cuerpoTabla.innerHTML = '';
                     Swal.fire(
                         'Eliminado!',
-                        'La cita fue eliminado.',
+                        'El usuario fue eliminado.',
                         'success'
                     )
                 }
             })
         });
+
     });
 };
 
-let regresarPrincipal = () => {
+llenarUsuarios();
+
+let dirigirBackMain = () => {
 
     switch (usuarioConectado.rol) {
         case "1":
@@ -72,11 +81,5 @@ let regresarPrincipal = () => {
             break;
     }
 };
-let titulo = () => {
-    pagina.textContent = 'Administrador';
-};
 
-botonReservaBack.addEventListener("click", regresarPrincipal);
-pagina.addEventListener("load", titulo);
-
-llenarTabla();
+botonBackMain.addEventListener("click", dirigirBackMain);
