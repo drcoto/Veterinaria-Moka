@@ -1,69 +1,218 @@
 * {
     box-sizing: border-box;
 }
-
 .container {
-    scroll-margin-top: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 45px;
-    width: 100%;
-    height: 100vh;
-    font-family: monospace;
-    flex-wrap: wrap;
     position: relative;
     top: 120px;
     height: 81vh;
+    width: 100%;
+    overflow: auto;
 }
-
-.tbl-container .tbl-info {
-    font-family: monospace;
-    font-size: 16px;
+.container h1{
+    text-align: center;
+    padding: 40px;
+}
+.tbl-container{
     margin: auto;
+    margin-top: 30px;
+    width: 85%;
 }
 
-.tbl-container .tbl-info thead {
-    background-color: rgba(0, 0, 0, 0.815);
-    backdrop-filter: blur(10);
+#tbl-lab {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin-top: 3%;
+    color: #000;
+}
+
+#tbl-lab thead {
+    background: #000;
     color: #fff;
-    font-weight: 600;
-    font-size: 18px;
 }
 
-.tbl-container .tbl-info thead>tr {
-    border-bottom: 2px solid #18b158;
+#tbl-lab thead tr {
+    border-bottom: 2px solid #0e726d
 }
 
-.tbl-container .tbl-info thead tr th {
-    padding: 20px 20px;
+#tbl-lab thead tr th {
+    padding: 5px 0;
 }
 
-.tbl-container .tbl-info tbody td {
-    border-bottom: 1px solid #18b158;
-    color: rgb(0, 0, 0);
-    font-weight: 600;
-    padding: 10px 15px;
+#tbl-lab tbody tr {
+    border-bottom: 2px solid #0e5754;
+}
+
+#tbl-lab tbody tr:nth-child(even) {
+    background: rgb(24, 107, 107);
+    color: #fff;
+}
+
+#tbl-lab tbody tr td {
+    padding: 10px 1%;
+    width: 5%;
     text-align: center;
 }
 
-.tbl-container .tbl-info tbody tr {
-    border-bottom: 2px solid #18b158;
-    color: rgb(0, 0, 0);
-    font-weight: 600;
-    padding: 10px 15px;
-    text-align: center;
-    background-color: #ffffffa9;
-    backdrop-filter: blur(10);
+
+.tbl-factura {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    color: #000;
+    width: 100%;
+}
+#tbl-hotel {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    color: #000;
+    width: 50%;
+    margin: auto;
+    font-size:20px ;
 }
 
-.tbl-container .tbl-info tbody tr:nth-child(even) {
-    background-color: #cfcfcff5;
-    backdrop-filter: blur(2);
+.tbl-general {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    color: #000;
+    width: 100%;
+}
+
+.tbl-general thead {
+    background: #000;
+    color: #fff;
+}
+
+.tbl-general thead tr {
+    border-bottom: 2px solid #0e726d
+}
+
+.tbl-general thead tr th {
+    padding: 5px 0;
+}
+
+.tbl-general tbody tr {
+    border-bottom: 2px solid #0e5754;
+}
+
+.tbl-general tbody tr:nth-child(even) {
+    background: rgb(24, 107, 107);
+    color: #fff;
+}
+
+.tbl-general tbody tr td {
+    padding: 10px 1%;
+    width: 5%;
+    text-align: center;
+}
+
+
+
+
+.tbl-procedimientos {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin-top: 3%;
+    color: #000;
+}
+
+.tbl-procedimientos thead {
+    background: #000;
+    color: #fff;
+}
+
+.tbl-procedimientos thead tr {
+    border-bottom: 2px solid #0e726d
+}
+
+.tbl-procedimientos thead tr th {
+    padding: 5px 0;
+}
+
+.tbl-procedimientos tbody tr {
+    border-bottom: 2px solid #0e5754;
+}
+
+.tbl-procedimientos tbody tr:nth-child(even) {
+    background: rgb(24, 107, 107);
+    color: #fff;
+}
+
+.tbl-procedimientos tbody tr td {
+    padding: 10px 1%;
+    width: 5%;
+    text-align: center;
+}
+
+.tbl-vacunas {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin-top: 3%;
+    color: #000;
+}
+
+.tbl-vacunas thead {
+    background: #000;
+    color: #fff;
+}
+
+.tbl-vacunas thead tr {
+    border-bottom: 2px solid #0e726d
+}
+
+.tbl-vacunas thead tr th {
+    padding: 5px 0;
+}
+
+.tbl-vacunas tbody tr {
+    border-bottom: 2px solid #0e5754;
+}
+
+.tbl-vacunas tbody tr:nth-child(even) {
+    background: rgb(24, 107, 107);
+    color: #fff;
+}
+
+.tbl-vacunas tbody tr td {
+    padding: 10px 1%;
+    width: 5%;
+    text-align: center;
+}
+
+.tbl-recetas {
+    background-color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin-top: 3%;
+    color: #000;
+}
+
+.tbl-recetas thead {
+    background: #000;
+    color: #fff;
+}
+
+.tbl-recetas thead tr {
+    border-bottom: 2px solid #0e726d
+}
+
+.tbl-recetas thead tr th {
+    padding: 5px 0;
+}
+
+.tbl-recetas tbody tr {
+    border-bottom: 2px solid #0e5754;
+}
+
+.tbl-recetas tbody tr:nth-child(even) {
+    background: rgb(24, 107, 107);
+    color: #fff;
+}
+
+.tbl-recetas tbody tr td {
+    padding: 10px 1%;
+    width: 5%;
+    text-align: center;
 }
 
 .btn-editar {
-    margin-right: 5px;
     background-color: #575757;
     color: #fff;
     border: 2px solid transparent;
@@ -75,12 +224,13 @@
     padding: 5px 10px;
     font-weight: 800;
     cursor: pointer;
-    width: 80px;
+    width: 75px;
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    margin: 5px;
 }
 
 .btn-editar:hover {
@@ -106,6 +256,7 @@
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
+    width: 75px;
 }
 
 .btn-eliminar:hover {
@@ -115,69 +266,7 @@
 
 .tbl-container h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     padding: 0 0 20px 0;
-    color: #18b158;
-}
-
-.tbl-container {
-    position: relative;
-    padding: 30px 30px;
-    /* background-image: url(/imgs/joe-caione-qO-PIF84Vxg-unsplash.jpg);
-    background-position: center;
-    background-size: cover; */
-    background-color: rgba(218, 218, 218, 0.349);
-    box-shadow: 0 0 5px #000;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-.btn-container {
-    width: 150px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 35px 0 0 0;
-}
-
-.btn-container button {
-    border: none;
-    padding: 10px;
-    font-size: 18px;
-    color: #18b158;
-    background-color: #000000e5;
-    backdrop-filter: blur(1px);
-    cursor: pointer;
-}
-
-.btn-container button:hover {
-    border: none;
-    padding: 10px;
-    font-size: 18px;
-    color: #00ff6a;
-    background-color: #000000d2;
-    backdrop-filter: blur(1px);
-}
-
-.btn-salir {
-    position: absolute;
-    color: #000000;
-    text-decoration: none;
-    font-size: 17px;
-    top: 15px;
-    left: 30px;
-}
-
-.btn-salir i {
-    padding-right: 5px;
     color: #18b158;
 }
